@@ -90,6 +90,12 @@
                 android:title="@string/recent_panel_expanded_mode_title"
                 android:persistent="false" />
 
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                android:key="recent_panel_bg_color"
+                android:title="@string/recent_panel_bg_color_title"
+                android:defaultValue="0x00ffffff"
+                alphaSlider="true" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
