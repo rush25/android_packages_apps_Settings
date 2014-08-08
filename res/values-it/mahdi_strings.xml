@@ -1207,6 +1207,8 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <string name="show_network_traffic_1000">1000 ms</string>
     <string name="show_network_traffic_1500">1500 ms</string>
     <string name="show_network_traffic_2000">2000 ms</string>
+    <string name="network_traffic_autohide">Nascondi automaticamente</string>
+    <string name="network_traffic_autohide_threshold">Limita inattività</string>
 
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Indicatori attività </string>
