@@ -39,4 +39,6 @@
 
     <color name="card_lockscreen_targets">@android:color/holo_blue_light</color>
     <color name="card_lockscreen_targets_text_color">@android:color/white</color>
+
+    <color name="pager_tab_strip_apps">@android:color/holo_blue_light</color>
 </resources>
