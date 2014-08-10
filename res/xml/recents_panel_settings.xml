@@ -38,6 +38,13 @@
                 android:defaultValue="3"
                 android:dependency="recent_menu_clear_all" />
 
+            <CheckBoxPreference
+                android:key="recent_clear_all_apps"
+                android:title="@string/recent_clear_all_apps_title"
+                android:summary="@string/recent_clear_all_apps_summary"
+                android:defaultValue="false"
+                android:dependency="recent_menu_clear_all" />
+
             <PreferenceScreen
                 android:key="recents_ram_bar"
                 android:fragment="com.android.settings.mahdi.RamBar"

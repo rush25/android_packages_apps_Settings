@@ -48,6 +48,7 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
     private static final String RECENT_PANEL_SCALE = "recent_panel_scale";
     private static final String RECENT_PANEL_EXPANDED_MODE = "recent_panel_expanded_mode";
     private static final String RECENT_MENU_CLEAR_ALL = "recent_menu_clear_all";
+    private static final String RECENT_CLEAR_ALL_APPS = "recent_clear_all_apps";
     private static final String RECENT_MENU_CLEAR_ALL_LOCATION = "recent_menu_clear_all_location";
 
     private CheckBoxPreference mRecentsCustom;
@@ -56,6 +57,7 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
     private ListPreference mRecentPanelScale;
     private ListPreference mRecentPanelExpandedMode;
     private CheckBoxPreference mRecentClearAll;
+    private CheckBoxPreference mRecentClearAllApps;
     private ListPreference mRecentClearAllPosition;
 
     @Override
@@ -101,6 +103,11 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
                 Settings.System.SHOW_CLEAR_RECENTS_BUTTON, 0) == 1);
         mRecentClearAll.setOnPreferenceChangeListener(this);
 
+        mRecentClearAllApps = (CheckBoxPreference) prefSet.findPreference(RECENT_CLEAR_ALL_APPS);
+        mRecentClearAllApps.setChecked(Settings.System.getInt(resolver,
+                Settings.System.CLEAR_ALL_RECENT_APPS, 0) == 1);
+        mRecentClearAllApps.setOnPreferenceChangeListener(this);
+
         mRecentClearAllPosition = (ListPreference) prefSet.findPreference(RECENT_MENU_CLEAR_ALL_LOCATION);
         String recentClearAllPosition = Settings.System.getString(resolver, Settings.System.CLEAR_RECENTS_BUTTON_LOCATION);
         if (recentClearAllPosition != null) {
@@ -139,6 +146,10 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
         if (preference == mRecentClearAll) {
             boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver, Settings.System.SHOW_CLEAR_RECENTS_BUTTON, value ? 1 : 0);
+            return true;
+        } else if (preference == mRecentClearAllApps) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver, Settings.System.CLEAR_ALL_RECENT_APPS, value ? 1 : 0);
             return true;
         } else if (preference == mRecentClearAllPosition) {
             String value = (String) newValue;
