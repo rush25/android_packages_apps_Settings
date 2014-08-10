@@ -24,6 +24,7 @@ import android.os.UserHandle;
 import android.os.UserManager;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 
@@ -36,9 +37,11 @@ public class PowerMenu extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "PowerMenu";
 
+    private static final String SHORTCUT_CATEGORY = "shortcut_category";
     private static final String POWER_MENU_MOBILE_DATA = "power_menu_mobile_data";
     private static final String KEY_ONTHEGO = "power_menu_onthego_enabled";
 
+    private PreferenceCategory mShortcutCategory;
     private CheckBoxPreference mMobileDataPowerMenu;
     private CheckBoxPreference mOnthegoPref;
 
@@ -51,6 +54,8 @@ public class PowerMenu extends SettingsPreferenceFragment implements
         final ContentResolver resolver = getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
 
+        mShortcutCategory = (PreferenceCategory) prefSet.findPreference(SHORTCUT_CATEGORY);
+
         mMobileDataPowerMenu = (CheckBoxPreference) prefSet.findPreference(POWER_MENU_MOBILE_DATA);
         Context context = getActivity();
         ConnectivityManager cm = (ConnectivityManager)
@@ -60,7 +65,7 @@ public class PowerMenu extends SettingsPreferenceFragment implements
                 Settings.System.POWER_MENU_MOBILE_DATA_ENABLED, 0) == 1);
             mMobileDataPowerMenu.setOnPreferenceChangeListener(this);
         } else {
-            prefSet.removePreference(mMobileDataPowerMenu);
+            mShortcutCategory.removePreference(mMobileDataPowerMenu);
         }
 
         // Only enable on the go item if device has camera
