@@ -25,6 +25,7 @@
         android:defaultValue="true" />
 
     <PreferenceCategory
+        android:key="shortcut_category"
         android:title="@string/lockscreen_shortcuts_title" >
 
         <com.android.settings.mahdi.SystemSettingCheckBoxPreference
