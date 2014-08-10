@@ -1429,6 +1429,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="recent_clear_all_button_location_top_right">Top right</string>
     <string name="recent_clear_all_button_location_bottom_left">Bottom left</string>
     <string name="recent_clear_all_button_location_bottom_right">Bottom right</string>
+    <string name="recent_clear_all_apps_title">Clear all tasks</string>
+    <string name="recent_clear_all_apps_summary">Clear all tasks including the topmost</string>
 
     <!-- New Recents Screen -->
     <string name="new_recents_category">Slims Recents</string>
