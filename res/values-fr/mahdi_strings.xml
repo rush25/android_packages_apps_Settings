@@ -595,39 +595,39 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="title_dynamic_wifi">Wi-Fi display</string>
 
     <string name="title_general">General</string>
-    <string name="title_quick_pulldown">Quick pulldown</string>
-    <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
-    <string name="quick_pulldown_summary_left">Left</string>
-    <string name="quick_pulldown_summary_right">Right</string>
-    <string name="quick_pulldown_off">Off</string>
-    <string name="quick_pulldown_left">Left</string>
-    <string name="quick_pulldown_right">Right</string>
-    <string name="title_collapse_panel">Auto close panel</string>
-    <string name="summary_collapse_panel">Close the Quick Settings panel upon toggle</string>
+    <string name="title_quick_pulldown">Déroulement rapide</string>
+    <string name="summary_quick_pulldown">%1$s coin de la barre de statut affiche les paramètres rapides</string>
+    <string name="quick_pulldown_summary_left">Gauche</string>
+    <string name="quick_pulldown_summary_right">Droit</string>
+    <string name="quick_pulldown_off">Désactivé</string>
+    <string name="quick_pulldown_left">Gauche</string>
+    <string name="quick_pulldown_right">Droit</string>
+    <string name="title_collapse_panel">Fermeture rapide</string>
+    <string name="summary_collapse_panel">Fermer le panneau de notification après appui sur une tuile</string>
 
     <!-- QuickSettings: Smart Pulldown -->
-    <string name="smart_pulldown_title">Smart pulldown</string>
-    <string name="smart_pulldown_summary">Open Quick Settings when there are %1$s notifications present</string>
-    <string name="smart_pulldown_off">Off</string>
-    <string name="smart_pulldown_dismissable">No dismissable</string>
-    <string name="smart_pulldown_persistent">No persistent</string>
-    <string name="smart_pulldown_all">No dismissable or persistent</string>
+    <string name="smart_pulldown_title">Déroulement intelligent</string>
+    <string name="smart_pulldown_summary">Ouvre les paramètres rapides lorsqu\'il y a %1$s notifications</string>
+    <string name="smart_pulldown_off">Désactivé</string>
+    <string name="smart_pullDésactivédown_dismissable">Aucune annulable</string>
+    <string name="smart_pulldown_persistent">Aucune persistente</string>
+    <string name="smart_pulldown_all">Aucune annulable ou persistente</string>
 
     <!-- QuickSettings: Custom Tile -->
-    <string name="custom_tile_dialog_text">Each action will add a new state to the tile. Each click changes to the next state. Long-press to add long-press actions. If no click action exists the long-action icon will be used for the tile. This allows you to change states by clicking and launch actions by long-pressing.</string>
-     <string name="custom_tile_dialog_title">Custom tile actions</string>
-     <string name="custom_toggle_extras">Custom tile extras</string>
-     <string name="custom_toggle_collapse_check">Collapse notification shade</string>
-     <string name="custom_toggle_match_state_check">Click action matches icon</string>
-     <string name="custom_tile_long_press">Longpress:</string>
-     <string name="custom_tile_null_warning">An action must be set first</string>
+    <string name="custom_tile_dialog_text">Chaque action ajoutera un nouvel état à la tuile. Chaque clic change pour l\'état suivant. Faire un appui long pour ajouter une action appui long. Si aucune action simple existe, l\'action appui long sera utiliChaque action ajoutera un nouvel état à la tuile. Chaque clic change pour l\'état suivant. Faire un appui long pour ajouter une action appui long. Si aucune action simple existe, l\'action appui long sera utilisée par défaut. Cela vous permet de changer l\'état par un clic et d\'effectuer une action par un appui long.sée par défaut. Cela vous permet de changer l\'état par un clic et d\'effectuer une action par un appui long.</string>
+     <string name="custom_tile_dialog_title">Actions de tuile custom</string>
+     <string name="custom_toggle_extras">Extras pour la tuile custom</string>
+     <string name="custom_toggle_collapse_check">Réduire l\'ombre de la notification</string>
+     <string name="custom_toggle_match_state_check">L\'action du clic correspond à l\'icône</string>
+     <string name="custom_tile_long_press">Pression longue:</string>
+     <string name="custom_tile_null_warning">Une action doit d\'abord être définie</string>
 
-    <string name="pref_network_mode_title">Network modes</string>
-    <string name="pref_screentimeout_mode_title">Screen timeout modes</string>
-    <string name="pref_ring_mode_title">Sound modes</string>
-    <string name="pref_music_mode_title">Music mode</string>
-    <string name="music_tile_mode_background">Show album artwork</string>
-    <string name="music_tile_mode_tracktitle">Show track title</string>
+    <string name="pref_network_mode_title">Modes réseau</string>
+    <string name="pref_screentimeout_mode_title">Modes d\'extinction de l\'écran</string>
+    <string name="pref_ring_mode_title">Modes du son</string>
+    <string name="pref_music_mode_title">Modes de la musique</string>
+    <string name="music_tile_mode_background">Afficher la pochette de l\'album</string>
+    <string name="music_tile_mode_tracktitle">fficher le titre de la piste</string>
 
     <!-- Quick access ribbon -->
     <string name="title_quick_access">Quick access ribbon</string>
@@ -636,57 +636,57 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="summary_quick_access_linked">Use the same tiles and layout as the Quick Settings panel</string>
 
     <!-- QuickSettings style options -->
-    <string name="quick_settings_title">Quick settings</string>
-    <string name="summary_quicksettings_tiles_style">Change the color of the tiles and more</string>
-    <string name="quick_tiles_color_title">Enable custom colors</string>
-    <string name="quick_tiles_color_summary">Enabling custom colors will override themes</string>
-    <string name="quick_tiles_bg_color_title">Tiles background color</string>
-    <string name="quick_tiles_bg_pressed_color_title">Tiles pressed background color</string>
-    <string name="quick_tiles_text_color_title">Tiles text color</string>
-    <string name="quick_tiles_alpha_title">Tiles background transparency</string>
-    <string name="qs_style_reset_message">Reset all quick settings colors to default?</string>
+    <string name="quick_settings_title">Paramètres rapides</string>
+    <string name="summary_quicksettings_tiles_style">Voir ou changer les options de style des paramètres rapides</string>
+    <string name="quick_tiles_color_title">Activer les coleurs personnalisée</string>
+    <string name="quick_tiles_color_summary">Activation des couleurs personnalisées remplace les thèmes</string>
+    <string name="quick_tiles_bg_color_title">Couleur de fond des tuiles</string>
+    <string name="quick_tiles_bg_pressed_color_title">Couleur de fond des tuiles appuyées</string>
+    <string name="quick_tiles_text_color_title">Couleur du texte des tuiles</string>
+    <string name="quick_tiles_alpha_title">Transparence du fond des tuiles</string>
+    <string name="qs_style_reset_message">Réinitialiser toutes les couleurs?</string>
 
     <!-- QuickSettings fliptiles -->
     <string name="flip_qs_tiles_title">Flip tiles</string>
     <string name="flip_qs_tiles_summary">Flips the tiles on touch</string>
 
     <!-- QuickSettings haptic feedback -->
-    <string name="haptic_qs_tiles_title">Vibrate on touch</string>
-    <string name="haptic_qs_tiles_summary">Vibrate when touching tiles</string>
+    <string name="haptic_qs_tiles_title">Vibrer en touche</string>
+    <string name="haptic_qs_tiles_summary">Vibrer quand on touche la tuile</string>
 
     <!-- QuickSettings smaller tiles -->
-    <string name="title_qs_small_icons">Show smaller tiles</string>
-    <string name="summary_qs_small_icons">Use smaller tiles to increase the number of colums</string>
+    <string name="title_qs_small_icons">Monter des petites tuiles</string>
+    <string name="summary_qs_small_icons">Pour avoir plus de tuiles utiliser des petites tailles</string>
 
     <!-- This exists as part of Power widget already, re-use them
          If Power widget is removed, re-enable these -->
-    <string name="pref_ring_mode_title">Sound modes</string>
-    <string name="pref_ring_mode_summary">View or change the Sound button modes</string>
-    <string name="cm_sound_mode_silent">Silent</string>
-    <string name="cm_sound_mode_vibrate">Vibrate</string>
-    <string name="cm_sound_mode_sound">Sound</string>
-    <string name="cm_sound_mode_soundVibrate">Sound + Vibrate</string>
+    <string name="pref_ring_mode_title">Modes du son</string>
+    <string name="pref_ring_mode_summary">Voir ou changer le mode du son</string>
+    <string name="cm_sound_mode_silent">Silencieu</string>
+    <string name="cm_sound_mode_vibrate">Vibration</string>
+    <string name="cm_sound_mode_sound">Son</string>
+    <string name="cm_sound_mode_soundVibrate">Son + Vibreur</string>
 
     <!-- Reset tiles -->
-    <string name="tiles_reset_title">Reset</string>
-    <string name="tiles_reset_message">Restore the default displayed tiles and layout?</string>            
+    <string name="tiles_reset_title">Réinitialiser</string>
+    <string name="tiles_reset_message">Réinitialiser les tuiles et leur disposition?</string>            
 
     <!-- USB Mass Storage -->
-    <string name="usb_mass_storage_title">Mass storage</string>
-    <string name="usb_mass_storage_summary">Enable USB mass storage</string>
-    <string name="storage_rescan_media">Rescan media for the storage volume</string>
-    <string name="storage_rescan_media_complete">Scan completed</string>
+    <string name="usb_mass_storage_title">Stockage de masse</string>
+    <string name="usb_mass_storage_summary">Activer le stockage de masse USB</string>
+    <string name="storage_rescan_media">Réanalyser le stockage</string>
+    <string name="storage_rescan_media_complete">Scan terminé</string>
 
     <!-- Category title for power sound notification specific Settings -->
-    <string name="power_notifications_category_title">Power sounds</string>
+    <string name="power_notifications_category_title">Alerte de branchement ou débranchement</string>
     <!-- Sound settings, power notifications enable/disable, setting check box label -->
-    <string name="power_notifications_enable_title">Enable</string>
+    <string name="power_notifications_enable_title">Activer</string>
     <!-- Sound settings, power notifications vibrate enable/disable, setting check box label -->
-    <string name="power_notifications_vibrate_title">Vibrate</string>
+    <string name="power_notifications_vibrate_title">Vibration</string>
     <!-- Sound settings, power notifications ringtone selection, preference label -->
-    <string name="power_notifications_ringtone_title">Notification sound</string>
+    <string name="power_notifications_ringtone_title">Son de notification</string>
     <!-- Sound settings, power notifications label for ringtone == none -->
-    <string name="power_notifications_ringtone_silent">Silent</string>
+    <string name="power_notifications_ringtone_silent">Silencieux</string>
 
     <!-- Wi-Fi region code settings-->
     <string name="wifi_setting_countrycode_title">Wi-Fi region code</string>
@@ -1661,18 +1661,18 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="app_ops_reset_confirm_mesg">Are you sure you wish to reset AppOps counters?</string>
 
     <!-- Screen off animation options -->
-    <string name="display_category_animation_options_title">Animation options</string>
-    <string name="system_power_crt_mode_title">Screen off </string>
-    <string name="system_power_crt_mode_dialog_title">Screen off animation</string>
-    <string name="system_power_crt_mode_off">Don\'t show</string>
-    <string name="system_power_crt_mode_horizontal">Collapse horizontal</string>
-    <string name="system_power_crt_mode_vertical">Collapse vertical</string>
-    <string name="system_power_crt_mode_both">Collapse orientation dependent</string>
-    <string name="system_power_crt_mode_scale">Scale down</string>
+    <string name="display_category_animation_options_title">Options d\'animation</string>
+    <string name="system_power_crt_mode_title">CRT animation  </string>
+    <string name="system_power_crt_mode_dialog_title">CRT animation </string>
+    <string name="system_power_crt_mode_off">Ne pas montrer</string>
+    <string name="system_power_crt_mode_horizontal">Ecrasement horizontal</string>
+    <string name="system_power_crt_mode_vertical">Ecrasement vertical</string>
+    <string name="system_power_crt_mode_both">Ecrasement selon l\'orientation</string>
+    <string name="system_power_crt_mode_scale">Réduire</string>
 
     <!-- Animation Control -->
-    <string name="interface_animation_title">Advanced options</string>
-    <string name="interface_animation_summary">Customize animations for System, Listview, Scroll and more</string>
+    <string name="interface_animation_title">Options avancées</string>
+    <string name="interface_animation_summary">Personnaliser les animations du system , listes et d\'autres.</string>
 
     <!-- ListView animation -->
     <string name="system_animation_title">System</string>
@@ -1705,19 +1705,19 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="listview_test_item">ListView item</string>
 
     <!-- ListView interpolator -->
-    <string name="listview_interpolator_title">ListView interpolator</string>
-    <string name="listview_accelerate_interpolator">Accelerate</string>
-    <string name="listview_decelerate_interpolator">Decelerate</string>
-    <string name="listview_accelerate_decelerate_interpolator">Accelerate and Decelerate</string>
-    <string name="listview_anticipate_interpolator">Anticipate</string>
-    <string name="listview_overshoot_interpolator">Overshoot</string>
-    <string name="listview_anticipate_overshoot_interpolator">Anticipate and Overshoot</string>
-    <string name="listview_bounce_interpolator">Bounce</string>
+    <string name="listview_interpolator_title">Interpolateur des listes</string>
+    <string name="listview_accelerate_interpolator">Accélérer</string>
+    <string name="listview_decelerate_interpolator">DDécélérer</string>
+    <string name="listview_accelerate_decelerate_interpolator">Accélérer et décélérer</string>
+    <string name="listview_anticipate_interpolator">Anticiper</string>
+    <string name="listview_overshoot_interpolator">Dépasser</string>
+    <string name="listview_anticipate_overshoot_interpolator">Anticiper et dépasser</string>
+    <string name="listview_bounce_interpolator">Rebondir</string>
     <string name="listview_cycle_interpolator">Cycle</string>
     <string name="listview_linear_interpolator">Linear</string>
 
     <!-- Animation Controls -->
-    <string name="animation_settings_reset_message">Reset all animation settings to default?</string>
+    <string name="animation_settings_reset_message">Réinitialiser tous les paramètres d\'animations </string>
     <string name="animation_controls_title">Animation controls</string>
     <string name="activity_open_title">Open in-app activity animation</string>
     <string name="activity_close_title">Close in-app activity animation</string>
@@ -1807,8 +1807,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="toast_SlideRightLeft_animation">Slide right to left</string>
 
     <!-- Chamber of Secrets -->
-    <string name="chamber_title">Chamber of secrets</string>
-    <string name="chamber_toast">The chamber of secrets has opened</string>
+    <string name="chamber_title">Chambre des secrets</string>
+    <string name="chamber_toast">La chambre des secrets est ouverte</string>
 
     <!-- EdgeGesture service -->
     <string name="edge_gesture_service_title">Block gesture touch events</string>
@@ -1891,28 +1891,28 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="noti_reminder_interval_4s">4 seconds</string>
 
     <!-- Lockscreen style settings -->
-    <string name="lockscreen_style_reset_message">Reset all lock screen colors?</string>
-    <string name="lockscreen_icon_title">Lock handle icon</string>
-    <string name="lockscreen_lock_icon_custom">Custom icon</string>
+    <string name="lockscreen_style_reset_message">Réinitialiser toutes les couleurs du lockscreen?</string>
+    <string name="lockscreen_icon_title">Icône du curseur du lockscreen</string>
+    <string name="lockscreen_lock_icon_custom">Icône custom</string>
     <string name="lockscreen_lock_icon_mahdi">Mahdi icon</string>
-    <string name="lockscreen_lock_icon_default">Default icon</string>
-    <string name="lockscreen_colorize_handle_title">Colorize custom handle</string>
-    <string name="lockscreen_colorize_handle_summary">Lock color will be set to your custom image</string>
-    <string name="lockscreen_style_title">More style settings</string>
-    <string name="lockscreen_style_summary">Choose a custom lockring and more</string>
-    <string name="lockscreen_frame_color_title">Frame color</string>
-    <string name="lockscreen_frame_color_summary">Color of the widget and unlock frames</string>
-    <string name="lockscreen_lock_color_title">Lock color</string>
-    <string name="lockscreen_lock_color_summary">Color of the lock handles</string>
-    <string name="lockscreen_dots_color_title">Dots color</string>
-    <string name="lockscreen_dots_color_summary">Color of the glowpad dots</string>
-    <string name="lockscreen_targets_color_title">Targets color</string>
-    <string name="lockscreen_targets_color_summary">Color of the challenge targets</string>
-    <string name="lockscreen_misc_color_title">Miscellaneous color</string>
-    <string name="lockscreen_misc_color_summary">Color of the remaining items</string>
+    <string name="lockscreen_lock_icon_default">Icône par défaut</string>
+    <string name="lockscreen_colorize_handle_title">Couleur de l\'icône du lockscreen</string>
+    <string name="lockscreen_colorize_handle_summary">La couleur sera appliquée à l\'icône du lockscreen</string>
+    <string name="lockscreen_style_title">Style de thème</string>
+    <string name="lockscreen_style_summary">Choisisez des verroux personnalisée</string>
+    <string name="lockscreen_frame_color_title">Couleur du cadre</string>
+    <string name="lockscreen_frame_color_summary">Couleur du cadre des widgets et de l\'icône</string>
+    <string name="lockscreen_lock_color_title">Couleur du verrou</string>
+    <string name="lockscreen_lock_color_summary">Couleur de l\'icône du verrou</string>
+    <string name="lockscreen_dots_color_title">Couleur des points</string>
+    <string name="lockscreen_dots_color_summary">Couleur des points du glowpad</string>
+    <string name="lockscreen_targets_color_title">Couleur des cibles</string>
+    <string name="lockscreen_targets_color_summary">Couleur des cibles définies</string>
+    <string name="lockscreen_misc_color_title">Diverses couleurs</string>
+    <string name="lockscreen_misc_color_summary">Couleur des éléments restants</string>
 
     <!-- Double-tap to sleep -->
-    <string name="double_tap_sleep_title">Double-tap to sleep</string>
+    <string name="double_tap_sleep_title">Double-taper pour mettre en veille</string>
     <string name="double_tap_to_sleep_summary">View or change double-tap to sleep options</string>
     <string name="double_tap_sleep_secure_lockscreen_category">Secure lock screen</string>
     <string name="status_bar_double_tap_sleep_status_bar_title">Status bar</string>
