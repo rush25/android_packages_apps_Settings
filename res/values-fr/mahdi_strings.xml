@@ -17,7 +17,7 @@
     <!-- Custom settings  -->
     <string name="custom_settings_category">Custom</string>
     <!-- Customization Interface settings  -->
-    <string name="customization_settings_title">Paramètres d\interface</string>
+    <string name="customization_settings_title">Paramètres d\'interface</string>
 
     <!-- About phone screen,  Mod Version -->
     <string name="mod_version">Build version</string>
@@ -64,7 +64,7 @@
     <string name="screen_on_notification_led_summary">Enable notification light even when screen is on</string>
 
     <!-- Notification light dialogs -->
-    <string name="edit_light_settings">Modifier les paramètres de la LED</string>
+    <string name="edit_light_settings">Modifier les paramètres du voyant</string>
     <string name="pulse_speed_title">Vitesse et durée du clignotement</string>
     <string name="picker_arrow">→</string>
     <string name="default_time">Normal</string>
@@ -86,7 +86,7 @@
     <string name="pulse_speed_very_slow">Très lent</string>
 
     <!-- Battery light settings -->
-    <string name="battery_light_title">LED pour la batterie</string>
+    <string name="battery_light_title">Voyant batterie</string>
     <string name="battery_low_pulse_title">Clignotement si batterie faible</string>
     <string name="battery_light_list_title">Couleurs pendant la charge</string>
     <string name="battery_light_low_color_title">Batterie faible</string>
@@ -94,26 +94,26 @@
     <string name="battery_light_full_color_title">Charge complète</string>
 
     <!-- Power menu enable disable -->
-    <string name="power_menu_title">Menu général</string> 
-    <string name="power_menu_summary">Changer la liste du menu général</string>
+    <string name="power_menu_title">Menu marche/arrêt</string> 
+    <string name="power_menu_summary">Changer la liste du Menu marche/arrêt</string>
     <string name="lockscreen_enable_power_menu_title">Activé le menu général au lockscreen</string>
-    <string name="power_menu_reboot_title">Menu du rédémarrage</string>
+    <string name="power_menu_reboot_title">Redémarrer</string>
     <string name="power_menu_screenshot_title">Capture d\'écran</string>
     <string name="power_menu_screenrecord_title">enregistreur d\'écran</string>
-    <string name="power_menu_profiles_title">Change le profil</string>
+    <string name="power_menu_profiles_title">Changer le profil</string>
     <string name="power_menu_airplane_title">Mode Avion</string>
     <string name="power_menu_silent_title">Menu du son</string>
     <string name="power_menu_expanded_desktop">Mode Etendu</string>
     <string name="power_menu_mobile_data">Données mobiles</string>
 
     <!-- Advanced reboot options -->
-    <string name="advanced_reboot_title">Reboot avancé</string>
+    <string name="advanced_reboot_title">Redémarrage avancé</string>
     <string name="advanced_reboot_summary">Inclure des options dans le power menu pour un reboot dans le recovery et le bootloader</string>
 
     <!-- Profiles settings  -->
     <string name="profiles_settings_title">Profiles</string>
     <string name="profiles_general_title">General</string>
-    <string name="profiles_add">Add</string>
+    <string name="profiles_add">AJouter</string>
     <string name="profile_menu_delete">Delete</string>
     <string name="profile_settings_title">Profile</string>
     <string name="profile_empty_list_profiles_off">To configure and use system profiles, turn profiles on.</string>
