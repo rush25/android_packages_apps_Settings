@@ -28,7 +28,7 @@
     <!-- About device screen, Cpu info. -->
     <string name="cpu_info">CPU</string>
     <!-- About phone screen, Free memory info -->
-    <string name="mem_info">Memory</string>
+    <string name="mem_info">Mémoire</string>
     <!-- About phone screen, status item label -->
 
     <!-- Updater --> 
@@ -37,7 +37,7 @@
 
     <!-- General strings -->
     <string name="ok">OK</string>
-    <string name="reset">Reset</string>
+    <string name="reset">Réinitialiser</string>
     <string name="attention">Attention</string>
     <string name="default_string">Défaut</string>
     <string name="enabled">Activé</string>
@@ -749,13 +749,13 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
 
     <!-- StatusBar Battery Settings -->    
-    <string name="status_bar_battery_title">Battery status style</string>
-    <string name="status_bar_style_icon_portrait">Icon portrait</string>
-    <string name="status_bar_style_icon_landscape">Icon landscape</string>
-    <string name="status_bar_style_circle">Circle</string>
-    <string name="status_bar_style_text">Text</string>
-    <string name="status_bar_style_hidden">Hidden</string>
-    <string name="status_bar_battery_show_percent_title">Show battery status percent</string>
+    <string name="status_bar_battery_title">Style du niveau de batterie</string>
+    <string name="status_bar_style_icon_portrait">Icône portrait</string>
+    <string name="status_bar_style_icon_landscape">Icône paysage</string>
+    <string name="status_bar_style_circle">Cercle</string>
+    <string name="status_bar_style_text">Texte</string>
+    <string name="status_bar_style_hidden">Ne pas afficher</string>
+    <string name="status_bar_battery_show_percent_title">Afficher le pourcentage de la batterie</string>
 
     <!-- StatusBar Brightness Control -->
     <string name="status_bar_toggle_brightness">Brightness control</string>
@@ -763,27 +763,27 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="status_bar_toggle_info">Automatic brightness is enabled</string>
 
     <!-- Privacy Guard -->
-    <string name="privacy_guard_switch_label">Enable Privacy Guard</string>
-    <string name="privacy_guard_dlg_title">Enable Privacy Guard?</string>
-    <string name="privacy_guard_dlg_text">When Privacy Guard is enabled, the app will not be able to access personal data such as contacts, messages or call logs.</string>
-    <string name="privacy_guard_dlg_system_app_text">When enabling Privacy Guard for a built-in app, the app will not be able to access or provide personal data. This may cause other apps to misbehave.</string>
-    <string name="privacy_guard_default_title">Enabled by default</string>
-    <string name="privacy_guard_default_summary">Enable by default for newly-installed apps</string>
+    <string name="privacy_guard_switch_label">Activer Privacy guard</string>
+    <string name="privacy_guard_dlg_title">Activer Privacy Guard?</string>
+    <string name="privacy_guard_dlg_text">Quand Privacy Guard est activé, l\'application ne pourra pas accéder aux données personnelles comme les contacts, messages, la localisation ou le journal d\'appels.</string>
+    <string name="privacy_guard_dlg_system_app_text">En activant Privacy Guard pour une application préinstallée, l\'application ne pourra plus accéder aux données personnelles comme les contacts, messages, la localisation ou le journal d\'appels. Ceci peut causer un comportement inattendu des autres applications.</string>
+    <string name="privacy_guard_default_title">Activé par défaut</string>
+    <string name="privacy_guard_default_summary">Ne pas accéder aux données personnelles par défaut pour les applications fraichement installées</string>
     <string name="privacy_guard_manager_title">Privacy Guard</string>
-    <string name="privacy_guard_manager_summary">Manage which apps have access to your personal data</string>
-    <string name="privacy_guard_no_user_apps">No apps are installed</string>
-    <string name="privacy_guard_filter_does_not_match">No apps with relevant permissions are installed</string>
+    <string name="privacy_guard_manager_summary">Gérer quelles applications ont accés à vos données personnelles ainsi que d\'autres permissions</string>
+    <string name="privacy_guard_no_user_apps">Aucune application installée</string>
+    <string name="privacy_guard_filter_does_not_match">Aucune application avec les permissions demandées n\'est installée</string>
     <string name="privacy_guard_help_title">Help</string>
     <string name="privacy_guard_reset_title">Reset</string>
     <string name="privacy_guard_reset_text">Reset permissions?</string>
-    <string name="privacy_guard_help_text">In this screen you can choose for which apps Privacy Guard should be active by simply tapping on them. Selected apps will not be able to access your personal data, such as contacts, messages or call logs. Long pressing on an entry opens the app details screen for that app.\n\nBy default built-in apps are not shown. If you want to show them, select the respective option in the menu.</string>
-    <string name="privacy_guard_manager_show_system_apps">Show built-in apps</string>
-    <string name="privacy_guard_manager_filter_permissions">Permission filter</string>
+    <string name="privacy_guard_help_text">Sur cet écran vous pouvez choisir pour quelles applications Privacy Guard est activé par une simple pression. Les applications sélectionnées ne pourront plus accéder à vos données personnelles, comme les contacts, messages, la localisation ou le journal d\'appels. Une pression longue sur le nom d\'une application permet de régler spécifiquement les permissions de celle ci.\n\nPar défaut les applications préinstallées ne sont pas listées. Si vous voulez qu\'elles apparaissent ou filtrer les applications pour ne montrer que celles qui demandent accés à vos données personnelles, sélectionnez les options respectives dans le menu.</string>
+    <string name="privacy_guard_manager_show_system_apps">Montrer les applications préinstallées</string>
+    <string name="privacy_guard_manager_filter_permissions">Filtre de permissions</string>
     <string name="privacy_guard_advanced_settings_title">Advanced</string>
-    <string name="privacy_guard_notification_title">Show notification</string>
-    <string name="privacy_guard_notification_icon_title">Show notification icon</string>
-    <string name="privacy_guard_notification_dismiss_title">Dismissable notification</string>
-    <string name="privacy_guard_notification_dismiss_summary">A dismissable notification can be cleared</string>
+    <string name="privacy_guard_notification_title">Afficher la notification</string>
+    <string name="privacy_guard_notification_icon_title">Afficher l\'icon du notification</string>
+    <string name="privacy_guard_notification_dismiss_title">Notification Dismissable</string>
+    <string name="privacy_guard_notification_dismiss_summary">Une notification dismissable peut être effacé</string>
 
     <!-- Battery status on lock ring -->
     <string name="battery_around_lockscreen_ring">Battery level around lock ring</string>
@@ -1532,7 +1532,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="lockscreen_battery_status_alwaysoff">Always off</string>
 
     <!-- Privacy Settings Header item -->
-    <string name="privacy_settings_mahdi_title">Privacy</string>
+    <string name="privacy_settings_mahdi_title">Vie privée</string>
 
     <!-- Superuser header name -->
     <string name="superuser">Superuser</string>
@@ -1545,120 +1545,120 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="emulate_menu_key_summary">Pressing the navbar menu key will open the overflow menu at the bottom</string>
 
     <!-- App ops -->
-    <string name="app_ops_summaries_coarse_location">coarse location</string>
-    <string name="app_ops_summaries_fine_location">fine location</string>
+    <string name="app_ops_summaries_coarse_location">localisation approximative</string>
+    <string name="app_ops_summaries_fine_location">localisation précise</string>
     <string name="app_ops_summaries_gps">GPS</string>
-    <string name="app_ops_summaries_vibrate">vibrate</string>
-    <string name="app_ops_summaries_read_contacts">read contacts</string>
-    <string name="app_ops_summaries_modify_contacts">modify contacts</string>
-    <string name="app_ops_summaries_read_call_log">read call log</string>
-    <string name="app_ops_summaries_modify_call_log">modify call log</string>
-    <string name="app_ops_summaries_read_calendar">read calendar</string>
-    <string name="app_ops_summaries_modify_calendar">modify calendar</string>
-    <string name="app_ops_summaries_wifi_scan">wi-fi scan</string>
+    <string name="app_ops_summaries_vibrate">vibreur</string>
+    <string name="app_ops_summaries_read_contacts">voir les contacts</string>
+    <string name="app_ops_summaries_modify_contacts">modifier les contacts</string>
+    <string name="app_ops_summaries_read_call_log">voir le journal d\'appel</string>
+    <string name="app_ops_summaries_modify_call_log">modifier le journal des appels</string>
+    <string name="app_ops_summaries_read_calendar">voir le calendrier</string>
+    <string name="app_ops_summaries_modify_calendar">modifier le calendrier</string>
+    <string name="app_ops_summaries_wifi_scan">scanner les réseaux WiFi</string>
     <string name="app_ops_summaries_notification">notification</string>
-    <string name="app_ops_summaries_cell_scan">cell scan</string>
-    <string name="app_ops_summaries_call_phone">call phone</string>
-    <string name="app_ops_summaries_read_sms">read SMS</string>
-    <string name="app_ops_summaries_write_sms">write SMS</string>
-    <string name="app_ops_summaries_receive_sms">receive SMS</string>
-    <string name="app_ops_summaries_receive_emergency_sms">receive emergency SMS</string>
-    <string name="app_ops_summaries_receive_mms">receive MMS</string>
-    <string name="app_ops_summaries_receive_wap_push">receive WAP push</string>
-    <string name="app_ops_summaries_send_sms">send SMS</string>
-    <string name="app_ops_summaries_read_icc_sms">read ICC SMS</string>
-    <string name="app_ops_summaries_write_icc_sms">write ICC SMS</string>
-    <string name="app_ops_summaries_modify_settings">modify settings</string>
-    <string name="app_ops_summaries_draw_on_top">draw on top</string>
-    <string name="app_ops_summaries_access_notifications">access notifications</string>
-    <string name="app_ops_summaries_camera">camera</string>
-    <string name="app_ops_summaries_record_audio">record audio</string>
-    <string name="app_ops_summaries_play_audio">play audio</string>
-    <string name="app_ops_summaries_read_clipboard">read clipboard</string>
-    <string name="app_ops_summaries_modify_clipboard">modify clipboard</string>
-    <string name="app_ops_summaries_media_buttons">media buttons</string>
-    <string name="app_ops_summaries_audio_focus">audio focus</string>
-    <string name="app_ops_summaries_master_volume">master volume</string>
-    <string name="app_ops_summaries_voice_volume">voice volume</string>
-    <string name="app_ops_summaries_ring_volume">ring volume</string>
-    <string name="app_ops_summaries_media_volume">media volume</string>
-    <string name="app_ops_summaries_alarm_volume">alarm volume</string>
-    <string name="app_ops_summaries_notification_volume">notification volume</string>
-    <string name="app_ops_summaries_bluetooth_volume">bluetooth volume</string>
-    <string name="app_ops_summaries_keep_awake">keep awake</string>
-    <string name="app_ops_summaries_monitor_location">monitor location</string>
-    <string name="app_ops_summaries_monitor_high_power_location">monitor high power location</string>
-    <string name="app_ops_summaries_wifi_change">wifi change</string>
-    <string name="app_ops_summaries_bluetooth_change">bluetooth change</string>
-    <string name="app_ops_summaries_data_change">data change</string>
-    <string name="app_ops_summaries_alarm_wakeup">wake up</string>
-    <string name="app_ops_summaries_send_mms">send MMS</string>
-    <string name="app_ops_summaries_read_mms">read MMS</string>
-    <string name="app_ops_summaries_write_mms">write MMS</string>
-    <string name="app_ops_summaries_auto_start">auto start</string>
+    <string name="app_ops_summaries_cell_scan">scanner le réseau cellulaire</string>
+    <string name="app_ops_summaries_call_phone">appel téléphonique</string>
+    <string name="app_ops_summaries_read_sms">voir les SMS</string>
+    <string name="app_ops_summaries_write_sms">écrire SMS</string>
+    <string name="app_ops_summaries_receive_sms">recevoir SMS</string>
+    <string name="app_ops_summaries_receive_emergency_sms">recevoir des SMS d\'urgence</string>
+    <string name="app_ops_summaries_receive_mms">recevoir des MMS</string>
+    <string name="app_ops_summaries_receive_wap_push">recevoir les push WAP</string>
+    <string name="app_ops_summaries_send_sms">envoyer des SMS</string>
+    <string name="app_ops_summaries_read_icc_sms">lire les SMS de l\'ICC</string>
+    <string name="app_ops_summaries_write_icc_sms">écrire des SMS de l\'ICC</string>
+    <string name="app_ops_summaries_modify_settings">modifier les paramètres</string>
+    <string name="app_ops_summaries_draw_on_top">déplacer au-dessus</string>
+    <string name="app_ops_summaries_access_notifications">accéder aux notifications</string>
+    <string name="app_ops_summaries_camera">appareil photo</string>
+    <string name="app_ops_summaries_record_audio">enregistrer un son</string>
+    <string name="app_ops_summaries_play_audio">jouer des sons</string>
+    <string name="app_ops_summaries_read_clipboard">voir le presse-papiers</string>
+    <string name="app_ops_summaries_modify_clipboard">modifier le presse-papiers</string>
+    <string name="app_ops_summaries_media_buttons">boutons de médias</string>
+    <string name="app_ops_summaries_audio_focus">focus audio</string>
+    <string name="app_ops_summaries_master_volume">volume principal</string>
+    <string name="app_ops_summaries_voice_volume">volume de la voix</string>
+    <string name="app_ops_summaries_ring_volume">volume de la sonnerie</string>
+    <string name="app_ops_summaries_media_volume">volume des médias</string>
+    <string name="app_ops_summaries_alarm_volume">volume de l\'alarme</string>
+    <string name="app_ops_summaries_notification_volume">volume des notifications</string>
+    <string name="app_ops_summaries_bluetooth_volume">volume de Bluetooth</string>
+    <string name="app_ops_summaries_keep_awake">maintenir activé</string>
+    <string name="app_ops_summaries_monitor_location">emplacement du moniteur</string>
+    <string name="app_ops_summaries_monitor_high_power_location">surveiller les emplacements de forte puissance</string>
+    <string name="app_ops_summaries_wifi_change">changement de WiFi</string>
+    <string name="app_ops_summaries_bluetooth_change">changement de Bluetooth</string>
+    <string name="app_ops_summaries_data_change">modification de données</string>
+    <string name="app_ops_summaries_alarm_wakeup">réveil</string>
+    <string name="app_ops_summaries_send_mms">envoyer des MMS</string>
+    <string name="app_ops_summaries_read_mms">voir les MMS</string>
+    <string name="app_ops_summaries_write_mms">écrire des MMS</string>
+    <string name="app_ops_summaries_auto_start">démarrer automatiquement</string>
 
-    <string name="app_ops_labels_location">Location</string>
-    <string name="app_ops_labels_vibrate">Vibrate</string>
-    <string name="app_ops_labels_read_contacts">Read contacts</string>
-    <string name="app_ops_labels_modify_contacts">Modify contacts</string>
-    <string name="app_ops_labels_read_call_log">Read call log</string>
-    <string name="app_ops_labels_modify_call_log">Modify call log</string>
-    <string name="app_ops_labels_read_calendar">Read calendar</string>
-    <string name="app_ops_labels_modify_calendar">Modify calendar</string>
+    <string name="app_ops_labels_location">Emplacement</string>
+    <string name="app_ops_labels_vibrate">Vibreur</string>
+    <string name="app_ops_labels_read_contacts">Voir les contacts</string>
+    <string name="app_ops_labels_modify_contacts">Modifier les contacts</string>
+    <string name="app_ops_labels_read_call_log">Voir le journal d\'appel</string>
+    <string name="app_ops_labels_modify_call_log">Modifier le journal des appels</string>
+    <string name="app_ops_labels_read_calendar">Voir le calendrier</string>
+    <string name="app_ops_labels_modify_calendar">Modifier le calendrier</string>
     <string name="app_ops_labels_notification_toast">Notification/Toast</string>
-    <string name="app_ops_labels_call_phone">Call phone</string>
-    <string name="app_ops_labels_read_sms_db">Read SMS DB</string>
-    <string name="app_ops_labels_write_sms_db">Write SMS DB</string>
-    <string name="app_ops_labels_receive_sms">Receive SMS</string>
-    <string name="app_ops_labels_receive_mms">Receive MMS</string>
-    <string name="app_ops_labels_send_sms">Send SMS</string>
-    <string name="app_ops_labels_modify_settings">Modify settings</string>
-    <string name="app_ops_labels_draw_on_top">Draw on top</string>
-    <string name="app_ops_labels_access_notifications">Access notifications</string>
-    <string name="app_ops_labels_camera">Camera</string>
-    <string name="app_ops_labels_record_audio">Record audio</string>
-    <string name="app_ops_labels_play_audio">Play audio</string>
-    <string name="app_ops_labels_read_clipboard">Read clipboard</string>
-    <string name="app_ops_labels_modify_clipboard">Modify clipboard</string>
-    <string name="app_ops_labels_media_buttons">Media buttons</string>
-    <string name="app_ops_labels_audio_focus">Audio focus</string>
-    <string name="app_ops_labels_master_volume">Master volume</string>
-    <string name="app_ops_labels_voice_volume">Voice volume</string>
-    <string name="app_ops_labels_ring_volume">Ring volume</string>
-    <string name="app_ops_labels_media_volume">Media volume</string>
-    <string name="app_ops_labels_alarm_volume">Alarm volume</string>
-    <string name="app_ops_labels_notification_volume">Notification volume</string>
-    <string name="app_ops_labels_bluetooth_volume">Bluetooth volume</string>
-    <string name="app_ops_labels_keep_awake">Keep awake</string>
-    <string name="app_ops_labels_wifi_change">Wi-Fi change</string>
-    <string name="app_ops_labels_bluetooth_change">Bluetooth change</string>
-    <string name="app_ops_labels_data_change">Data change</string>
-    <string name="app_ops_labels_alarm_wakeup">Wake up</string>
-    <string name="app_ops_labels_send_mms">Send MMS</string>
-    <string name="app_ops_labels_read_mms">Read MMS</string>
-    <string name="app_ops_labels_write_mms">Write MMS</string>
-    <string name="app_ops_labels_auto_start">Auto start</string>
+    <string name="app_ops_labels_call_phone">Appel téléphonique</string>
+    <string name="app_ops_labels_read_sms_db">Voir SMS DB</string>
+    <string name="app_ops_labels_write_sms_db">Écrire SMS DB</string>
+    <string name="app_ops_labels_receive_sms">Recevoir des SMS</string>
+    <string name="app_ops_labels_receive_mms">Recevoir des MMS</string>
+    <string name="app_ops_labels_send_sms">Envoyer des SMS</string>
+    <string name="app_ops_labels_modify_settings">Modifier les paramètres</string>
+    <string name="app_ops_labels_draw_on_top">Déplacer au-dessus</string>
+    <string name="app_ops_labels_access_notifications">Accéder aux notifications</string>
+    <string name="app_ops_labels_camera">Appareil photo</string>
+    <string name="app_ops_labels_record_audio">Enregistrer un son</string>
+    <string name="app_ops_labels_play_audio">Jouer des sons</string>
+    <string name="app_ops_labels_read_clipboard">Voir le presse-papiers</string>
+    <string name="app_ops_labels_modify_clipboard">Modifier le presse-papiers</string>
+    <string name="app_ops_labels_media_buttons">Boutons des médias</string>
+    <string name="app_ops_labels_audio_focus">Focus audio</string>
+    <string name="app_ops_labels_master_volume">Volume haut parleur</string>
+    <string name="app_ops_labels_voice_volume">Volume de la voix</string>
+    <string name="app_ops_labels_ring_volume">Volume de la sonnerie</string>
+    <string name="app_ops_labels_media_volume">Volume des médias</string>
+    <string name="app_ops_labels_alarm_volume">Volume des alarmes</string>
+    <string name="app_ops_labels_notification_volume">Volume des notifications</string>
+    <string name="app_ops_labels_bluetooth_volume">Volume du Bluetooth</string>
+    <string name="app_ops_labels_keep_awake">Maintenir activé</string>
+    <string name="app_ops_labels_wifi_change">Changement de Wi-Fi</string>
+    <string name="app_ops_labels_bluetooth_change">Changement de Bluetooth</string>
+    <string name="app_ops_labels_data_change">Modification de données</string>
+    <string name="app_ops_labels_alarm_wakeup">Réveil</string>
+    <string name="app_ops_labels_send_mms">Envoyer des MMS</string>
+    <string name="app_ops_labels_read_mms">Voir MMS</string>
+    <string name="app_ops_labels_write_mms">Écrire des MMS</string>
+    <string name="app_ops_labels_auto_start">Démarrage automatique</string>
 
     <!-- App ops categories -->
-    <string name="app_ops_categories_location">Location</string>
-    <string name="app_ops_categories_personal">Personal</string>
-    <string name="app_ops_categories_messaging">Messaging</string>
-    <string name="app_ops_categories_media">Media</string>
-    <string name="app_ops_categories_device">Device</string>
-    <string name="app_ops_categories_bootup">Bootup</string>
+    <string name="app_ops_categories_location">Emplacement</string>
+    <string name="app_ops_categories_personal">Personnel</string>
+    <string name="app_ops_categories_messaging">Messagerie</string>
+    <string name="app_ops_categories_media">Média</string>
+    <string name="app_ops_categories_device">Appareil</string>
+    <string name="app_ops_categories_bootup">Démarrage</string>
 
     <!-- App ops detail -->
-    <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (used <xliff:g id="count">%2$s</xliff:g>)</string>
-    <string name="app_ops_allowed_count">Allowed <xliff:g id="count" example="2 times">%s</xliff:g></string>
-    <string name="app_ops_ignored_count">Denied <xliff:g id="count" example="2 times">%s</xliff:g></string>
-    <string name="app_ops_both_count">Allowed <xliff:g id="count">%1$s</xliff:g>, denied <xliff:g id="count">%2$s</xliff:g></string>
+    <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (Utilisés <xliff:g id="count">%2$s</xliff:g>)</string>
+    <string name="app_ops_allowed_count">Autorisé <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_ignored_count">Refusé <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_both_count">Autorisé <xliff:g id="count">%1$s</xliff:g>, refusé <xliff:g id="count">%2$s</xliff:g></string>
 
     <!-- App ops menu options -->
-    <string name="app_ops_show_user_apps">Show user apps</string>
-    <string name="app_ops_show_system_apps">Show built-in apps</string>
-    <string name="app_ops_reset_counters">Reset allow/deny counters</string>
-    <string name="app_ops_reset_confirm_title">Confirm counters reset</string>
-    <string name="app_ops_reset_confirm_mesg">Are you sure you wish to reset AppOps counters?</string>
+    <string name="app_ops_show_user_apps">Voir les applications d\'utilisateur</string>
+    <string name="app_ops_show_system_apps">Afficher les applications système</string></string>
+    <string name="app_ops_reset_counters">Réinitialiser le compteur des autorisés/refusés</string>
+    <string name="app_ops_reset_confirm_title">Confirmer la réinitialisation des compteurs</string>
+    <string name="app_ops_reset_confirm_mesg">Êtes-vous sûr de vouloir réinitialiser les compteurs de AppOps ?</string>
 
     <!-- Screen off animation options -->
     <string name="display_category_animation_options_title">Options d\'animation</string>
@@ -1876,19 +1876,19 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="ad_redisplay_5h">5 hours</string>
 
     <!-- Notification Reminders -->
-    <string name="noti_reminder_category">Notification reminder</string>
-    <string name="noti_reminder_enable_title">Enable notification reminder</string>
-    <string name="noti_reminder_sound_title">Notify sound</string>
-    <string name="noti_reminder_sound_looping">Until dismissed</string>
-    <string name="noti_reminder_ringtone">Notify ringtone</string>
-    <string name="noti_reminder_interval">Flip interval</string>
-    <string name="noti_reminder_interval_1s">1 second</string>
-    <string name="noti_reminder_interval_1dot5s">1.5 seconds</string>
-    <string name="noti_reminder_interval_2s">2 seconds</string>
-    <string name="noti_reminder_interval_2dot5s">2.5 seconds</string>
-    <string name="noti_reminder_interval_3s">3 seconds</string>
-    <string name="noti_reminder_interval_3dot5s">3.5 second</string>
-    <string name="noti_reminder_interval_4s">4 seconds</string>
+    <string name="noti_reminder_category">Rappel de notification</string>
+    <string name="noti_reminder_enable_title">Active le rappel de notification</string>
+    <string name="noti_reminder_sound_title">Son de notification</string>
+    <string name="noti_reminder_sound_looping">Jusqu\'à annulation</string>
+    <string name="noti_reminder_ringtone">Sonnerie de notification</string>
+    <string name="noti_reminder_interval">Intervalle de bascule</string>
+    <string name="noti_reminder_interval_1s">1 seconde</string>
+    <string name="noti_reminder_interval_1dot5s">1.5 secondes</string>
+    <string name="noti_reminder_interval_2s">2 secondes</string>
+    <string name="noti_reminder_interval_2dot5s">2.5 secondes</string>
+    <string name="noti_reminder_interval_3s">3 secondes</string>
+    <string name="noti_reminder_interval_3dot5s">3.5 secondes</string>
+    <string name="noti_reminder_interval_4s">4 secondes</string>
 
     <!-- Lockscreen style settings -->
     <string name="lockscreen_style_reset_message">Réinitialiser toutes les couleurs du lockscreen?</string>
@@ -1978,7 +1978,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Voice+ -->
     <string name="voice_plus_title">Voice+</string>
-    <string name="voice_plus_summary">Enable all apps to send SMS messages through Google Voice</string>
+    <string name="voice_plus_summary">Autoriser toutes les applications à envoyer des messages SMS par l\'intermédiaire de Google Voice</string>
 
     <!-- Voice Wakeup -->
     <string name="voice_wakeup_settings_title">Voice wakeup</string>
@@ -2072,51 +2072,53 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="time_five_to">Five till</string>
 
     <!-- Pie Control -->
-    <string name="pie_control_title">Pie navigation</string>
-    <string name="pie_control_summary">Enable pie controls to help navigate while using immersive mode</string>
-    <string name="pie_control_size">Navigation size</string>
-    <string name="pie_control_trigger_positions">Trigger options</string>
-    <string name="pie_control_trigger_left">Trigger left screen border</string>
-    <string name="pie_control_trigger_bottom">Trigger bottom screen border</string>
-    <string name="pie_control_trigger_right">Trigger right screen border</string>
-    <string name="pie_control_trigger_top">Trigger top screen border</string>
-    <string name="pie_control_trigger_top_summary">Top pie does not show status and clock information</string>
-    <string name="pie_button_style">Buttons style</string>
-    <string name="pie_button_color_title">Button color</string>
-    <string name="pie_button_alpha_title">Button transparency</string>
-    <string name="pie_button_outline_color_title">Button outline color</string>
-    <string name="pie_button_pressed_color_title">Button pressed color</string>
-    <string name="pie_button_long_pressed_color_title">Button long pressed color</string>
-    <string name="pie_button_pressed_alpha_title">Button pressed transparency</string>
-    <string name="pie_icon_style">Button icon style</string>
-    <string name="pie_icon_color_title">Button icon color</string>
-    <string name="pie_icon_color_mode_title">Button icon color mode</string>
-    <string name="pie_icon_color_mode_dialog_title">Colorize</string>
-    <string name="pie_icon_color_mode_summary">Change the button icon color mode</string>
+    <string name="pie_control_title">Navigation Pie</string>
+    <string name="pie_control_summary">Active les Pie controls</string>
+    <string name="pie_control_size">Taille du Pie</string>
+    <string name="pie_control_trigger_positions">Options de déclenchement</string>
+    <string name="pie_control_trigger_left">Déclenchement sur le bord gauche de l\'écran</string>
+    <string name="pie_control_trigger_bottom">Déclenchement sur le bas de l\'écran</string>
+    <string name="pie_control_trigger_right">Déclenchement sur le bord droit de l\'écran</string>
+    <string name="pie_control_trigger_top">Déclenchement sur le haut de l\'écran</string>
+    <string name="pie_control_trigger_top_summary">Le Pie supérieur n\'affiche pas les informations de statut et d\'horloge</string>
+    <string name="pie_button_style">Style des boutons</string>
+    <string name="pie_button_color_title">Couleur de bouton</string>
+    <string name="pie_button_alpha_title">Transparence de bouton</string>
+    <string name="pie_button_outline_color_title">Couleur extérieure de bouton</string>
+    <string name="pie_button_pressed_color_title">Couleur de bouton appuyé</string>
+    <string name="pie_button_long_pressed_color_title">Couleur de bouton lors d\'un appui long</string>
+    <string name="pie_button_pressed_alpha_title">Transparence de bouton appuyé</string>
+    <string name="pie_icon_style">Style d\'icône de bouton</string>
+    <string name="pie_icon_color_title">Couleur d\'icône de bouton</string>
+    <string name="pie_icon_color_mode_title">Mode de couleur d\'icône de bouton</string>
+    <string name="pie_icon_color_mode_dialog_title">Colorier</string>
+    <string name="pie_icon_color_mode_summary">Change le mode de couleur de l\'icône de bouton</string>
     <string name="pie_trigger_note_title">Note</string>
-    <string name="pie_trigger_note_summary">To avoid conflicts with status bar or navigation bar, the triggers on these edges are automatically turned off if one or both are available</string>
-    <string name="pie_background_color_title">Background color</string>
-    <string name="pie_snap_color_title">Snap point color</string>
-    <string name="pie_text_color_title">Text color</string>
-    <string name="pie_background_alpha_title">Background transparency</string>
-    <string name="pie_mirror_right_title">Mirror right pie</string>
-    <string name="pie_mirror_right_summary">Mirror right pie on the horizontal axis</string>
-    <string name="pie_style">Style and dimension</string>
+    <string name="pie_trigger_note_summary">Pour éviter les conflits avec la barre de statut ou la barre de navigation, les déclencheurs sur ces côtés sont automatiquement désactivés si un ou tous sont disponibles</string>
+    <string name="pie_background_color_title">Couleur du fond</string>
+    <string name="pie_snap_color_title">Couleur du point d\'ancrage</string>
+    <string name="pie_text_color_title">Couleur du texte</string>
+    <string name="pie_background_alpha_title">Transparence du fond</string>
+    <string name="pie_mirror_right_title">Refléter le Pie à droite</string>
+    <string name="pie_mirror_right_summary">Refléter le Pie à droite sur l\'axe horizontal</string>
+    <string name="pie_style">Style et dimension</string>
     <string name="pie_style_title">Style</string>
     <string name="pie_dimens_title">Dimension</string>
-    <string name="pie_show_snap_title">Show snap points</string>
-    <string name="pie_show_snap_summary">Shows snap points to change the trigger edge dynamically</string>
-    <string name="pie_show_text_title">Show status and clock</string>
-    <string name="pie_show_text_summary">Shows phone status, time and date information</string>
-    <string name="pie_show_background_title">Show background</string>
-    <string name="pie_show_background_summary">Enable pie background screen</string>
-    <string name="pie_button">Buttons</string>
-    <string name="pie_button_second_layer">Buttons second layer</string>
-    <string name="pie_button_second_layer_summary">Change second layer buttons</string>
-    <string name="pie_button_style_summary">Change pie button style</string>
-    <string name="pie_style_reset_message">Reset style entries to default?</string>
-    <string name="pie_disable_ime_triggers_title">Reduce trigger size on keyboard</string>
-    <string name="pie_disable_ime_triggers_summary">Reduces left and right trigger size if keyboard is active</string>
+    <string name="pie_show_snap_title">Afficher les points d\'ancrage</string>
+    <string name="pie_show_snap_summary">Affiche les points d\'ancrage pour changer le côté de déclenchement de manière dynamique</string>
+    <string name="pie_show_text_title">Afficher le statut et l\'horloge</string>
+    <string name="pie_show_text_summary">Afficher l\'état du téléphone, l\'heure et la date</string>
+    <string name="pie_show_background_title">Afficher le fond</string>
+    <string name="pie_show_background_summary">Activer l\'écran de fond du Pie</string>
+    <string name="pie_button">Boutons</string>
+    <string name="pie_button_second_layer">Boutons de la seconde couche</string>
+    <string name="pie_button_second_layer_summary">Permet de changer les boutons de la seconde couche</string>
+    <string name="pie_button_style_summary">Permet de changer le style des boutons du Pie</string>
+    <string name="pie_style_reset_message">Réinitialiser les valeurs de style?</string>
+    <string name="pie_warning_no_navigation_present">Aucun autre moyen de navigation n\'est actuellement activé. Désactiver le pie peut rendre votre appareil inutilisable. Voulez vous activer la barre de navigation à la place?</string>
+    <string name="pie_trigger_warning">Un des déclencheurs au minimum (bas, gauche ou droit) doit être activé.</string>
+    <string name="pie_disable_ime_triggers_title">Réduction des déclencheurs avec le clavier</string>
+    <string name="pie_disable_ime_triggers_summary">Réduit les déclencheurs droit et gauche si le clavier est actif</string>
 
     <!-- Shortcuts -->
     <string name="shortcut_picker">Actions</string>
@@ -2129,25 +2131,25 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Font size sample text. This needs to be a very short string, as it is shown in
     multiple font sizes in a limited amount of space. -->
-    <string name="font_size_sample">Sample</string>
+    <string name="font_size_sample">Exemple</string>
 
     <!--Notification category-->
     <string name="notification_category">Notifications</string>
     <!--Notification peek-->
     <string name="notification_peek_title">Notification peek</string>
-    <string name="notification_peek_summary">Show latest notification after picking up your device</string>
+    <string name="notification_peek_summary">Voir la dernière notification après avoir ramassé votre appareil</string>
     <string name="peek_pickup_timeout_title">Peek pickup timeout</string>
     <string name="peek_wake_timeout_title">Peek wake timeout</string>
-    <string name="peek_pickup_15seconds">15 seconds (default)</string>
-    <string name="peek_pickup_30seconds">30 seconds</string>
-    <string name="peek_pickup_45seconds">45 seconds</string>
+    <string name="peek_pickup_15seconds">15 secondes (défault)</string>
+    <string name="peek_pickup_30seconds">30 secondes</string>
+    <string name="peek_pickup_45seconds">45 secondes</string>
     <string name="peek_pickup_60seconds">1 minute</string>
     <string name="peek_pickup_120seconds">2 minutes</string>
-    <string name="peek_wake_4seconds">4 seconds</string>
-    <string name="peek_wake_7seconds">7 seconds (default)</string>
-    <string name="peek_wake_10seconds">10 seconds</string>
-    <string name="peek_wake_20seconds">20 seconds</string>
-    <string name="peek_wake_30seconds">30 seconds</string>
+    <string name="peek_wake_4seconds">4 secondes</string>
+    <string name="peek_wake_7seconds">7 secondes (par défault)</string>
+    <string name="peek_wake_10seconds">10 secondes</string>
+    <string name="peek_wake_20seconds">20 secondes</string>
+    <string name="peek_wake_30seconds">30 secondes</string>
 
     <!-- Battery Bar -->
     <string name="battery_bar_title">Battery bar</string>
@@ -2162,45 +2164,45 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="battery_bar_reset_message">Reset battery bar style to default?</string>
 
     <!-- Volume Steps -->
-    <string name="volume_steps_title">Volume steps</string>
-    <string name="volume_steps_summary">Choose the amount of steps you want between min and max</string>
+    <string name="volume_steps_title">Étape du volume</string>
+    <string name="volume_steps_summary">Choisissez le nombre d'étapes que vous voulez entre min et max</string>
     <string name="volume_steps_60">60</string>
     <string name="volume_steps_45">45</string>
     <string name="volume_steps_30">30</string>
     <string name="volume_steps_15">15</string>
     <string name="volume_steps_7">7</string>
     <string name="volume_steps_5">5</string>
-    <string name="volume_steps_alarm_title">Alarm</string>
+    <string name="volume_steps_alarm_title">Alarme</string>
     <string name="volume_steps_dtmf_title">DTMF</string>
-    <string name="volume_steps_music_title">Music</string>
-    <string name="volume_steps_notification_title">Notification</string>
-    <string name="volume_steps_ring_title">Ringer</string>
+    <string name="volume_steps_music_title">Musique</string>
+    <string name="volume_steps_notification_title">Notifications</string>
+    <string name="volume_steps_ring_title">Sonneur</string>
     <string name="volume_steps_system_title">System</string>
-    <string name="volume_steps_voice_call_title">Voice call</string>
+    <string name="volume_steps_voice_call_title">Appel vocal</string>
 
     <!-- Shake Events -->
     <string name="shake_events_title">Shake events</string>
     <string name="keyguard_shake_events_title">Shake events</string>
-    <string name="shake_events_summary">Use shake events to perform custom actions</string>
-    <string name="shake_events_enabled_title">Enable shake listener</string>
-    <string name="shake_events_normal_title">Active shake events</string>
-    <string name="shake_events_disabled_title">Disabled apps</string>
-    <string name="shake_events_disabled_summary">Shake will be disabled while in these apps</string>
-    <string name="shake_event_x_title">Activity to launch when shaken horizontally</string>
-    <string name="shake_event_y_title">Activity to launch when shaken vertically</string>
-    <string name="shake_event_z_title">Activity to launch when shaken back-and-forth</string>
+    <string name="shake_events_summary">utiliser le secouage pour des actions personnalisées</string>
+    <string name="shake_events_enabled_title">Activer la surveillance des shake events</string>
+    <string name="shake_events_normal_title">Shake events actifs</string>
+    <string name="shake_events_disabled_title">Applications désactivées</string>
+    <string name="shake_events_disabled_summary">Les shake events seront désactivés dans ces applications</string>
+    <string name="shake_event_x_title">Activité à lancer quand secoué horizontalement</string>
+    <string name="shake_event_y_title">Activité à lancer quand secoué verticalement</string>
+    <string name="shake_event_z_title">Activité à lancer quand secoué d\'avant en arrière</string>
     <string name="keyguard_shake_events_cat">Keyguard</string>
     <string name="keyguard_shake_events_title">Keyguard shake events</string>
 
     <!-- Shake sensitivity -->
-    <string name="shake_sensitivity_title">Shake sensitivity</string>
-    <string name="shake_sensitivity_summary">Global sensitivity of all shake preferences</string>
-    <string name="shake_sensitivity_even_less_sensitive">Very insensitive</string>
-    <string name="shake_sensitivity_less_sensitive">Less sensitive</string>
-    <string name="shake_sensitivity_more_sensitive">More sensitive</string>
-    <string name="shake_sensitivity_very_sensitive">Very sensitive</string>
-    <string name="shake_sensitivity_super_sensitive">Super sensitive</string>
-    <string name="shake_sensitivity_ultra_sensitive">Ultra sensitive</string>
+    <string name="shake_sensitivity_title">Sensibilité de la secousse</string>
+    <string name="shake_sensitivity_summary">Sensibilité globale de toutes les préférences de secousse</string>
+    <string name="shake_sensitivity_even_less_sensitive">Très peu sensible</string>
+    <string name="shake_sensitivity_less_sensitive">Peu sensible</string>
+    <string name="shake_sensitivity_more_sensitive">Plus sensible</string>
+    <string name="shake_sensitivity_very_sensitive">Très sensible</string>
+    <string name="shake_sensitivity_super_sensitive">Super sensible</string>
+    <string name="shake_sensitivity_ultra_sensitive">Ultra sensible</string>
 
     <!-- Data Usage -->
     <!-- Subtitle of dialog for editing data usage cycle reset date. [CHAR LIMIT=32] -->
@@ -2209,81 +2211,81 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="data_usage_lengths_spinner_subtitle">Cycle length:</string>
 
     <!--Blacklist-->
-    <string name="blacklist_button_title">Blacklist</string>
-    <string name="peek_blacklist_label">Blacklist from Peek</string>
-    <string name="floating_blacklist_label">Blacklist from Floating Mode</string>
+    <string name="blacklist_button_title">Liste noire</string>
+    <string name="peek_blacklist_label">Liste noire pour Peek</string>
+    <string name="floating_blacklist_label">Liste noire pour le mode flottant</string>
 
     <!-- Protected Apps -->
-    <string name="menu_hidden_apps_delete">Reset</string>
-    <string name="menu_hidden_apps_reset_lock">Reset pattern lock</string>
-    <string name="protected_apps">Protected apps</string>
-    <string name="saving_protected_components">Saving component state</string>
+    <string name="menu_hidden_apps_delete">Réinitialiser</string>
+    <string name="menu_hidden_apps_reset_lock">Réinitialiser le modèle de verrouillage</string>
+    <string name="protected_apps">Applications protégées</string>
+    <string name="saving_protected_components">SEnregistrement de l\'état du composant\u2026</string>
 
     <!-- Protected apps lockpattern reset button -->
-    <string name="lockpattern_reset_button">Reset pattern</string>
-    <string name="lockpattern_settings_reset_summary">Enter primary email account and associated password to reset pattern lock</string>
-    <string name="pa_login_username_hint">Username (email)</string>
-    <string name="pa_login_password_hint">Password</string>
-    <string name="pa_login_submit_button">Sign in</string>
-    <string name="pa_login_checking_password">Checking account\u2026</string>
-    <string name="pa_login_incorrect_login">Login was incorrect</string>
+    <string name="lockpattern_reset_button">Réinitialiser le schéma</string>
+    <string name="lockpattern_settings_reset_summary">Entrez l\'adresse mail du compte principal et son mot de passe pour réinitialiser le schéma de déverrouillage</string>
+    <string name="pa_login_username_hint">Nom d\'utilisateur (email)</string>
+    <string name="pa_login_password_hint">Mot de passe</string>
+    <string name="pa_login_submit_button">Connexion</string>
+    <string name="pa_login_checking_password">Vérification du compte\u2026</string>
+    <string name="pa_login_incorrect_login">Le nom d\'utilisateur ou le mot de passe est incorrect</string>
 
     <!-- Heads Up -->
-    <string name="category_heads_up">Heads up</string>
-    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
-    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
-    <string name="heads_up_floating_window">Launch in floating window</string>
-    <string name="heads_up_floating_window_summary">Tapping on the notification will open the app in a floating window</string>
-    <string name="heads_up_expanded_title">Always expanded</string>
-    <string name="heads_up_expanded_summary">Show heads up notification always expanded</string>
-    <string name="heads_up_show_updates_title">Show updates</string>
-    <string name="heads_up_show_updates_summary">Show updates from pending background notifications as heads up</string>
-    <string name="heads_up_snooze_title">Snooze timer</string>
-    <string name="heads_up_snooze_summary">If snooze button is pressed disable heads up for <xliff:g id="number">%d</xliff:g> minutes.</string>
-    <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled.</string>
+    <string name="category_heads_up">Notifications flottantes</string>
+    <string name="summary_heads_up_enabled">Les notifications Heads-up sont activées</string>
+    <string name="summary_heads_up_disabled">Les notifications Heads-up sont désctivées</string>
+    <string name="heads_up_floating_window">Lancer en fenêtre flottante</string>
+    <string name="heads_up_floating_window_summary">En tapant sur la notification, l\'application s\'ouvre en mode flottant.</string>
+    <string name="heads_up_expanded_title">Toujours étendu</string>
+    <string name="heads_up_expanded_summary">Affiche les notifications Heads up toujours en mode étendu</string>
+    <string name="heads_up_show_updates_title">Affichage des mises à jour</string>
+    <string name="heads_up_show_updates_summary">Affiche les mises à jour des notifications en attente en arrière plan comme heads up</string>
+    <string name="heads_up_snooze_title">Minuterie de répétition</string>
+    <string name="heads_up_snooze_summary">Un appui sur le bouton snooze désactive les heads up pour <xliff:g id="number">%d</xliff:g> minutes.</string>
+    <string name="heads_up_snooze_disabled_summary">La minuterie de répétition est désactivée.</string>
     <string name="heads_up_snooze_3min">3 minutes</string>
     <string name="heads_up_snooze_5min">5 minutes</string>
     <string name="heads_up_snooze_10min">10 minutes</string>
     <string name="heads_up_snooze_15min">15 minutes</string>
     <string name="heads_up_snooze_20min">20 minutes</string>
-    <string name="heads_up_time_out_title">Time out</string>
-    <string name="heads_up_time_out_summary">Heads up notification will show up for <xliff:g id="number">%d</xliff:g> seconds.</string>
-    <string name="heads_up_time_out_never_summary">Heads up notification will show till it is dismissed.</string>
-    <string name="heads_up_time_out_4sec">4 seconds</string>
-    <string name="heads_up_time_out_6sec">6 seconds</string>
-    <string name="heads_up_time_out_8sec">8 seconds</string>
-    <string name="heads_up_time_out_10sec">10 seconds</string>
-    <string name="heads_up_time_out_never">Never</string>
+    <string name="heads_up_time_out_title">Durée</string>
+    <string name="heads_up_time_out_summary">Les notifications Heads up seront affichées pendant <xliff:g id="number">%d</xliff:g> secondes.</string>
+    <string name="heads_up_time_out_never_summary">Les notifications Heads up seront affichées jusqu\'à annulation.</string>
+    <string name="heads_up_time_out_4sec">4 secondes</string>
+    <string name="heads_up_time_out_6sec">6 secondes</string>
+    <string name="heads_up_time_out_8sec">8 secondes</string>
+    <string name="heads_up_time_out_10sec">10 secondes</string>
+    <string name="heads_up_time_out_never">Jamais</string>
     <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_dnd_summary">Don\'t show heads up in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Don\'t show heads up from these applications</string>
-    <string name="heads_up_dnd_title">Do not disturb</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>
-    <string name="heads_up_disabled_notice">To allow applications to display interactive notifications in a pop-up window on your screen, enable Heads up.</string>
-    <string name="heads_up_gravity_title">Show at the bottom</string>
-    <string name="heads_up_gravity_summary">Show heads up notification at the bottom of the screen</string>
+    <string name="add_heads_up_dnd_summary">Ne pas afficher de notifications flottantes dans ces applications</string>
+    <string name="add_heads_up_blacklist_summary">Ne pas afficher les notifications flottantes de ces applications</string>
+    <string name="heads_up_dnd_title">Ne pas déranger</string>
+    <string name="heads_up_blacklist_title">Liste noire</string>
+    <string name="heads_up_disabled_notice">Pour permettre aux applications d\'afficher des notifications interactives dans une fenêtre pop-up sur votre écran, activez les notifications flottantes.</string>
+    <string name="heads_up_gravity_title">Affichage en bas</string>
+    <string name="heads_up_gravity_summary">Affiche les notifications Heads up en bas de l\'écran</string>
 
     <!-- Notification settings -->
     <string name="notification_settings_title">Notifications</string>
-    <string name="notification_settings_summary">Customize the way you recieve notifications with options like Heads up, Peek and more</string>
+    <string name="notification_settings_summary">Personnaliser les options du notifications comme heads-up et peek.</string>
 
     <!-- Hardware tunables - Vibrator intensity -->
-    <string name="vibrator_intensity_title">Vibrator intensity</string>
-    <string name="vibrator_warning">Values higher than %1$d are not recommended</string>
+    <string name="vibrator_intensity_title">Intensité du vibreur</string>
+    <string name="vibrator_warning">Les valeurs supérieures à %1$d ne sont pas recommandées</string>
 
     <!-- Hardware tunables - Color calibration -->
-    <string name="color_calibration_title">Color calibration</string>
-    <string name="color_calibration_summary">Calibrate on-screen colors</string>
-    <string name="color_red_title">Red</string>
-    <string name="color_green_title">Green</string>
-    <string name="color_blue_title">Blue</string>
+    <string name="color_calibration_title">Calibrage des couleurs</string>
+    <string name="color_calibration_summary">Calibrer les couleurs de l\'écran</string>
+    <string name="color_red_title">Rouge</string>
+    <string name="color_green_title">Vert</string>
+    <string name="color_blue_title">Bleu</string>
 
     <!-- Hardware tunables - Gamma calibration -->
-    <string name="gamma_tuning_title_head">Gamma calibration</string>
-    <string name="gamma_tuning_summary_head">Tweak gamma values</string>
-    <string name="gamma_tuning_control_set_header">Group <xliff:g id="index">%d</xliff:g></string> <!-- used if no name provided by overlay -->
-    <string name="gamma_tuning_contrast">Contrast</string>
-    <string name="gamma_tuning_brightness">Brightness</string>
+    <string name="gamma_tuning_title_head">Calibrage du gamma</string>
+    <string name="gamma_tuning_summary_head">Personnaliser les valeurs du gamma</string>
+    <string name="gamma_tuning_control_set_header">Groupe <xliff:g id="index">%d</xliff:g></string> <!-- used if no name provided by overlay -->
+    <string name="gamma_tuning_contrast">Contraste</string>
+    <string name="gamma_tuning_brightness">Luminosité</string>
     <string name="gamma_tuning_saturation">Saturation</string>
 
     <!-- Backlight brightness settings screen -->
@@ -2325,31 +2327,31 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
         <item quantity="one"><xliff:g id="seconds">%d</xliff:g> second</item>
         <item quantity="other"><xliff:g id="seconds">%d</xliff:g> seconds</item>
     </plurals>
-    <string name="backlight_summary_disabled">Disabled</string>
-    <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
-    <string name="backlight_summary_enabled">Enabled</string>
+    <string name="backlight_summary_disabled">Désactivé</string>
+    <string name="backlight_summary_enabled_with_timeout">Activé pendant <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">Activé</string>
 
     <!-- Glove mode / high touch sensitivity -->
     <string name="auto_adjust_touch_title">High touch sensitivity</string>
     <string name="auto_adjust_touch_summary">"Increase the screen's sensitivity so you can touch it while wearing gloves"</string>
 
     <!-- Search -->
-    <string name="settings_search_action_bar_button">Search</string>
-    <string name="settings_search_autocompleteview_hint">Search settings</string>
-    <string name="settings_search_loading_text">Loading search data\u2026</string>
+    <string name="settings_search_action_bar_button">Rechercher</string>
+    <string name="settings_search_autocompleteview_hint">Recherche de paramètres</string>
+    <string name="settings_search_loading_text">Chargement des données de recherche\u2026</string>
 
     <!-- Stay Awake while plugged in -->
-    <string name="keep_screen_on_summary_cm">Screen will never sleep while plugged in</string>
+    <string name="keep_screen_on_summary_cm">L\'écran ne s\'éteint jamais tant qu\'il est branché</string>
 
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
     <plurals name="show_dev_countdown_cm">
-        <item quantity="one">You are now <xliff:g id="step_count">%1$d</xliff:g> step away from enabling development settings.</item>
-        <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from enabling development settings.</item>
+        <item quantity="one">Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étape de l\'activation des options de développeur.</item>
+        <item quantity="other">Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'activation des options de développeur.</item>
     </plurals>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-    <string name="show_dev_on_cm">You have enabled development settings!</string>
+    <string name="show_dev_on_cm">Vous avez activé les options de développeur !</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-    <string name="show_dev_already_cm">No need, you have already enabled development settings.</string>
+    <string name="show_dev_already_cm">Inutile, vous avez déjà activé les options de développeur.</string>
 
     <!-- Setting checkbox title for Whether to enable Android debugging support on the phone. -->
     <string name="enable_adb_cm">Android debugging</string>
@@ -2367,13 +2369,13 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="smart_cover_sleep_summary">Put the device to sleep when smart cover closes</string>
 
     <!-- Proximity wake -->
-    <string name="proximity_wake_title">Prevent accidental wake-up</string>
-    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+    <string name="proximity_wake_title">Empêcher un réveil accidentel</string>
+    <string name="proximity_wake_summary">Utiliser le capteur de proximité pour prévenir les réveils accidentels de l\'écran</string>
 
     <!-- Spam notifications -->
-    <string name="spam_added_title">Added %1$s</string>
-    <string name="spam_last_blocked_title">Last blocked %1$s</string>
-    <string name="block_notifications_title">Filter notifications</string>
-    <string name="block_notifications_summary">Manage ignored notifications and filters</string>
-    <string name="no_filters_title">No filters set</string>
+    <string name="spam_added_title">%1$s ajouté</string>
+    <string name="spam_last_blocked_title">Dernier bloqué %1$s</string>
+    <string name="block_notifications_title">Filtre des notifications</string>
+    <string name="block_notifications_summary">Gérer les notifications ignorées et les filtres</string>
+    <string name="no_filters_title">Aucun filtre défini</string>
 </resources>
