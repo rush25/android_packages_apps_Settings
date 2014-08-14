@@ -112,11 +112,11 @@
 
     <!-- Profiles settings  -->
     <string name="profiles_settings_title">Profils</string>
-    <string name="profiles_general_title">General</string>
+    <string name="profiles_general_title">Général</string>
     <string name="profiles_add">Ajouter</string>
     <string name="profile_menu_delete">Supprimer</string>
     <string name="profile_settings_title">Profil</string>
-    <string name="profile_empty_list_profiles_off">Activer le système de profils pour le personnaliser et l\'utiliser.</string>
+    <string name="profile_empty_list_profiles_off">Pour configurer et utiliser les profils système, activez les profils.</string>
 
     <!-- Add Profile -->
     <string name="add_profile_dialog_title">Créer un nouveau profil</string>
@@ -124,22 +124,22 @@
     <string name="profile_profile_name_prompt">Entrer un nom pour le nouveau profil</string>
     <string name="menu_new_profile">Nouveau profil</string>
     <string name="menu_new_profile_summary">Ajouter et configurer un nouveau profil</string>
-    <string name="new_profile_name">\u003CNouveau profil\u003E</string>
+    <string name="new_profile_name">\u003Cnew profile\u003E</string>
 
     <!-- Rename Dialog  -->
     <string name="rename_dialog_title">Renommer</string>
     <string name="rename_dialog_message">Entrer un nouveau nom</string>
     <string name="duplicate_profile_name">Dupliquer le nom du profil!</string>
-    <string name="duplicate_appgroup_name">Duplicate app group name!</string>
+    <string name="duplicate_appgroup_name">Dupliquer le nom du groupe d\'applications !</string>
 
     <!-- Reset Profiles -->
     <string name="profile_reset_title">Réinitialiser</string>
-    <string name="profile_reset_message">Supprimer tous les profils et groupes d\'applications et revenir à la configuration d\'origine?</string>
+    <string name="profile_reset_message">Supprimer tous les profils utilisateur créés et les groupes d\'applications et les réinitialiser ?</string>
 
     <!-- Delete confimation messages -->
-    <string name="profile_delete_confirm">Supprimer ce profil?</string>
-    <string name="profile_app_delete_confirm">Supprimer cette application?</string>
-    <string name="profile_cannot_delete">Vous ne pouvez pas supprimer le profil actif</string>
+    <string name="profile_delete_confirm">Supprimer ce profil ?</string>
+    <string name="profile_app_delete_confirm">Supprimer cette application ?</string>
+    <string name="profile_cannot_delete">Un profil actif ne peut pas être supprimé</string>
 
     <!-- Profile network mode -->
     <string name="profile_networkmode_2g">2G</string>
@@ -147,69 +147,69 @@
     <string name="profile_networkmode_2g3g">2G/3G</string>
 
     <!-- Profile Config screen PreferenceGroup titles -->
-    <string name="profile_connectionoverrides_title">Connexions</string>
-    <string name="profile_volumeoverrides_title">Volumes</string>
+    <string name="profile_connectionoverrides_title">Connection overrides</string>
+    <string name="profile_volumeoverrides_title">Volume overrides</string>
     <string name="profile_vibratoroverrides_title">Vibrator overrides</string>
-    <string name="connection_state_disabled">Inactif</string>
-    <string name="connection_state_enabled">Activer</string>
-    <string name="volume_override_summary">Défini à</string>
-    <string name="vibrator_state_disabled">Inactif</string>
+    <string name="connection_state_disabled">Disable</string>
+    <string name="connection_state_enabled">Enable</string>
+    <string name="volume_override_summary">Set to</string>
+    <string name="vibrator_state_disabled">Désactiver</string>
     <string name="vibrator_state_enabled">Activer</string>
-    <string name="vibrator_state_silent">Only when silent</string>
+    <string name="vibrator_state_silent">Uniquement sur silence</string>
 
     <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Profils</string>
     <string name="profile_profile_manage">Gérer le profil</string>
-    <string name="profile_applist_manage">Application list</string>
+    <string name="profile_applist_manage">Liste d\'applications</string>
     <string name="profile_appgroups_manage">Groupes d\'applications</string>
     <string name="profile_appgroup_manage">Gérer le groupe d\'applications</string>
 
     <!-- Profile settings screen, section header for settings related to notification profiles -->
     <string name="profile_settings">Paramètres du profil</string>
     <string name="profile_name">Nom</string>
-    <string name="profile_trigger_connect">À la connexion</string>
-    <string name="profile_trigger_disconnect">À la déconnexion</string>
-    <string name="profile_trigger_notrigger">Aucune activation</string>
-    <string name="profile_trigger_a2dp_connect">À la connexion A2DP</string>
-    <string name="profile_trigger_a2dp_disconnect">À la déconnexion A2DP</string>
+    <string name="profile_trigger_connect">Sur connecté</string>
+    <string name="profile_trigger_disconnect">Sur déconnecté</string>
+    <string name="profile_trigger_notrigger">Au déclencheur</string>
+    <string name="profile_trigger_a2dp_connect">Sur connexion A2DP</string>
+    <string name="profile_trigger_a2dp_disconnect">On A2DP disconnect</string>
 
     <!-- Profile Settings sound modes labels -->
-    <string name="sound_mode">Mode de notification</string>
-    <string name="ringer_mode">Sonnerie</string>
-    <string name="lights_mode">Voyant</string>
-    <string name="vibrate_mode">Vibreur</string>
-    <string name="choose_soundtone">Son de notification</string>
-    <string name="choose_ringtone">Choix de la sonnerie</string>
+    <string name="sound_mode">Mode notification</string>
+    <string name="ringer_mode">Mode sonnerie</string>
+    <string name="lights_mode">Mode lumières</string>
+    <string name="vibrate_mode">Mode vibreur</string>
+    <string name="choose_soundtone">Choisir la tonalité de notification</string>
+    <string name="choose_ringtone">Choisir la sonnerie</string>
 
     <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
-    <string name="soundtone_title">Son de notification</string>
+    <string name="soundtone_title">Tonalité de notification</string>
     <string name="soundtone_summary">""</string>
 
     <!-- Title for application group setting screen -->
     <string name="profile_appgroups_title">Groupes d\'applications</string>
     <string name="profile_applist_title">Applications</string>
     <string name="profile_new_appgroup">Nouveau groupe d\'applications</string>
-    <string name="profile_delete_appgroup">Supprimer ce groupe d\'applications?</string>
-    <string name="profile_appgroup_name_prompt">Saisir le nom du nouveau groupe</string>
+    <string name="profile_delete_appgroup">Supprimer ce groupe d\'applications ?</string>
+    <string name="profile_appgroup_name_prompt">Entrer un nom pour ce nouveau groupe d\'applications</string>
     <string name="profile_appgroup_name_title">Nom</string>
 
     <!-- Add application dialog box title -->
     <string name="profile_choose_app">Choisir une application</string>
-    <string name="profile_settings_header">Profile settings</string>
+    <string name="profile_settings_header">Paramètres du fpril</string>
 
     <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">Paramètres système</string>
-    <string name="profile_lockmode_title">Mode de verrouillage</string>
+    <string name="profile_lockmode_title">Mode écran de verrouillage</string>
     <string name="profile_lockmode_default">Par défaut</string>
-    <string name="profile_lockmode_insecure">Non sécurisé</string>
+    <string name="profile_lockmode_insecure">Insecure</string>
     <string name="profile_lockmode_disabled">Désactivé</string>
-    <string name="profile_lockmode_default_summary">Conserver les paramètres système</string>
-    <string name="profile_lockmode_insecure_summary">Écran de verrouillage non sécurisé</string>
-    <string name="profile_lockmode_disabled_summary">Écran de verrouillage désactivé</string>
-    <string name="profile_airplanemode_title">Mode Avion</string>
+    <string name="profile_lockmode_default_summary">Use system default</string>
+    <string name="profile_lockmode_insecure_summary">Use insecure lock screen</string>
+    <string name="profile_lockmode_disabled_summary">Lock screen is disabled</string>
+    <string name="profile_airplanemode_title">Mode avion</string>
     <string name="profile_disable_screen_lock_summary">Disable lock screen security while this profile is active</string>
 
-    <string name="vibrator_type_ringer">Calls</string>
+    <string name="vibrator_type_ringer">Appels</string>
     <string name="vibrator_type_notification">Notifications</string>
 
     <!-- Connection override toggles (not all are used at this time ) -->
