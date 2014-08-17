@@ -2366,4 +2366,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Keep the referenced menu string consistent with status_bar_notification_spam_item_title in frameworks/base/packages/SystemUI -->
     <string name="no_filters_title">No filters set. To filter a notification, long press it and choose \'Ignore messages like this\'.</string>
 
+    <!-- NFC Polling-->
+    <string name="nfc_polling_mode_title">NFC polling mode</string>
+    <string name="nfc_polling_mode_screen_off">Screen off</string>
+    <string name="nfc_polling_mode_screen_locked">Screen on, locked</string>
+    <string name="nfc_polling_mode_screen_unlocked">Screen on, unlocked (default)</string>
 </resources>
