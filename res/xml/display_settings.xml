@@ -157,25 +157,6 @@
         </PreferenceCategory>
 
         <PreferenceCategory
-            android:key="smart_cover_prefs"
-            android:title="@string/smart_cover">
-
-            <com.android.settings.mahdi.SystemSettingCheckBoxPreference
-                android:key="lockscreen_lid_wake"
-                android:title="@string/smart_cover_wake_title"
-                android:summary="@string/smart_cover_wake_summary"
-                android:defaultValue="true" />
-
-
-            <com.android.settings.mahdi.SystemSettingCheckBoxPreference
-                android:key="lockscreen_lid_sleep"
-                android:title="@string/smart_cover_sleep_title"
-                android:summary="@string/smart_cover_sleep_summary"
-                android:defaultValue="true" />
-
-        </PreferenceCategory>
-
-        <PreferenceCategory
             android:key="wakeup_prefs"
             android:title="@string/display_category_wakeup_options_title">
 
@@ -215,6 +196,31 @@
                     android:targetPackage="com.mahdi.touchcontrol"
                     android:targetClass="com.mahdi.touchcontrol.settings.TouchControlActivity" />
             </PreferenceScreen>
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:key="smart_cover_prefs"
+            android:title="@string/smart_cover">
+
+            <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+                android:key="smart_cover_activated"
+                android:title="@string/smart_cover_title"
+                android:summary="@string/smart_cover_summary"
+                android:defaultValue="false" />
+
+            <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+                android:key="lockscreen_lid_wake"
+                android:title="@string/smart_cover_wake_title"
+                android:summary="@string/smart_cover_wake_summary"
+                android:defaultValue="true" />
+
+
+            <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+                android:key="lockscreen_lid_sleep"
+                android:title="@string/smart_cover_sleep_title"
+                android:summary="@string/smart_cover_sleep_summary"
+                android:defaultValue="true" />
 
         </PreferenceCategory>
         
