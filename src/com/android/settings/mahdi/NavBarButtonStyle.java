@@ -117,7 +117,7 @@ public class NavBarButtonStyle extends SettingsPreferenceFragment implements
         mNavigationBarButtonColorMode =
             (ListPreference) prefs.findPreference(PREF_NAV_BUTTON_COLOR_MODE);
         int navigationBarButtonColorMode = Settings.System.getInt(getContentResolver(),
-                Settings.System.NAVIGATION_BAR_BUTTON_TINT_MODE, 0);
+                Settings.System.NAVIGATION_BAR_BUTTON_TINT_MODE, 3);
         mNavigationBarButtonColorMode.setValue(String.valueOf(navigationBarButtonColorMode));
         mNavigationBarButtonColorMode.setSummary(mNavigationBarButtonColorMode.getEntry());
         mNavigationBarButtonColorMode.setOnPreferenceChangeListener(this);
