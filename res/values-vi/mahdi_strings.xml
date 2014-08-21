@@ -1267,7 +1267,7 @@ Xóa sẽ gỡ bỏ dòng.
     <string name="show_enter_key_title">Hiện phím enter</string>
     <string name="show_enter_key_summary">Ép bàn phím hiện enter thay vì phím Emoticon</string>
     <string name="ime_switcher_notify">Lựa chọn thông báo</string>
-    <string name="ime_switcher_notify_summary">Hiện thông báo luwacj chọn phương thức nhập</string>
+    <string name="ime_switcher_notify_summary">Hiện thông báo lựa chọn phương thức nhập</string>
 
     <!-- Themes settings  -->
     <string name="themes_settings_title">Giao diện</string>
