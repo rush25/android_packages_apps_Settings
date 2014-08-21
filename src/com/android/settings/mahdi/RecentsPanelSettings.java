@@ -140,6 +140,7 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
             mRecentPanelBgColor.setSummary(hexColor);
         }
         mRecentPanelBgColor.setNewPreviewColor(intColor);
+        setHasOptionsMenu(true);
         
         updatePreference();
     }
@@ -153,11 +154,13 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
             mRecentPanelLeftyMode.setEnabled(false);
             mRecentPanelScale.setEnabled(false);
             mRecentPanelExpandedMode.setEnabled(false);
+            mRecentPanelBgColor.setEnabled(false);
         } else {
             mRecentsShowTopmost.setEnabled(true);
             mRecentPanelLeftyMode.setEnabled(true);
             mRecentPanelScale.setEnabled(true);
             mRecentPanelExpandedMode.setEnabled(true);
+            mRecentPanelBgColor.setEnabled(true);
         }
     }
 
@@ -213,7 +216,7 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
             if (hex.equals("#00ffffff")) {
-                preference.setSummary("TRDS default");
+                preference.setSummary("default");
             } else {
                 preference.setSummary(hex);
             }

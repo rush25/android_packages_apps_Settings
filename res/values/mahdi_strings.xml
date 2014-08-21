@@ -650,7 +650,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="quick_tiles_bg_pressed_color_title">Tiles pressed background color</string>
     <string name="quick_tiles_text_color_title">Tiles text color</string>
     <string name="quick_tiles_alpha_title">Tiles background transparency</string>
-    <string name="qs_style_reset_message">Reset all quick settings colors to default?</string>
+    <string name="qs_style_reset_message">Reset colors to default?</string>
 
     <!-- QuickSettings fliptiles -->
     <string name="flip_qs_tiles_title">Flip tiles</string>
