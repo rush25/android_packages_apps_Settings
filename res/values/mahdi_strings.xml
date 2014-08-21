@@ -954,6 +954,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="shortcut_action_wake_device">Wake up device</string>
     <string name="shortcut_action_theme_switch">Theme switcher</string>
     <string name="shortcut_action_torch">Torch</string>
+    <string name="shortcut_action_omniswitch">OmniSwitch</string>
     <string name="shortcut_action_longpress">Longpress:</string>
     <string name="shortcut_action_select_action_longpress">Choose longpress action:</string>
     <string name="shortcut_action_select_action">Choose action:</string>
@@ -1439,6 +1440,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="recents_panel_settings_title">Multitasking</string>
     <string name="recents_panel_settings_summary">Multitasking options including slim recents and more</string>
 
+    <!-- OmniSwitch -->
+    <string name="omniswitch_title">OmniSwitch</string>
+
     <!-- Recents clear all -->
     <string name="aosp_recents_category">AOSP Recents</string>
     <string name="show_recent_clear_all_button_title">Clear all button</string>
@@ -1476,7 +1480,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
     <string name="custom_runtime_warning_title">Warning</string>
-    <string name="custom_runtime_warning_message">ART is not supported by Mahdi-Rom. This setting is included for experimentation only and has the potential to cause instability, crashes, data loss or prevent the proper boot of your device. Visit \u003Ca href=\"http://source.android.com/devices/tech/dalvik/art.html\"\u003EIntroducing ART\u003C/a\u003E for more information.\u003Cbr/\u003E\u003Cbr/\u003EWe request you do not file bug reports if you have enabled ART as your runtime.\u003Cbr/\u003E\u003Cbr/\u003EAre you sure you want to reboot to change runtime from <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> to <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string> 
+    <string name="custom_runtime_warning_message">ART is not supported by Mahdi-Rom. This setting is included for experimentation only and has the potential to cause instability, crashes, data loss or prevent the proper boot of your device. Visit \u003Ca href=\"http://source.android.com/devices/tech/dalvik/art.html\"\u003EIntroducing ART\u003C/a\u003E for more information.\u003Cbr/\u003E\u003Cbr/\u003EWe request you do not file bug reports if you have enabled ART as your runtime.\u003Cbr/\u003E\u003Cbr/\u003EAre you sure you want to reboot to change runtime from <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> to <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
 
     <!-- Less Notification sounds -->
     <string name="notifications_category_title">Notifications</string>

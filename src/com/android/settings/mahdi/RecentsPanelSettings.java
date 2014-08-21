@@ -50,6 +50,8 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "RecentsPanelSettings";
 
+    private static final String OMNISWITCH_SETTINGS = "omniswitch_settings";
+    private static final String OMNISWITCH_PACKAGE_NAME = "org.omnirom.omniswitch";
     private static final String RECENT_MENU_CLEAR_ALL = "recent_menu_clear_all";
     private static final String RECENT_MENU_CLEAR_ALL_LOCATION = "recent_menu_clear_all_location";
     private static final String RECENT_CLEAR_ALL_APPS = "recent_clear_all_apps";
@@ -60,6 +62,7 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
     private static final String RECENT_PANEL_EXPANDED_MODE = "recent_panel_expanded_mode";
     private static final String RECENT_PANEL_BG_COLOR = "recent_panel_bg_color";
 
+    private PreferenceScreen mOmniSwitch;
     private CheckBoxPreference mRecentClearAll;
     private ListPreference mRecentClearAllPosition;
     private CheckBoxPreference mRecentClearAllApps;
@@ -80,6 +83,11 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mOmniSwitch = (PreferenceScreen) findPreference(OMNISWITCH_SETTINGS);
+        if (!Utils.isPackageInstalled(getActivity(), OMNISWITCH_PACKAGE_NAME)) {
+            prefSet.removePreference(mOmniSwitch);
+        }
 
         mRecentClearAll = (CheckBoxPreference) prefSet.findPreference(RECENT_MENU_CLEAR_ALL);
         mRecentClearAll.setChecked(Settings.System.getInt(resolver,
