@@ -108,7 +108,7 @@
 
     <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">Расширенная перезагрузка</string>
-    <string name="advanced_reboot_summary">Включить отображение в меню управления питанием настроек для загрузки в рекавери и бутлоадер</string>
+    <string name="advanced_reboot_summary">Включить отображение в меню управления питанием настроек для загрузки в рекавери, бутлоадер или выполнения быстрой перезагрузки</string>
 
    <!-- Profiles settings  -->
     <string name="profiles_settings_title">Профили</string>
@@ -605,6 +605,7 @@
 
     <!-- Quick access ribbon -->
     <string name="title_quick_access">Лента быстрого доступа</string>
+    <string name="title_quick_access_size">Размеры плиток в ленте</string>
     <string name="title_quick_access_linked">Связанное расположение</string>
     <string name="summary_quick_access_linked">Используются плитки и их размещение из панели быстрых настроек</string>
 
@@ -914,6 +915,11 @@
     <string name="shortcut_action_ring_vib">Звонок/Вибро</string>
     <string name="shortcut_action_ring_silent">Звонок/Тихо</string>
     <string name="shortcut_action_ring_vib_silent">Звонок/Вибро/Тихо</string>
+    <string name="shortcut_action_camera">Камера</string>
+    <string name="shortcut_action_media_next">Музыка - следующий трек</string>
+    <string name="shortcut_action_media_play_pause">Музыка - играть/пауза</string>
+    <string name="shortcut_action_media_previous">Музыка - предыдущий трек</string>
+    <string name="shortcut_action_wake_device">Разбудить устройство</string>
     <string name="shortcut_action_theme_switch">Переключатель тем</string>
     <string name="shortcut_action_torch">Фонарь</string>
     <string name="shortcut_action_omniswitch">OmniSwitch</string>
@@ -1066,12 +1072,14 @@
     <string name="navbar_enable_bar_summary">Включает панель навигации</string>
     <string name="navigation_bar_left_title">Режим левши</string>
     <string name="navigation_bar_left_summary">Отображает панель навигации на левой стороне экрана в ландшафтном режиме</string>
+    <string name="navigation_bar_ime_title">Отключить стрелки управления курсором</string>
+    <string name="navigation_bar_ime_summary">Стрелки управления курсором включены по умолчанию, используйте эту настройку, чтобы отключить их</string>
     <string name="navigation_bar_height_title">Высота панели навигации</string>
-    <string name="navigation_bar_height_summary">Высота панели навигации в портретном режиме.</string>
+    <string name="navigation_bar_height_summary">Высота панели навигации в портретном режиме</string>
     <string name="navigation_bar_height_landscape_title">Высота панели навигации в ландшафте</string>
-    <string name="navigation_bar_height_landscape_summary">Высота панели навигации в ландшафтном режиме.</string>
+    <string name="navigation_bar_height_landscape_summary">Высота панели навигации в ландшафтном режиме</string>
     <string name="navigation_bar_width_title">Ширина панели навигации</string>
-    <string name="navigation_bar_width_summary">Или высота, если панель находится сбоку.</string>
+    <string name="navigation_bar_width_summary">Или высота, если панель находится сбоку</string>
     <string name="navbar_can_move">Ландшафтный режим</string>
     <string name="navbar_can_move_summary">Показывать панель навигации внизу в ландшафтном режиме</string>
     <string name="navbar_style_dimen_title">Стиль и размеры</string>
@@ -1175,6 +1183,8 @@
     <string name="show_network_traffic_1000">1000 мс</string>
     <string name="show_network_traffic_1500">1500 мс</string>
     <string name="show_network_traffic_2000">2000 мс</string>
+    <string name="network_traffic_autohide">Скрывать автоматически</string>
+    <string name="network_traffic_autohide_threshold">Порог неактивности</string>
 
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Индикатор сетевой активности</string>
@@ -1357,6 +1367,25 @@
     <string name="wakeup_when_plugged_unplugged_title">Пробуждение при зарядке</string>
     <string name="wakeup_when_plugged_unplugged_summary">Подключение/отключение зарядного устройства пробуждает телефон</string>
 
+    <!-- Gestures Options -->
+    <string name="screen_off_gesture_settings_title">Жесты</string>
+
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Предотвращать случайное включение</string>
+    <string name="proximity_wake_summary">Проверять датчик приближения при выходе из режима сна</string>
+
+    <!-- Touch control -->
+    <string name="touch_control_settings_title">Расширенные</string>
+    <string name="touch_control_settings_summary">Управление расширенными настройками пробуждения, включая пробуждение двойным нажатием и прочее</string>    
+    
+    <!-- Lid Settings -->
+    <string name="smart_cover">Использовать \"Умную\" обложку</string>
+    <string name="smart_cover_summary">Заменяет экран блокировки экраном \"умной\" обложки, когда она закрыта</string>
+    <string name="smart_cover_wake_title">Пробуждение \"умной\" обложкой</string>
+    <string name="smart_cover_wake_summary">Пробуждать устройство при открытии \"умной\" обложки</string>
+    <string name="smart_cover_sleep_title">Блокировка \"умной\" обложкой</string>
+    <string name="smart_cover_sleep_summary">Заблокировать устройство при закрытии \"умной\" обложки</string>
+
     <!-- Delete apn confirmation dialog message -->
     <string name="confirm_delete_apn">Точка доступа (APN) будет удалена.</string>
 
@@ -1379,6 +1408,9 @@
     <!-- Recents panel menu -->
     <string name="recents_panel_settings_title">Недавние приложения</string>
     <string name="recents_panel_settings_summary">Настройки \"Недавних приложений\"</string>
+    
+    <!-- OmniSwitch -->
+    <string name="omniswitch_title">OmniSwitch</string>
 
     <!-- Recents clear all -->
     <string name="aosp_recents_category">\"Недавние приложения\" от AOSP</string>
@@ -1390,6 +1422,8 @@
     <string name="recent_clear_all_button_location_top_right">Вверху справа</string>
     <string name="recent_clear_all_button_location_bottom_left">Внизу слева</string>
     <string name="recent_clear_all_button_location_bottom_right">Внизу справа</string>
+    <string name="recent_clear_all_apps_title">Закрыть все приложения</string>
+    <string name="recent_clear_all_apps_summary">Закрыть все приложения, включая текущее</string>
 
     <!-- New Recents Screen -->
     <string name="new_recents_category">\"Недавние приложения\" от Slim</string>
@@ -1407,6 +1441,7 @@
     <string name="recent_panel_expanded_mode_never">Никогда</string>
     <string name="recent_panel_show_topmost_title">Показывать последнее приложение</string>
     <string name="recent_panel_show_topmost_summary">Показывать последнее приложение в списке недавних</string>
+    <string name="recent_panel_bg_color_title">Цвет фона</string>
 
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Показывать у левого края</string>
@@ -2213,7 +2248,9 @@
     <string name="heads_up_dnd_title">Не беспокоить</string>
     <string name="heads_up_blacklist_title">Чёрный список</string>
     <string name="heads_up_disabled_notice">\"Всплывающие уведомления\" позволяют отображать интерактивные уведомления от приложений во всплывающем окне.</string>
-
+    <string name="heads_up_gravity_title">Показывать внизу</string>
+    <string name="heads_up_gravity_summary">Показывать всплывающие уведомления в нижней части экрана</string>
+    
     <!-- Notification settings -->
     <string name="notification_settings_title">Уведомления</string>
     <string name="notification_settings_summary">Выбрать способ отображения уведомлений.</string>
@@ -2307,13 +2344,11 @@
     <!-- Setting checkbox summary for Whether to enable Android debugging support on the phone -->
     <string name="enable_adb_summary_cm">Включение интерфейса Android Debug Bridge (ADB)</string>
 
-    <!-- Gestures Options -->
-    <string name="screen_off_gesture_settings_title">Жесты</string>
-    
-    <!-- Lid Settings -->
-    <string name="smart_cover">\"Умная\" обложка</string>
-    <string name="smart_cover_wake_title">Пробуждение \"умной\" обложкой</string>
-    <string name="smart_cover_wake_summary">Пробуждать устройство при открытии \"умной\" обложки</string>
-    <string name="smart_cover_sleep_title">Блокировка \"умной\" обложкой</string>
-    <string name="smart_cover_sleep_summary">Заблокировать устройство при закрытии \"умной\" обложки</string>
+    <!-- Spam notifications -->
+    <string name="spam_added_title">Добавлено <xliff:g id="time_since" example="5 minutes ago">%1$s</xliff:g></string>
+    <string name="spam_last_blocked_title">Последняя блокировка <xliff:g id="time_since" example="5 minutes ago">%1$s</xliff:g> (всего: <xliff:g id="count" example="2 times">%2$s</xliff:g>)</string>
+    <string name="block_notifications_title">Фильтр уведомлений</string>
+    <string name="block_notifications_summary">Настройка игнорируемых уведомлений и фильтров</string>
+    <!-- Keep the referenced menu string consistent with status_bar_notification_spam_item_title in frameworks/base/packages/SystemUI -->
+    <string name="no_filters_title">Фильтр не настроен. Чтобы запретить показ какого-либо уведомления, нажмите и удерживайте его, а затем выберите «Скрыть подобные сообщения».</string>
 </resources>
