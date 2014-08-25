@@ -53,6 +53,7 @@ import com.android.settings.Utils;
 import org.cyanogenmod.hardware.AdaptiveBacklight;
 import org.cyanogenmod.hardware.ColorEnhancement;
 import org.cyanogenmod.hardware.HighTouchSensitivity;
+import org.cyanogenmod.hardware.SunlightEnhancement;
 import org.cyanogenmod.hardware.TapToWake;
 
 import java.util.ArrayList;
@@ -72,7 +73,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_LIGHT_OPTIONS = "led_prefs";
     private static final String CATEGORY_WAKEUP = "wakeup_prefs";
 
-    private static final String KEY_ADAPTIVE_BACKLIGHT = "adaptive_backlight";    
+    private static final String KEY_ADAPTIVE_BACKLIGHT = "adaptive_backlight";
+    private static final String KEY_SUNLIGHT_ENHANCEMENT = "sunlight_enhancement";
     private static final String KEY_COLOR_ENHANCEMENT = "color_enhancement";
     private static final String KEY_DISPLAY_COLOR = "color_calibration";
     private static final String KEY_DISPLAY_GAMMA = "gamma_tuning";
@@ -107,6 +109,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
     private CheckBoxPreference mAdaptiveBacklight;
+    private CheckBoxPreference mSunlightEnhancement;
     private CheckBoxPreference mColorEnhancement;
     private PreferenceScreen mScreenColorSettings;
     private PreferenceScreen mDisplayRotationPreference;    
@@ -159,6 +162,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (!isAdaptiveBacklightSupported()) {
             displayPrefs.removePreference(mAdaptiveBacklight);
             mAdaptiveBacklight = null;
+        }
+
+        mSunlightEnhancement = (CheckBoxPreference) findPreference(KEY_SUNLIGHT_ENHANCEMENT);
+        if (!isSunlightEnhancementSupported()) {
+            displayPrefs.removePreference(mSunlightEnhancement);
+            mSunlightEnhancement = null;
         }
 
         mColorEnhancement = (CheckBoxPreference) findPreference(KEY_COLOR_ENHANCEMENT);
@@ -443,14 +452,23 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         updateLightPulseDescription();
         updateBatteryPulseDescription();
 
+        if (mAdaptiveBacklight != null) {
+            mAdaptiveBacklight.setChecked(AdaptiveBacklight.isEnabled());
+        }
+
+        if (mSunlightEnhancement != null) {
+            if (SunlightEnhancement.isAdaptiveBacklightRequired() &&
+                    !AdaptiveBacklight.isEnabled()) {
+                mSunlightEnhancement.setEnabled(false);
+            } else {
+                mSunlightEnhancement.setChecked(SunlightEnhancement.isEnabled());
+            }
+        }
+
         if (mTapToWake != null) {
             final SharedPreferences prefs =
                     PreferenceManager.getDefaultSharedPreferences(getActivity());
             mTapToWake.setChecked(prefs.getBoolean(KEY_TAP_TO_WAKE, true));
-        }
-
-        if (mAdaptiveBacklight != null) {
-            mAdaptiveBacklight.setChecked(AdaptiveBacklight.isEnabled());
         }
 
         if (mColorEnhancement != null) {
@@ -562,7 +580,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             prefs.edit().putBoolean(KEY_TAP_TO_WAKE, mTapToWake.isChecked()).commit();
             return TapToWake.setEnabled(mTapToWake.isChecked());
         } else if (preference == mAdaptiveBacklight) {
+            if (mSunlightEnhancement != null &&
+                    SunlightEnhancement.isAdaptiveBacklightRequired()) {
+                mSunlightEnhancement.setEnabled(mAdaptiveBacklight.isChecked());
+            }
             return AdaptiveBacklight.setEnabled(mAdaptiveBacklight.isChecked());
+        } else if (preference == mSunlightEnhancement) {
+            return SunlightEnhancement.setEnabled(mSunlightEnhancement.isChecked());
         } else if (preference == mHighTouchSensitivity) {
             return HighTouchSensitivity.setEnabled(mHighTouchSensitivity.isChecked());
         } else if (preference == mColorEnhancement) {
@@ -615,8 +639,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
      * @param ctx A valid context
      */
     public static void restore(Context ctx) {
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
         if (isAdaptiveBacklightSupported()) {
-            final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
             final boolean enabled = prefs.getBoolean(KEY_ADAPTIVE_BACKLIGHT, true);
             if (!AdaptiveBacklight.setEnabled(enabled)) {
                 Log.e(TAG, "Failed to restore adaptive backlight settings.");
@@ -624,8 +648,23 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 Log.d(TAG, "Adaptive backlight settings restored.");
             }
         }
+
+        if (isSunlightEnhancementSupported()) {
+            final boolean enabled = prefs.getBoolean(KEY_SUNLIGHT_ENHANCEMENT, true);
+            if (SunlightEnhancement.isAdaptiveBacklightRequired() &&
+                    !AdaptiveBacklight.isEnabled()) {
+                SunlightEnhancement.setEnabled(false);
+                Log.d(TAG, "SRE requires CABC, disabled");
+            } else {
+                if (!SunlightEnhancement.setEnabled(enabled)) {
+                    Log.e(TAG, "Failed to restore SRE settings.");
+                } else {
+                    Log.d(TAG, "SRE settings restored.");
+                }
+            }
+        }
+
         if (isColorEnhancementSupported()) {
-            final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
             final boolean enabled = prefs.getBoolean(KEY_COLOR_ENHANCEMENT, true);
             if (!ColorEnhancement.setEnabled(enabled)) {
                 Log.e(TAG, "Failed to restore color enhancement settings.");
@@ -633,8 +672,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 Log.d(TAG, "Color enhancement settings restored.");
             }
         }
+
         if (isTapToWakeSupported()) {
-            final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
             final boolean enabled = prefs.getBoolean(KEY_TAP_TO_WAKE, true);
             if (!TapToWake.setEnabled(enabled)) {
                 Log.e(TAG, "Failed to restore tap-to-wake settings.");
@@ -658,6 +697,15 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static boolean isAdaptiveBacklightSupported() {
         try {
             return AdaptiveBacklight.isSupported();
+        } catch (NoClassDefFoundError e) {
+            // Hardware abstraction framework not installed
+            return false;
+        }
+    }
+
+    private static boolean isSunlightEnhancementSupported() {
+        try {
+            return SunlightEnhancement.isSupported();
         } catch (NoClassDefFoundError e) {
             // Hardware abstraction framework not installed
             return false;
