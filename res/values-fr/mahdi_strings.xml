@@ -325,7 +325,7 @@
     <string name="pref_zram_title">zRam</string>
     <string name="pref_zram_summary">Comprimer la mémoire pour augmenter la capacité virtuelle (nécessite un redémarrage)</string>
     <!-- KSM -->
-    <string name="pref_ksm_title">KSM/string>
+    <string name="pref_ksm_title">KSM</string>
     <string name="pref_ksm_summary">Cette fonction du noyau réduit l\'utilisation de la mémoire physique et améliore les performances (Kernel Samepage Merging)</string>
     <!-- Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Purge des bitmaps</string>
@@ -364,7 +364,7 @@
     <string name="button_volume_default_summary">Choisissez le volume qui est changé par défaut</string>
     <!-- Volume panel timeout -->
     <string name="volume_panel_timeout_title">Veille</string>
-    <string name="volume_panel_timeout_summary">Temps jusqu'à ce que le panneau soit caché</string>
+    <string name="volume_panel_timeout_summary">Temps jusqu\'à ce que le panneau soit caché</string>
 
     <!-- Headset category -->
     <string name="headset_category_title">Casque</string>
