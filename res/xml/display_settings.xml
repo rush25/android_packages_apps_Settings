@@ -60,6 +60,12 @@
                 android:summary="@string/adaptive_backlight_summary"
                 android:defaultValue="true" />
 
+            <CheckBoxPreference
+                android:key="sunlight_enhancement"
+                android:title="@string/sunlight_enhancement_title"
+                android:summary="@string/sunlight_enhancement_summary"
+                android:defaultValue="true" />
+
         </PreferenceCategory>
 
         <PreferenceCategory

@@ -1417,6 +1417,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="smart_cover_sleep_title">Put to sleep</string>
     <string name="smart_cover_sleep_summary">Put the device to sleep when the lid closes</string>
 
+    <!-- tap-to-wake -->
+    <string name="double_tap_to_wake_title">Double-tap to wake</string>
+
     <!-- Delete apn confirmation dialog message -->
     <string name="confirm_delete_apn">The APN will be deleted.</string>
 
@@ -2326,8 +2329,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="adaptive_backlight_title">Adaptive backlight</string>
     <string name="adaptive_backlight_summary">Intelligently vary the backlight brightness of the display and help maximize battery life</string>
 
-    <!-- tap-to-wake -->
-    <string name="double_tap_to_wake_title">Double-tap to wake</string>
+    <!-- Sunlight readability enhancement screen -->
+    <string name="sunlight_enhancement_title">Sunlight enhancement</string>
+    <string name="sunlight_enhancement_summary">Enhance display brightness and readability under bright sunlight</string>
 
     <!-- Screen color -->
     <string name="screencolor">Screen color</string>
