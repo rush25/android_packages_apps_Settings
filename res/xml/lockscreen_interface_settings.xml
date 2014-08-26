@@ -30,6 +30,27 @@
             android:fragment="com.android.settings.mahdi.LockscreenWidgets"
             android:title="@string/lockscreen_widgets_title" />
 
+        <ListPreference
+            android:key="lockscreen_lock_icon"
+            android:title="@string/lockscreen_icon_title"
+            android:entries="@array/lock_icon_entries"
+            android:entryValues="@array/lock_icon_values"/>
+
+        <ListPreference
+            android:key="lockscreen_battery_status"
+            android:persistent="false"
+            android:dialogTitle="@string/lockscreen_battery_status_title"
+            android:title="@string/lockscreen_battery_status_title"
+            android:entries="@array/lockscreen_battery_status_entries"
+            android:entryValues="@array/lockscreen_battery_status_values"
+            android:defaultValue="0" />
+
+        <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+            android:key="battery_around_lockscreen_ring"
+            android:title="@string/battery_around_lockscreen_ring"
+            android:summary="@string/battery_around_lockscreen_ring_summary"
+            android:defaultValue="false" />
+
         <CheckBoxPreference
             android:key="see_through"
             android:title="@string/see_through_title"
@@ -41,27 +62,6 @@
             android:summary="@string/blur_radius_summary"
             android:max="25"
             android:defaultValue="12" />
-
-        <com.android.settings.mahdi.SystemSettingCheckBoxPreference
-            android:key="battery_around_lockscreen_ring"
-            android:title="@string/battery_around_lockscreen_ring"
-            android:summary="@string/battery_around_lockscreen_ring_summary"
-            android:defaultValue="false" />
-
-        <ListPreference
-            android:key="lockscreen_battery_status"
-            android:persistent="false"
-            android:dialogTitle="@string/lockscreen_battery_status_title"
-            android:title="@string/lockscreen_battery_status_title"
-            android:entries="@array/lockscreen_battery_status_entries"
-            android:entryValues="@array/lockscreen_battery_status_values"
-            android:defaultValue="0" />
-
-        <PreferenceScreen
-            android:key="keyguard_style"
-            android:fragment="com.android.settings.mahdi.LockscreenStyle"
-            android:title="@string/lockscreen_style_title"
-            android:summary="@string/lockscreen_style_summary" />
 
     </PreferenceCategory>
 
