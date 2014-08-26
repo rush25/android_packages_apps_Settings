@@ -293,8 +293,63 @@
     <string name="remove_blacklist_entry">¿Quieres eliminar esta entrada de lista negra?</string>
     <string name="select_contact">Seleccionar contacto</string>
 
-    <!-- Performance Control -->
-    <string name="performance_settings">Configuración de Kernel</string>
+    <!-- Performance settings -->
+    <string name="performance_settings_title">Rendimiento</string>
+    
+    <!-- Performance Settings : Warning dialog -->
+    <string name="performance_settings_warning_title">Proceda con precaucion</string>
+    <string name="performance_settings_warning">Estos ajustes se incluyeron para la experimentación y los cambios realizados en ellos tienen el potencial de causar fallos de inestabilidad, caidas, la pérdida de datos o de hardware.\n\nSe solicita usted no presente los informes de error si alguno de estos valores han sido cambiados de los valores predeterminados.</string>
+    
+    <!-- Performance Settings : Set on boot option -->
+    <string name="performance_set_on_boot">Establecer en el arranque</string>
+    <string name="performance_set_on_boot_summary">Restaurar ajustes en el arranque</string>
+   
+    <!-- Performance Settings : Processor Settings -->
+    <!-- Performance Settings : Processor settings title -->
+    <string name="processor_title">Procesador</string>
+    
+    <!-- Performance Settings : Processor settings sub items -->
+    <string name="cpu_cur_freq_title">Frecuencia actual del CPU</string>
+    <string name="cpu_governors_title">Gobernador de CPU</string>
+    <string name="cpu_governors_summary" translatable="false">%S</string>
+    <string name="cpu_min_freq_title">Frecuencia minima de CPU</string>
+    <string name="cpu_min_freq_summary" translatable="false">%s</string>
+    <string name="cpu_max_freq_title">Frecuencia maxima de CPU</string>
+    <string name="cpu_max_freq_summary" translatable="false">%s</string>
+    
+    <!-- Performance Settings : I/O scheduler settings title -->
+    <string name="io_scheds_title">I/O scheduler</string>
+   
+    <!-- Performance Settings : I/O scheduler settings sub items -->
+    <string name="io_sched_title">Programador I/O</string>
+    <string name="io_sched_summary" translatable="false">%S</string>
+   
+    <!-- Performance Settings : Performance profile settings -->
+    <string name="perf_profile_title">Perfil</string>
+    <string name="perf_profile_summary" translatable="false">%s</string>
+   
+    <!-- Memory Management -->
+    <string name="memory_management_title">Administracion de Memoria</string>
+    <!-- zRam -->
+    <string name="pref_zram_title">zRam</string>
+    <string name="pref_zram_summary">Comprimir la memoria para aumentar la capacidad virtual (requiere reinicio)</string>
+    <!-- KSM -->
+    <string name="pref_ksm_title">Kernel samepage merging</string>
+    <string name="pref_ksm_summary">KSM reduce los requisitos de memoria física y mejora el rendimiento</string>
+    <!-- Purgeable Assets -->
+    <string name="pref_purgeable_assets_title">Permitir purgar activos</string>
+    <string name="pref_purgeable_assets_summary">Purgar los activos de la memoria de mapa de bits permite la liberación de más memoria RAM cuando es necesario (requiere reinicio)</string>
+   
+    <!-- Performance Settings : 16bpp Alpha -->
+    <string name="pref_use_16bpp_alpha_title">Transparencia de 16bit</string>
+    <string name="pref_use_16bpp_alpha_summary">Mejor desempeño de gráficas, pero de menor calidad y puede causar desperfectos visuales (requiere reinicio)</string>
+   
+    <!-- Automatic performance profiles -->
+    <string name="autoperf_title">Activar perfil por aplicacion</string>
+    <string name="autoperf_summary">Elegir automáticamente un perfil de rendimiento adecuado para diversas aplicaciones</string>
+   
+    <!-- Performance menu, graphics options category -->
+    <string name="graphics_title">Renderizacion y graficos</string>
 
     <!-- Sound settings -->
     <string name="volume_category">Volumen</string>
@@ -319,6 +374,31 @@
     <string name="button_volume_default_media">Media</string>
     <string name="button_volume_default_title">Volumen por defecto</string>
     <string name="button_volume_default_summary">Elija qué volumen se cambia de forma predeterminada</string>
+    <!-- Volume panel timeout -->
+    <string name="volume_panel_timeout_title">Timeout</string>
+    <string name="volume_panel_timeout_summary">Time until the panel will be hidden</string>
+    
+    <!-- Headset category -->
+    <string name="headset_category_title">Headset</string>
+    
+    <!-- Headset plug -->
+    <string name="headset_settings">Auriculares</string>
+    <string name="headset_plug_enable_title">Insertar acceso directo</string>
+    <string name="headset_plug_positive_title">Desactivado</string>
+    <string name="headset_plug_neutral_title">Por defecto</string>
+    <string name="headset_plug_neutral_summary">Aplicación de música por defecto</string>
+    <string name="headset_plug_music_active_title">Desactivar el audio activo</string>
+    <string name="headset_plug_music_active_summary">No ejecutar atajo con audio activo</string>
+    <string name="headset_plug_app_running_title">Acción sobre la ejecución de acceso directo</string>
+    <string name="headset_plug_app_running_nothing">Ninguno</string>
+    <string name="headset_plug_app_running_front">Mover al principio</string>
+    <string name="headset_plug_actions_title">Acción borrar</string>
+    <string name="headset_plug_actions_disabled">Ninguno</string>
+    <string name="headset_plug_actions_front">Mover al principio</string>
+    <string name="headset_plug_actions_kill">Matar aplicación</string>
+    <string name="headset_plug_force_actions_title">Fuerza eliminar la acción</string>
+    <string name="headset_plug_force_actions_summary">Ejecutar quitar acción si atajo ya estaba corriendo</string>
+    
     <!-- Launch music app on connect -->
     <string name="volume_panel_timeout_title">Tiempo en espera</string>
     <string name="volume_panel_timeout_summary">Tiempo hasta que el panel se ocultará</string>
@@ -1274,6 +1354,29 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <string name="wakeup_when_plugged_unplugged_title">Despertar al cargar</string>
     <string name="wakeup_when_plugged_unplugged_summary">Despierta el dispositivo si el cargador está enchufado / desenchufado.</string>
 
+    <!-- Gestures Options -->
+    <string name="screen_off_gesture_settings_title">Gestos</string>
+    <string name="screen_off_gesture_settings_summary">Manejar la pantalla de gestos</string>
+    
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevenir encender pantalla accidentalmente</string>
+    <string name="proximity_wake_summary">Revisar el sensor de proximidad antes de encenderse</string>
+    
+    <!-- Touch control -->
+    <string name="touch_control_settings_title">Avanzado</string>
+    <string name="touch_control_settings_summary">Maneja las opciones de encendido avanzadas incluyendo doble toque y mas</string>
+    
+    <!-- Lid Settings -->
+    <string name="smart_cover_title">Usar cubierta inteligente</string>
+    <string name="smart_cover_summary">Reemplaza la pantalla de bloqueo con una cubierta inteligente cuando la tapa esta cerrada</string>
+    <string name="smart_cover_wake_title">Encender dispositivo</string>
+    <string name="smart_cover_wake_summary">Enciende el dispositivo cuando la taba se abre</string>
+    <string name="smart_cover_sleep_title">Apagar Dispositivo</string>
+    <string name="smart_cover_sleep_summary">Apaga el dispositivo cuando la tapa se cierra</string>
+    
+    <!-- tap-to-wake -->
+    <string name="double_tap_to_wake_title">Doble toque para encender</string>
+    
     <!-- Delete apn confirmation dialog message -->
     <string name="confirm_delete_apn">La APN se borrará.</string>
 
@@ -1297,6 +1400,9 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <string name="recents_panel_settings_title">Panel de recientes</string>
     <string name="recents_panel_settings_summary">Activar botón de limpieza en el panel de recientes y más</string>
 
+    <!-- OmniSwitch -->
+    <string name="omniswitch_title">OmniSwitch</string>
+
     <!-- Recents clear all -->
     <string name="aosp_recents_category">AOSP Recientes</string>
     <string name="show_recent_clear_all_button_title">Borrar todo</string>
@@ -1317,7 +1423,7 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <string name="recent_panel_100">100 porciento (por defecto)</string>
     <string name="recent_panel_85">85 porciento</string>
     <string name="recent_panel_70">70 porciento</string>
-	<string name="recent_panel_expanded_mode_title">Modo expandido</string>
+    <string name="recent_panel_expanded_mode_title">Modo expandido</string>
     <string name="recent_panel_expanded_mode_summary">Modo previo de tarea de recientes expandida</string>
     <string name="recent_panel_expanded_mode_auto">Auto (por defecto)</string>
     <string name="recent_panel_expanded_mode_always">Siempre</string>
@@ -2138,22 +2244,6 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <!-- Subtitle of dialog for editing data usage cycle length. [CHAR LIMIT=32] -->
     <string name="data_usage_lengths_spinner_subtitle">Longitud de ciclo:</string>
 
-    <!-- Headset plug -->
-    <string name="headset_settings">Auriculares</string>
-    <string name="headset_plug_enable_title">Insertar acceso directo</string>
-    <string name="headset_plug_positive_title">Desactivado</string>
-    <string name="headset_plug_neutral_title">Por defecto</string>
-    <string name="headset_plug_neutral_summary">Aplicación de música por defecto</string>
-    <string name="headset_plug_music_active_title">Desactivar el audio activo</string>
-    <string name="headset_plug_music_active_summary">No ejecutar atajo con audio activo</string>
-    <string name="headset_plug_app_running_title">Acción sobre la ejecución de acceso directo</string>
-    <string name="headset_plug_app_running_nothing">Ninguno</string>
-    <string name="headset_plug_app_running_front">Mover al principio</string>
-    <string name="headset_plug_actions_title">Acción borrar</string>
-    <string name="headset_plug_actions_disabled">Ninguno</string>
-    <string name="headset_plug_actions_front">Mover al principio</string>
-    <string name="headset_plug_actions_kill">Matar aplicación</string>
-    <string name="headset_plug_force_actions_title">Fuerza eliminar la acción</string>
-    <string name="headset_plug_force_actions_summary">Ejecutar quitar acción si atajo ya estaba corriendo</string>
+    
 </resources>
 
