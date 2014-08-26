@@ -1930,25 +1930,10 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="noti_reminder_interval_4s">4 seconds</string>
 
     <!-- Lockscreen style settings -->
-    <string name="lockscreen_style_reset_message">Reset all lock screen colors?</string>
     <string name="lockscreen_icon_title">Lock handle icon</string>
     <string name="lockscreen_lock_icon_custom">Custom icon</string>
     <string name="lockscreen_lock_icon_mahdi">Mahdi icon</string>
     <string name="lockscreen_lock_icon_default">Default icon</string>
-    <string name="lockscreen_colorize_handle_title">Colorize custom handle</string>
-    <string name="lockscreen_colorize_handle_summary">Lock color will be set to your custom image</string>
-    <string name="lockscreen_style_title">More style settings</string>
-    <string name="lockscreen_style_summary">Choose a custom lockring and more</string>
-    <string name="lockscreen_frame_color_title">Frame color</string>
-    <string name="lockscreen_frame_color_summary">Color of the widget and unlock frames</string>
-    <string name="lockscreen_lock_color_title">Lock color</string>
-    <string name="lockscreen_lock_color_summary">Color of the lock handles</string>
-    <string name="lockscreen_dots_color_title">Dots color</string>
-    <string name="lockscreen_dots_color_summary">Color of the glowpad dots</string>
-    <string name="lockscreen_targets_color_title">Targets color</string>
-    <string name="lockscreen_targets_color_summary">Color of the challenge targets</string>
-    <string name="lockscreen_misc_color_title">Miscellaneous color</string>
-    <string name="lockscreen_misc_color_summary">Color of the remaining items</string>
 
     <!-- Double-tap to sleep -->
     <string name="double_tap_sleep_title">Double-tap to sleep</string>

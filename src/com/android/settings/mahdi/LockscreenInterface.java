@@ -27,7 +27,11 @@ import android.app.admin.DevicePolicyManager;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.preference.CheckBoxPreference;
@@ -37,7 +41,10 @@ import android.preference.PreferenceScreen;
 import android.preference.PreferenceCategory;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.SeekBarPreference;
+import android.provider.MediaStore;
 import android.provider.Settings;
+import android.util.Log;
+import android.util.TypedValue;
 import android.view.Window;
 import android.widget.Toast;
 
@@ -49,6 +56,9 @@ import com.android.settings.ChooseLockSettingsHelper;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
+import java.io.File;
+import java.io.FileOutputStream;
+
 public class LockscreenInterface extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
@@ -56,22 +66,25 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
 
     private static final int DLG_ENABLE_EIGHT_TARGETS = 0;
 
-    private static final String LOCKSCREEN_GENERAL_CATEGORY = "lockscreen_general_category";
-    private static final String KEY_LOCKSCREEN_MODLOCK_ENABLED = "lockscreen_modlock_enabled";
     private static final String LOCKSCREEN_STYLE_CATEGORY = "lockscreen_style_category";
-    private static final String KEY_ENABLE_WIDGETS = "keyguard_enable_widgets";
-    private static final String KEY_BATTERY_STATUS = "lockscreen_battery_status";
     private static final String LOCKSCREEN_SHORTCUTS_CATEGORY = "lockscreen_shortcuts_category";
+
+    private static final String KEY_LOCKSCREEN_MODLOCK_ENABLED = "lockscreen_modlock_enabled";
+    private static final String KEY_ENABLE_WIDGETS = "keyguard_enable_widgets";
+    private static final String KEY_LOCKSCREEN_LOCK_ICON = "lockscreen_lock_icon";
+    private static final String KEY_BATTERY_STATUS = "lockscreen_battery_status";
+    private static final String KEY_SEE_THROUGH = "see_through";
+    private static final String KEY_BLUR_RADIUS = "blur_radius";
     private static final String PREF_LOCKSCREEN_EIGHT_TARGETS = "lockscreen_eight_targets";
     private static final String PREF_LOCKSCREEN_TORCH = "lockscreen_glowpad_torch";
     private static final String PREF_LOCKSCREEN_SHORTCUTS = "lockscreen_shortcuts";
 
-    private static final String KEY_SEE_THROUGH = "see_through";
-    private static final String KEY_BLUR_RADIUS = "blur_radius";
+    private PreferenceCategory mStyleCategory;
+    private PreferenceCategory mShortcutCategory;
         
     private CheckBoxPreference mEnableModLock;
-    private PreferenceCategory mStyleCategory;
     private Preference mEnableKeyguardWidgets;
+    private ListPreference mLockIcon;
     private CheckBoxPreference mSeeThrough;
     private SeekBarPreference mBlurRadius;
     private ListPreference mBatteryStatus;
@@ -86,6 +99,11 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
     private LockPatternUtils mLockPatternUtils;
     private DevicePolicyManager mDPM;
     private ChooseLockSettingsHelper mChooseLockSettingsHelper;
+
+    private String mDefault;
+    private File mLockImage;
+
+    private static final int REQUEST_PICK_LOCK_ICON = 100;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -110,12 +128,13 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
         prefs = getPreferenceScreen();           
 
         // Find categories
-        PreferenceCategory generalCategory = (PreferenceCategory)
-                findPreference(LOCKSCREEN_GENERAL_CATEGORY);
-        PreferenceCategory lockscreen_shortcuts_category = (PreferenceCategory)
-                findPreference(LOCKSCREEN_SHORTCUTS_CATEGORY);
         PreferenceCategory lockscreen_style_category = (PreferenceCategory)
                 findPreference(LOCKSCREEN_STYLE_CATEGORY);
+        PreferenceCategory lockscreen_shortcuts_category = (PreferenceCategory)
+                findPreference(LOCKSCREEN_SHORTCUTS_CATEGORY);
+
+        // Set to string so we don't have to create multiple objects of it
+        mDefault = getResources().getString(R.string.default_string);
 
         mEnableModLock = (CheckBoxPreference) findPreference(KEY_LOCKSCREEN_MODLOCK_ENABLED);
         if (mEnableModLock != null) {
@@ -144,14 +163,20 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
             }
         }
 
-        // lock screen see through
+        // Lock icon
+        mLockImage = new File(getActivity().getFilesDir() + "/lock_icon.tmp");
+        mLockIcon = (ListPreference)
+                findPreference(KEY_LOCKSCREEN_LOCK_ICON);
+        mLockIcon.setOnPreferenceChangeListener(this);
+
+        // Lock screen see through
         mSeeThrough = (CheckBoxPreference) findPreference(KEY_SEE_THROUGH);
         if (mSeeThrough != null) {
             mSeeThrough.setChecked(Settings.System.getInt(getContentResolver(),
                     Settings.System.LOCKSCREEN_SEE_THROUGH, 0) == 1);
         }
 
-        // lock screen blur radius
+        // Lock screen blur radius
         mBlurRadius = (SeekBarPreference) findPreference(KEY_BLUR_RADIUS);
         mBlurRadius.setProgress(Settings.System.getInt(getContentResolver(),
                 Settings.System.LOCKSCREEN_BLUR_RADIUS, 12));
@@ -163,7 +188,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
             mBatteryStatus.setOnPreferenceChangeListener(this);
         }
         
-        // Update battery status
+        // Battery status
         if (mBatteryStatus != null) {
             ContentResolver cr = getActivity().getContentResolver();
             int batteryStatus = Settings.System.getInt(cr,
@@ -172,6 +197,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
             mBatteryStatus.setSummary(mBatteryStatus.getEntries()[batteryStatus]);
         }
 
+        // Remove glowpad torch if device doesn't have a torch
         mLockscreenEightTargets = (CheckBoxPreference) findPreference(
                 PREF_LOCKSCREEN_EIGHT_TARGETS);
         mLockscreenEightTargets.setChecked(Settings.System.getInt(
@@ -208,6 +234,8 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
         if ((unsecureUnlockMethod != 1)
                  || unsecureUnlockMethod == -1) {             
         }
+
+        updateLockSummary();
                         
         mCheckPreferences = true;
         return prefs;
@@ -226,6 +254,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
                     cr, Settings.System.LOCKSCREEN_MODLOCK_ENABLED, 1) == 1;
             mEnableModLock.setChecked(checked);
         }
+
         if (mEnableKeyguardWidgets != null) {
             if (!lockPatternUtils.getWidgetsEnabled()) {
                 mEnableKeyguardWidgets.setSummary(R.string.disabled);
@@ -248,6 +277,35 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
         return !getResources().getBoolean(com.android.internal.R.bool.config_showNavigationBar);
     }
 
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == Activity.RESULT_OK) {
+            if (requestCode == REQUEST_PICK_LOCK_ICON) {
+
+                if (mLockImage.length() == 0 || !mLockImage.exists()) {
+                    Toast.makeText(getActivity(),
+                            getResources().getString(R.string.shortcut_image_not_valid),
+                            Toast.LENGTH_LONG).show();
+                    return;
+                }
+
+                File image = new File(getActivity().getFilesDir() + File.separator
+                        + "lock_icon" + System.currentTimeMillis() + ".png");
+                String path = image.getAbsolutePath();
+                mLockImage.renameTo(image);
+                image.setReadable(true, false);
+
+                deleteLockIcon();  // Delete current icon if it exists before saving new.
+                Settings.Secure.putString(getContentResolver(),
+                        Settings.Secure.LOCKSCREEN_LOCK_ICON, path);
+            }
+        } else {
+            if (mLockImage.exists()) {
+                mLockImage.delete();
+            }
+        }
+        updateLockSummary();
+    }
+
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mSeeThrough) {
@@ -266,16 +324,26 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
         if (!mCheckPreferences) {
             return false;
         }
-        if (preference == mBatteryStatus) {
+        if (preference == mEnableModLock) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(cr, Settings.System.LOCKSCREEN_MODLOCK_ENABLED,
+                    value ? 1 : 0);
+            return true;
+        } else if (preference == mLockIcon) {
+            int indexOf = mLockIcon.findIndexOfValue(objValue.toString());
+            if (indexOf == 0) {
+                requestLockImage();
+            } else  if (indexOf == 2) {
+                deleteLockIcon();
+            } else {
+                resizeMahdiLock();
+            }
+            return true;
+        } else if (preference == mBatteryStatus) {
             int value = Integer.valueOf((String) objValue);
             int index = mBatteryStatus.findIndexOfValue((String) objValue);
             Settings.System.putInt(cr, Settings.System.LOCKSCREEN_BATTERY_VISIBILITY, value);
             mBatteryStatus.setSummary(mBatteryStatus.getEntries()[index]);
-            return true;
-        } else if (preference == mEnableModLock) {
-            boolean value = (Boolean) objValue;
-            Settings.System.putInt(cr, Settings.System.LOCKSCREEN_MODLOCK_ENABLED,
-                    value ? 1 : 0);
             return true;
         } else if (preference == mLockscreenEightTargets) {
             showDialogInner(DLG_ENABLE_EIGHT_TARGETS, (Boolean) objValue);
@@ -287,6 +355,102 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
             return true;
         }
         return false;
+    }
+
+    private void updateLockSummary() {
+        int resId;
+        String value = Settings.Secure.getString(getContentResolver(),
+                Settings.Secure.LOCKSCREEN_LOCK_ICON);
+        if (value == null) {
+            resId = R.string.lockscreen_lock_icon_default;
+            mLockIcon.setValueIndex(2);
+        } else if (value.contains("mahdi_lock")) {
+            resId = R.string.lockscreen_lock_icon_mahdi;
+            mLockIcon.setValueIndex(1);
+        } else {
+            resId = R.string.lockscreen_lock_icon_custom;
+            mLockIcon.setValueIndex(0);
+        }
+        mLockIcon.setSummary(getResources().getString(resId));
+    }
+
+    private void requestLockImage() {
+        Intent intent = new Intent(Intent.ACTION_PICK,
+                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+
+        int px = requestImageSize();
+
+        intent.setType("image/*");
+        intent.putExtra("crop", "true");
+        intent.putExtra("aspectX", px);
+        intent.putExtra("aspectY", px);
+        intent.putExtra("outputX", px);
+        intent.putExtra("outputY", px);
+        intent.putExtra("scale", true);
+        intent.putExtra("scaleUpIfNeeded", false);
+        intent.putExtra("outputFormat", Bitmap.CompressFormat.PNG.toString());
+
+        try {
+            mLockImage.createNewFile();
+            mLockImage.setWritable(true, false);
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(mLockImage));
+            startActivityForResult(intent, REQUEST_PICK_LOCK_ICON);
+        } catch (Exception e) {
+            Log.e(TAG, e.getMessage(), e);
+        }
+    }
+
+    private void deleteLockIcon() {
+        String path = Settings.Secure.getString(getContentResolver(),
+                Settings.Secure.LOCKSCREEN_LOCK_ICON);
+
+        if (path != null) {
+            File f = new File(path);
+            if (f != null && f.exists()) {
+                f.delete();
+            }
+        }
+
+        Settings.Secure.putString(getContentResolver(),
+                Settings.Secure.LOCKSCREEN_LOCK_ICON, null);
+
+        updateLockSummary();
+    }
+
+    private void resizeMahdiLock() {
+        Bitmap mahdiLock = BitmapFactory.decodeResource(getResources(), R.drawable.mahdi_lock);
+        if (mahdiLock != null) {
+            String path = null;
+            int px = requestImageSize();
+            mahdiLock = Bitmap.createScaledBitmap(mahdiLock, px, px, true);
+            try {
+                mLockImage.createNewFile();
+                mLockImage.setWritable(true, false);
+                File image = new File(getActivity().getFilesDir() + File.separator
+                            + "mahdi_lock" + System.currentTimeMillis() + ".png");
+                path = image.getAbsolutePath();
+                mLockImage.renameTo(image);
+                FileOutputStream outPut = new FileOutputStream(image);
+                mahdiLock.compress(Bitmap.CompressFormat.PNG, 100, outPut);
+                image.setReadable(true, false);
+                outPut.flush();
+                outPut.close();
+            } catch (Exception e) {
+                // Uh-oh Nothing we can do here.
+                Log.e(TAG, e.getMessage(), e);
+                return;
+            }
+
+            deleteLockIcon();  // Delete current icon if it exists before saving new.
+            Settings.Secure.putString(getContentResolver(),
+                    Settings.Secure.LOCKSCREEN_LOCK_ICON, path);
+            updateLockSummary();
+        }
+    }
+
+    private int requestImageSize() {
+        return (int) TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP, 68, getResources().getDisplayMetrics());
     }
 
     private void showDialogInner(int id, boolean state) {
