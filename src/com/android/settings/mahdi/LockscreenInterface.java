@@ -40,7 +40,6 @@ import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.preference.PreferenceCategory;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.SeekBarPreference;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
@@ -55,6 +54,8 @@ import com.android.settings.R;
 import com.android.settings.ChooseLockSettingsHelper;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+
+import com.android.settings.mahdi.chameleonos.SeekBarPreference;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -171,9 +172,10 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
 
         // Lock screen blur radius
         mBlurRadius = (SeekBarPreference) findPreference(KEY_BLUR_RADIUS);
-        mBlurRadius.setProgress(Settings.System.getInt(getContentResolver(),
-                Settings.System.LOCKSCREEN_BLUR_RADIUS, 12));
-        mBlurRadius.setOnPreferenceChangeListener(this);
+        int blurRadius = Settings.System.getInt(getContentResolver(),
+                    Settings.System.LOCKSCREEN_BLUR_RADIUS, 12);
+            mBlurRadius.setValue(blurRadius / 1);
+            mBlurRadius.setOnPreferenceChangeListener(this);
         mBlurRadius.setEnabled(mSeeThrough.isChecked() && mSeeThrough.isEnabled());
 
         mBatteryStatus = (ListPreference) findPreference(KEY_BATTERY_STATUS);
@@ -316,9 +318,9 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
             showDialogInner(DLG_ENABLE_EIGHT_TARGETS, (Boolean) objValue);
             return true;
         } else if (preference == mBlurRadius) {
+            int mBlurRadius = (Integer) objValue;
             Settings.System.putInt(getContentResolver(),
-                    Settings.System.LOCKSCREEN_BLUR_RADIUS,
-                    (Integer) objValue);
+                    Settings.System.LOCKSCREEN_BLUR_RADIUS, mBlurRadius * 1);
             return true;
         }
         return false;

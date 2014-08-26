@@ -87,12 +87,14 @@
             android:title="@string/see_through_title"
             android:summary="@string/see_through_summary" />
 
-        <SeekBarPreference
+        <com.android.settings.mahdi.chameleonos.SeekBarPreference
             android:key="blur_radius"
             android:title="@string/blur_radius_title"
             android:summary="@string/blur_radius_summary"
             android:max="25"
-            android:defaultValue="12" />
+            settings:min="0"
+            android:defaultValue="12"
+            android:persistent="false" />
 
     </PreferenceCategory>
 
