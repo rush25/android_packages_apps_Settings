@@ -1880,25 +1880,10 @@
   <string name="noti_reminder_interval_4s">4 δευτερόλεπτα</string>
 
   <!-- Lockscreen style settings -->
-  <string name="lockscreen_style_reset_message">Επαναφορά όλων των χρωμάτων της οθόνης κλειδώματος;</string>
   <string name="lockscreen_icon_title">Εικονίδιο ξεκλειδώματος</string>
   <string name="lockscreen_lock_icon_custom">Προσαρμοσμένο εικονίδιο</string>
   <string name="lockscreen_lock_icon_mahdi">Mahdi εικονίδιο</string>
   <string name="lockscreen_lock_icon_default">Προεπιλεγμένο εικονίδιο</string>
-  <string name="lockscreen_colorize_handle_title">Χρωματιστό προσαρμοσμένο εικονίδιο</string>
-  <string name="lockscreen_colorize_handle_summary">Το χρώμα κλειδώματος θα οριστεί στη προσαρμοσμένη εικόνα</string>
-  <string name="lockscreen_style_title">Περισσότερες ρυθμίσεις του στυλ</string>
-  <string name="lockscreen_style_summary">Επιλογή ενος προσαρμοσμένου δαχτυλιδιού ξεκλειδώματος και άλλα</string>
-  <string name="lockscreen_frame_color_title">Χρώμα πλαισίου</string>
-  <string name="lockscreen_frame_color_summary">Χρώμα των γραφικών στοιχείων και του πλαίσιου ξεκλειδώματος</string>
-  <string name="lockscreen_lock_color_title">Χρώμα κλειδαριάς</string>
-  <string name="lockscreen_lock_color_summary">Χρωμα του εικονιδίου ξεκλειδωματος</string>
-  <string name="lockscreen_dots_color_title">Χρώμα κουκκίδων</string>
-  <string name="lockscreen_dots_color_summary">Χρώμα των κουκκιδων γυρω του δαχτυλιδιου</string>
-  <string name="lockscreen_targets_color_title">Χρώμα στόχων</string>
-  <string name="lockscreen_targets_color_summary">Χρώμα των συντομεύσεων των εφαρμογών</string>
-  <string name="lockscreen_misc_color_title">Διάφορα αλλα χρώματα</string>
-  <string name="lockscreen_misc_color_summary">Χρώμα των υπόλοιπων στοιχείων </string>
 
   <!-- Double-tap to sleep -->
   <string name="double_tap_sleep_title">Διπλο κλικ για κλείσιμο οθόνης</string>
@@ -1968,12 +1953,6 @@
   <!-- Voice+ -->
   <string name="voice_plus_title">Voice+</string>
   <string name="voice_plus_summary">Ενεργοποίηση όλων των εφραρμογών να στέλνουν SMS μηνύματα μέσω του Google Voice</string>
-
-  <!-- Voice Wakeup -->
-  <string name="voice_wakeup_settings_title">Αφύπνιση με χρήση φωνής</string>
-  <string name="voice_wakeup_retrain_title">Εκπαίδευση της φωνής σας</string>
-  <string name="voice_wakeup_activity_title">Ενέργεια προς έναρξη</string>
-  <string name="voice_wakeup_default_activity">Google Now</string>
 
   <!-- Driving mode -->
   <!-- require add space in the end of string -->
@@ -2109,9 +2088,6 @@
 
   <!-- Shortcuts -->
   <string name="shortcut_picker">Ενέργειες</string>
-  
-  <!-- Custom lockscreen -->
-  <string name="lockscreen_enable_modlock_title">Προσαρμοσμένη οθόνη κλειδώματος</string>
   
   <!-- Bluetooth accept all file types -->
   <string name="bluetooth_accept_all_files">Αποδοχή όλων των ειδών αρχείων</string>

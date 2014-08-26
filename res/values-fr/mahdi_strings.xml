@@ -1874,25 +1874,10 @@
     <string name="noti_reminder_interval_4s">4 secondes</string>
 
     <!-- Lockscreen style settings -->
-    <string name="lockscreen_style_reset_message">Réinitialiser toutes les couleurs du lockscreen?</string>
     <string name="lockscreen_icon_title">Icône du curseur du lockscreen</string>
     <string name="lockscreen_lock_icon_custom">Icône custom</string>
     <string name="lockscreen_lock_icon_mahdi">Mahdi icon</string>
     <string name="lockscreen_lock_icon_default">Icône par défaut</string>
-    <string name="lockscreen_colorize_handle_title">Couleur de l\'icône du lockscreen</string>
-    <string name="lockscreen_colorize_handle_summary">La couleur sera appliquée à l\'icône du lockscreen</string>
-    <string name="lockscreen_style_title">Style de thème</string>
-    <string name="lockscreen_style_summary">Choisisez des verroux personnalisée</string>
-    <string name="lockscreen_frame_color_title">Couleur du cadre</string>
-    <string name="lockscreen_frame_color_summary">Couleur du cadre des widgets et de l\'icône</string>
-    <string name="lockscreen_lock_color_title">Couleur du verrou</string>
-    <string name="lockscreen_lock_color_summary">Couleur de l\'icône du verrou</string>
-    <string name="lockscreen_dots_color_title">Couleur des points</string>
-    <string name="lockscreen_dots_color_summary">Couleur des points du glowpad</string>
-    <string name="lockscreen_targets_color_title">Couleur des cibles</string>
-    <string name="lockscreen_targets_color_summary">Couleur des cibles définies</string>
-    <string name="lockscreen_misc_color_title">Diverses couleurs</string>
-    <string name="lockscreen_misc_color_summary">Couleur des éléments restants</string>
 
     <!-- Double-tap to sleep -->
     <string name="double_tap_sleep_title">Double-taper pour mettre en veille</string>
@@ -1962,12 +1947,6 @@
     <!-- Voice+ -->
     <string name="voice_plus_title">Voice+</string>
     <string name="voice_plus_summary">Autoriser toutes les applications à envoyer des messages SMS par l\'intermédiaire de Google Voice</string>
-
-    <!-- Voice Wakeup -->
-    <string name="voice_wakeup_settings_title">Voice wakeup</string>
-    <string name="voice_wakeup_retrain_title">Retrain your voice</string>
-    <string name="voice_wakeup_activity_title">Activity to launch</string>
-    <string name="voice_wakeup_default_activity">Google Now</string>
 
     <!-- Driving mode -->
     <!-- require add space in the end of string -->

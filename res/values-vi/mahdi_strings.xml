@@ -1692,21 +1692,11 @@ Xóa sẽ gỡ bỏ dòng.
     <!-- Lockscreen see through -->
     <string name="lockscreen_see_through_title">Nhìn xuyên</string>
     <string name="lockscreen_see_through_summary">Hiện nội dung sau màn hình khóa, dữ liệu có thể xem bởi người xung quanh</string>
+
     <!-- Lockscreen style settings -->
-    <string name="lockscreen_style_reset_message">Khôi phục tất cả màu màn hình khóa?</string>
     <string name="lockscreen_icon_title">Xử lí biểu tượng khóa</string>
     <string name="lockscreen_lock_icon_custom">Tùy chọn biểu tượng</string>
     <string name="lockscreen_lock_icon_default">Biểu tượng mặc định</string>
-    <string name="lockscreen_colorize_handle_title">Tủy chỉnh màu</string>
-    <string name="lockscreen_colorize_handle_summary">Màu sẽ được ấn định đến hình ảnh tùy chọn</string>
-    <string name="lockscreen_style_title">Cài đặt nhiều kiểu hơn</string>
-    <string name="lockscreen_style_summary">Chọn biểu tượng khóa khác và hơn nữa</string>
-    <string name="lockscreen_frame_color_title">Khung màu</string>
-    <string name="lockscreen_frame_color_summary">Màu của widget và mở khóa khung màu</string>
-    <string name="lockscreen_lock_color_title">Màu khóa</string>
-    <string name="lockscreen_lock_color_summary">Màu của khóa</string>
-    <string name="lockscreen_dots_color_title">Chấm màu</string>
-    <string name="lockscreen_dots_color_summary">Màu của chấm glowpad</string>
 
     <!-- Lockscreen Wallpaper -->
     <string name="lockscreen_wallpaper_title">Hình nền khóa</string>
@@ -1781,12 +1771,6 @@ Xóa sẽ gỡ bỏ dòng.
     <!-- Voice+ -->
     <string name="voice_plus_title">Voice+</string>
     <string name="voice_plus_summary">Bật tất cả ứng dụng gửi SMS qua Google Voice</string>
-
-    <!-- Voice Wakeup -->
-    <string name="voice_wakeup_settings_title">Âm bật máy</string>
-    <string name="voice_wakeup_retrain_title">Nhận biết giọng</string>
-    <string name="voice_wakeup_activity_title">Hành động để duyệt</string>
-    <string name="voice_wakeup_default_activity">Google hiện hành</string>
 
     <!-- Driving mode -->
     <!-- require add space in the end of string -->

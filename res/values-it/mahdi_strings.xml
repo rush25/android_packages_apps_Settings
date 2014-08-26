@@ -1893,25 +1893,10 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <string name="noti_reminder_interval_4s">4 secondi </string>
 
     <!-- Lockscreen style settings -->
-    <string name="lockscreen_style_reset_message">Ripristinare tutti i colori della lockscreen?</string>
     <string name="lockscreen_icon_title">Icona lucchetto </string>
     <string name="lockscreen_lock_icon_custom">Icona personalizzata</string>
     <string name="lockscreen_lock_icon_mahdi">Icona Mahdi</string>
     <string name="lockscreen_lock_icon_default">Icona predefinita</string>
-    <string name="lockscreen_colorize_handle_title">Colore personalizzato </string>
-    <string name="lockscreen_colorize_handle_summary">Il colore sarà impostato come sfondo per la tua lockscreen </string>
-    <string name="lockscreen_style_title">Altre impostazioni </string>
-    <string name="lockscreen_style_summary">Scegli un lucchetto personalizzato e altro </string>
-    <string name="lockscreen_frame_color_title">Colore dei frame </string>
-    <string name="lockscreen_frame_color_summary">Colore del widget e dei frame </string>
-    <string name="lockscreen_lock_color_title">Colore lucchetto </string>
-    <string name="lockscreen_lock_color_summary">Colore del lucchetto di sblocco </string>
-    <string name="lockscreen_dots_color_title">Colore puntini </string>
-    <string name="lockscreen_dots_color_summary">Colore dei puntini intorno al lucchetto </string>
-    <string name="lockscreen_targets_color_title">Colore obiettivo</string>
-    <string name="lockscreen_targets_color_summary">Colore dell\'obiettivo scelto</string>
-    <string name="lockscreen_misc_color_title">Colori vari</string>
-    <string name="lockscreen_misc_color_summary">Colore degli elementi rimanenti</string>
     
     <!-- Double-tap to sleep -->
     <string name="double_tap_sleep_title">Doppio tocco per spegnere lo schermo </string>
@@ -1981,12 +1966,6 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <!-- Voice+ -->
     <string name="voice_plus_title">Voice+ </string>
     <string name="voice_plus_summary">Permetti a tutte le app di mandare messaggi tramite Google Now </string>
-
-    <!-- Voice Wakeup -->
-    <string name="voice_wakeup_settings_title">Risveglio vocale </string>
-    <string name="voice_wakeup_retrain_title">Riqualifica la tua voce </string>
-    <string name="voice_wakeup_activity_title">Attività da lanciare </string>
-    <string name="voice_wakeup_default_activity">Google Now</string>
 
     <!-- Driving mode -->
     <!-- require add space in the end of string -->
@@ -2122,9 +2101,6 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
    
     <!-- Shortcuts -->
     <string name="shortcut_picker">Azioni</string>
-
-    <!-- Custom lockscreen -->
-    <string name="lockscreen_enable_modlock_title">Lockscreen personalizzata</string>
 
     <!-- Bluetooth accept all file types -->
     <string name="bluetooth_accept_all_files">Accetta tutti i tipi di file</string>

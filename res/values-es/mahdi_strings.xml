@@ -1803,25 +1803,10 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <string name="noti_reminder_interval_4s">4 seg</string>
 
     <!-- Lockscreen style settings -->
-    <string name="lockscreen_style_reset_message">¿Reestablecer todos los colores de pantalla de bloqueo?</string>
     <string name="lockscreen_icon_title">Icono de bloqueo</string>
     <string name="lockscreen_lock_icon_custom">Icono personal</string>
     <string name="lockscreen_lock_icon_mahdi">Icono Mahdi</string>
     <string name="lockscreen_lock_icon_default">Icono por defecto</string>
-    <string name="lockscreen_colorize_handle_title">Colorear bloqueo personal</string>
-    <string name="lockscreen_colorize_handle_summary">El color del bloqueo se ajustará a la imagen personalizada</string>
-    <string name="lockscreen_style_title">Ajustes de estilo</string>
-    <string name="lockscreen_style_summary">Cambiar el fondo, elija un lockring personal y más</string>
-    <string name="lockscreen_frame_color_title">Color del marco</string>
-    <string name="lockscreen_frame_color_summary">Color del widget y marco de desbloqueo</string>
-    <string name="lockscreen_lock_color_title">Color de bloqueo</string>
-    <string name="lockscreen_lock_color_summary">Colores del bloqueo</string>
-    <string name="lockscreen_dots_color_title">Color de puntos</string>
-    <string name="lockscreen_dots_color_summary">Colores de puntos</string>
-    <string name="lockscreen_targets_color_title">Color objetos</string>
-    <string name="lockscreen_targets_color_summary">Colores de los objetos</string>
-    <string name="lockscreen_misc_color_title">Color miscelánea</string>
-    <string name="lockscreen_misc_color_summary">Color del resto de cosas</string>
 	
     <!-- Themes -->
     <string name="theme_settings_title_slim">Temas</string>
@@ -1901,12 +1886,6 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <!-- Voice+ -->
     <string name="voice_plus_title">Voice+</string>
     <string name="voice_plus_summary">Habilitar todas las aplicaciones para enviar mensajes SMS a través de Google Voice</string>
-
-    <!-- Voice Wakeup -->
-    <string name="voice_wakeup_settings_title">Activación voz</string>
-    <string name="voice_wakeup_retrain_title">Entrenar voz</string>
-    <string name="voice_wakeup_activity_title">Lanzar actividad</string>
-    <string name="voice_wakeup_default_activity">Google Now</string>
 
     <!-- Driving mode -->
     <!-- require add space in the end of string -->
@@ -2042,17 +2021,6 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
 
     <!-- Shortcuts -->
     <string name="shortcut_picker">Acciones</string>
-
-    <!-- Lockscreen background -->
-    <string name="lockscreen_background">Fondo</string>
-    <string name="lockscreen_background_style_title">Fondo pantalla de bloqueo</string>
-    <string name="background_default">Fondo por defecto</string>
-    <string name="background_wallpaper">Wallpaper personal</string>
-    <string name="background_result_successful">Fondo cambiado</string>
-    <string name="background_result_not_successful">Fondo no cambiado</string>
-    <string name="setting_lockscreen_background">Aplicando fondo</string>
-    <!-- Custom lockscreen -->
-    <string name="lockscreen_enable_modlock_title">Bloqueo de pantalla personal</string>
 
     <!-- Bluetooth accept all file types -->
     <string name="bluetooth_accept_all_files">Aceptar todo tipo de archivos</string>
