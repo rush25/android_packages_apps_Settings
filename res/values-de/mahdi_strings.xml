@@ -1201,10 +1201,6 @@ If Power widget is removed, re-enable these -->
     <string name="screen_recorder_bitrate_50000000">50000000</string>
     <string name="screen_recorder_bitrate_100000000">100000000</string>
 
-    <!-- Custom lockscreen options -->
-    <string name="lockscreen_custom_title">Sperrbildschirm Benutzeroptionen</string>
-    <string name="lockscreen_custom_summary">Konfiguration von Verknüpfungen und Benachrichtigungen</string>
-
     <!-- Lockscreen widget settings -->
     <string name="title_widgets">Widgets</string>
     <string name="lockscreen_widgets_title">Widgets</string>
@@ -1854,25 +1850,10 @@ If Power widget is removed, re-enable these -->
     <string name="noti_reminder_interval_4s">4 Sekunden</string>
 
     <!-- Lockscreen style settings -->
-    <string name="lockscreen_style_reset_message">Alle Farben zurücksetzen?</string>
     <string name="lockscreen_icon_title">Entsperrsymbol</string>
     <string name="lockscreen_lock_icon_custom">Benutzerdefiniert</string>
     <string name="lockscreen_lock_icon_mahdi">Mahdi Logo</string>
     <string name="lockscreen_lock_icon_default">Standard</string>
-    <string name="lockscreen_colorize_handle_title">Farbwahl</string>
-    <string name="lockscreen_colorize_handle_summary">Anpassen des ausgewählten Entsperrsysmbols</string>
-    <string name="lockscreen_style_title">Erweiterte Einstellungen</string>
-    <string name="lockscreen_style_summary">Konfiguration des Entsperrsymbols und der Farben</string>
-    <string name="lockscreen_frame_color_title">Rahmenfarbe</string>
-    <string name="lockscreen_frame_color_summary">Farbe des Widgets- und des Entsperrrahmens</string>
-    <string name="lockscreen_lock_color_title">Verschlussfarbe</string>
-    <string name="lockscreen_lock_color_summary">Farbe des Entsperrmechanismus</string>
-    <string name="lockscreen_dots_color_title">Punktfarbe</string>
-    <string name="lockscreen_dots_color_summary">Farbe der Punkte des Glow-Pads</string>
-    <string name="lockscreen_targets_color_title">Zielfarbe</string>
-    <string name="lockscreen_targets_color_summary">Farbe der Ringziele</string>
-    <string name="lockscreen_misc_color_title">Sonstige Farben</string>
-    <string name="lockscreen_misc_color_summary">Farbe der verbleibenden Elemente</string>
 
     <!-- Double-tap to sleep -->
     <string name="double_tap_sleep_title">Double-Tap-Schlafmodus</string>
@@ -1946,12 +1927,6 @@ If Power widget is removed, re-enable these -->
     <!-- Voice+ -->
     <string name="voice_plus_title">Voice+</string>
     <string name="voice_plus_summary">Ermöglicht es aus allen Apps SMS-Nachrichten über Google Voice zu senden</string>
-
-    <!-- Voice Wakeup -->
-    <string name="voice_wakeup_settings_title">Voice-Wakeup</string>
-    <string name="voice_wakeup_retrain_title">Stimme trainieren</string>
-    <string name="voice_wakeup_activity_title">Aktionen starten</string>
-    <string name="voice_wakeup_default_activity">Google Now</string>
 
     <!-- Driving mode -->
     <!-- require add space in the end of string -->

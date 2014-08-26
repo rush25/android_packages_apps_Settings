@@ -1893,25 +1893,10 @@
     <string name="noti_reminder_interval_4s">4 секунды</string>
 
     <!-- Lockscreen style settings -->
-    <string name="lockscreen_style_reset_message">Сбросить все цвета экрана блокировки?</string>
     <string name="lockscreen_icon_title">Значок ползунка блокировки</string>
     <string name="lockscreen_lock_icon_custom">Свой значок</string>
     <string name="lockscreen_lock_icon_mahdi">Значок Mahdi</string>
     <string name="lockscreen_lock_icon_default">Значок по умолчанию</string>
-    <string name="lockscreen_colorize_handle_title">Цвет своего значка</string>
-    <string name="lockscreen_colorize_handle_summary">Установить цвет блокировщика для значка блокировки</string>
-    <string name="lockscreen_style_title">Стиль темы</string>
-    <string name="lockscreen_style_summary">Выбрать свой значок ползунка и т.д.</string>
-    <string name="lockscreen_frame_color_title">Цвет рамки</string>
-    <string name="lockscreen_frame_color_summary">Цвет рамок виджета и разблокировки</string>
-    <string name="lockscreen_lock_color_title">Цвет блокировщика</string>
-    <string name="lockscreen_lock_color_summary">Цвет значков ползунка блокировки</string>
-    <string name="lockscreen_dots_color_title">Цвет точек</string>
-    <string name="lockscreen_dots_color_summary">Цвет точек экрана блокировки</string>
-    <string name="lockscreen_targets_color_title">Цвет миниатюр</string>
-    <string name="lockscreen_targets_color_summary">Цвет миниатюр кольца блокировки</string>
-    <string name="lockscreen_misc_color_title">Цвет остального</string>
-    <string name="lockscreen_misc_color_summary">Цвет остальных элементов</string>
 
     <!-- Double-tap to sleep -->
     <string name="double_tap_sleep_title">Выключение двойным нажатием</string>
@@ -1984,12 +1969,6 @@
     <!-- Voice+ -->
     <string name="voice_plus_title">Voice+</string>
     <string name="voice_plus_summary">Отправка всех сообщений через Google Voice</string>
-
-    <!-- Voice Wakeup -->
-    <string name="voice_wakeup_settings_title">Пробуждение голосом</string>
-    <string name="voice_wakeup_retrain_title">Перезаписать ваш голос</string>
-    <string name="voice_wakeup_activity_title">Действие при активации</string>
-    <string name="voice_wakeup_default_activity">Google Now</string>
 
     <!-- Driving mode -->
     <!-- require add space in the end of string -->
@@ -2101,17 +2080,6 @@
 
     <!-- Shortcuts -->
     <string name="shortcut_picker">Действия</string>
-    
-    <!-- Lockscreen background -->
-    <string name="lockscreen_background">Фон</string>
-    <string name="lockscreen_background_style_title">Фон экрана блокировки</string>
-    <string name="background_default">Фон по умолчанию</string>
-    <string name="background_wallpaper">Пользовательские обои</string>
-    <string name="background_result_successful">Фон успешно изменён</string>
-    <string name="background_result_not_successful">Фон не изменился</string>
-    <string name="setting_lockscreen_background">Установка фона</string>
-    <!-- Custom lockscreen -->
-    <string name="lockscreen_enable_modlock_title">Пользовательский экран блокировки</string>
 
     <!-- Bluetooth accept all file types -->
     <string name="bluetooth_accept_all_files">Принимать все типы файлов</string>
