@@ -813,7 +813,7 @@
     <string name="lockscreen_buttons_sleep">Mise en veille</string>
 
     <!-- Home wake -->
-    <string name="button_home_wake_title">Wake up</string>
+    <string name="button_home_wake_title">Réveil</string>
     <string name="home_wake_summary">Un appui sur le bouton Accueil sortira votre appareil de la veille</string>
 
     <!-- Home unlock -->
@@ -830,18 +830,18 @@
     <string name="power_end_call_summary">Appuyer sur le bouton marche/arrêt raccrochera l\'appel en cours</string>
 
     <!-- Volume keys -->
-    <string name="button_volume_keys_title">Volume Keys</string>
-    <string name="button_volume_wake_title">Wake up</string>
-    <string name="button_volume_wake_summary">Pressing either volume button will wake your device</string>
+    <string name="button_volume_keys_title">Bouton de volume</string>
+    <string name="button_volume_wake_title">Réveil</string>
+    <string name="button_volume_wake_summary">Un appui sur un bouton de volume sortira votre appareil de la veille</string>
 
     <!-- Swap volume buttons -->
     <string name="swap_volume_buttons_title">Réorienter</string>
     <string name="swap_volume_buttons_summary">Inverser les boutons volume lorsque l\'écran est tourné</string>
 
     <!-- Volume buttons cursor control -->
-    <string name="volume_key_cursor_control_title">Keyboard cursor control</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="volume_key_cursor_control_title">Commander le curseur avec les boutons de volume</string>
+    <string name="volume_key_cursor_control_on">Volume haut/bas déplace le curseur gauche/droite</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume haut/bas déplace le curseur gauche/droite</string>
 
     <!-- Volume button music control -->
     <string name="volbtn_music_controls_title">Contrôle de la musique</string>
@@ -864,27 +864,27 @@
     <string name="increasing_ring_interval_10seconds">10 secondes</string>
 
     <!-- Low battery warning policy -->
-    <string name="pref_low_battery_warning_policy_title">Low battery warning</string>
-    <string name="pref_low_battery_warning_policy_dialog_title">Indicate low battery warning with</string>
-    <string name="low_battery_warning_policy_popup_sound">Pop-up and sound</string>
-    <string name="low_battery_warning_policy_notif_sound">Notification and sound</string>
-    <string name="low_battery_warning_policy_popup">Pop-up dialog only</string>
-    <string name="low_battery_warning_policy_notif">Notification only</string>
-    <string name="low_battery_warning_policy_sound">Sound only</string>
+    <string name="pref_low_battery_warning_policy_title">Avertissement de batterie faible</string>
+    <string name="pref_low_battery_warning_policy_dialog_title">Indiquer l\'avertissement de batterie faible avec</string>
+    <string name="low_battery_warning_policy_popup_sound">Pop-up et son</string>
+    <string name="low_battery_warning_policy_notif_sound">Notification et son</string>
+    <string name="low_battery_warning_policy_popup">Pop-up de dialogue uniquement</string>
+    <string name="low_battery_warning_policy_notif">Notification uniquement</string>
+    <string name="low_battery_warning_policy_sound">Son seulement</string>
     <string name="battery_prefs_title">Options</string>
-    <string name="battery_stats_title">Statistics</string>
+    <string name="battery_stats_title">Statistiques</string>
 
     <!-- Display : Rotation  -->
     <string name="display_rotation_title">Rotation</string>
-    <string name="display_rotation_enabled">Enabled</string>
-    <string name="display_rotation_disabled">Disabled</string>
-    <string name="display_rotation_unit">degrees</string>    
-    <string name="display_lockscreen_rotation_title">Include lock screen</string>
-    <string name="display_rotation_category_title">Rotation modes</string>
-    <string name="display_rotation_0_title">0 degrees</string>
-    <string name="display_rotation_90_title">90 degrees</string>
-    <string name="display_rotation_180_title">180 degrees</string>
-    <string name="display_rotation_270_title">270 degrees</string> 
+    <string name="display_rotation_enabled">Activé</string>
+    <string name="display_rotation_disabled">Désactivé</string>
+    <string name="display_rotation_unit">degrés</string>    
+    <string name="display_lockscreen_rotation_title">Rotation de l\'écran de verrouillage</string>
+    <string name="display_rotation_category_title">Modes de rotation</string>
+    <string name="display_rotation_0_title">0 degré</string>
+    <string name="display_rotation_90_title">90 degrés</string>
+    <string name="display_rotation_180_title">180 degrés</string>
+    <string name="display_rotation_270_title">270 degrés</string> 
 
     <!-- Android debugging over WiFi -->
     <string name="adb_over_network">ADB over network</string>
@@ -1388,7 +1388,7 @@
     <string name="development_shortcut_summary">Enable \'wipe data\' and \'force close\' options in notification area and recent apps list</string>
 
     <!-- Recents panel menu -->
-    <string name="recents_panel_settings_title">Multitasking</string>
+    <string name="recents_panel_settings_title">Multi-tâches</string>
     <string name="recents_panel_settings_summary">Multitasking options including slim recents and more</string>
 
     <!-- Recents clear all -->
@@ -1912,7 +1912,7 @@
     <string name="notification_count_summary">Show the pending notification counts as overlays on the status bar</string>
 
     <!-- Immersive mode -->
-    <string name="immersive_mode_category">Immersive</string>
+    <string name="immersive_mode_category">Bureau éttendu</string>
     <string name="immersive_mode_title">Immersive mode</string>
     <string name="summary_immersive_mode">%1$s</string>
     <string name="immersive_mode_summary_status_bar">Status bar visible</string>
@@ -1930,34 +1930,34 @@
     <string name="title_tile_onthego">On-The-Go</string>
 
     <!-- Recents Ram Bar -->
-    <string name="ram_bar_title">Recents RAM bar</string>
-    <string name="ram_bar_summary">View or change RAM bar settings</string>
-    <string name="ram_bar_note_title">Note</string>
-    <string name="ram_bar_note_summary">This RAM bar shows the actual android memory (RAM) utilization. Please note that having cached apps helps your device open apps much faster. For further explanations on how android memory (RAM) management works, check the help menu.</string>
-    <string name="ram_bar_mode_title">Recents RAM bar mode</string>
-    <string name="ram_bar_mode_dialog_title">Show on recents RAM bar</string>
-    <string name="ram_bar_none">None</string>
+    <string name="ram_bar_title">Barre de RAM</string>
+    <string name="ram_bar_summary">Voir et changer les options du barre de RAM.</string>
+    <string name="ram_bar_note_title">Remarque</string>
+    <string name="ram_bar_note_summary">Cette barre de RAM montre l\'utilisation réelle de la mémoire (RAM) par Android. Veuillez noter qu\'avoir en cache des applications aide vos applications ouvertes à s\'ouvrir beaucoup plus rapidement. Pour plus d\'explications sur la gestion de la mémoire (RAM) par Android, examinez le menu d\'aide.</string>
+    <string name="ram_bar_mode_title">Mode d\'affichage de la barre de RAM</string>
+    <string name="ram_bar_mode_dialog_title">Afficher sur la barre de RAM</string>
+    <string name="ram_bar_none">Aucun</string>
     <string name="ram_bar_apps">Applications</string>
-    <string name="ram_bar_cache">Applications and cache</string>
-    <string name="ram_bar_other">Applications, cache and other</string>
-    <string name="ram_bar_style_cat">Recents RAM bar style</string>
-    <string name="ram_bar_color_app_mem_color">Applications RAM color</string>
-    <string name="ram_bar_color_cache_mem_color">Cache RAM color</string>
-    <string name="ram_bar_color_total_mem_color">Other RAM color</string>
-    <string name="ram_bar_color_enabled">Enabled</string>
-    <string name="ram_bar_color_disabled">Disabled</string>
-    <string name="ram_bar_button_help">Help</string>
-    <string name="ram_bar_button_reset">Reset colors</string>
-    <string name="ram_bar_reset">Reset</string>
-    <string name="ram_bar_reset_message">Reset RAM bar style to default?</string>
+    <string name="ram_bar_cache">Applications et cache</string>
+    <string name="ram_bar_other">Applications, cache et autres</string>
+    <string name="ram_bar_style_cat">Style de la barre de RAM</string>
+    <string name="ram_bar_color_app_mem_color">Couleur des applications</string>
+    <string name="ram_bar_color_cache_mem_color">Couleur du cache</string>
+    <string name="ram_bar_color_total_mem_color">Couleur des autres choses</string>
+    <string name="ram_bar_color_enabled">Activée</string>
+    <string name="ram_bar_color_disabled">Désactivée</string>
+    <string name="ram_bar_button_help">Aide</string>
+    <string name="ram_bar_button_reset">Réinitialiser les couleurs</string>
+    <string name="ram_bar_reset">Réinitialiser</string>
+    <string name="ram_bar_reset_message">Réinitialiser le style du barre de RAM?</string>
 
     <!-- Disable FC Notifications -->
     <string name="disable_fc_notifications_title">Disable FC Notifications</string>
     <string name="disable_fc_notifications_summary">This will hide all force close notifications</string>
 
     <!-- Notification drawer brightness slider -->
-    <string name="brightness_slider_title">Brightness slider</string>
-    <string name="brightness_slider_summary">enable a brightness slider in the notification drawer</string>
+    <string name="brightness_slider_title">Curseur de luminosité</string>
+    <string name="brightness_slider_summary">Ajoute un curseur de luminosité au paneau de notification.</string>
 
     <!-- Voice+ -->
     <string name="voice_plus_title">Voice+</string>
@@ -2107,10 +2107,10 @@
     <string name="shortcut_picker">Actions</string>
 
     <!-- Custom lockscreen -->
-    <string name="lockscreen_enable_modlock_title">Custom lock screen</string>
+    <string name="lockscreen_enable_modlock_title">Écran de verrouillage personnalisée</string>
 
     <!-- Bluetooth accept all file types -->
-    <string name="bluetooth_accept_all_files">Accept all file types</string>
+    <string name="bluetooth_accept_all_files">Accepter tous les types de fichiers</string>
 
     <!-- Font size sample text. This needs to be a very short string, as it is shown in
     multiple font sizes in a limited amount of space. -->
@@ -2135,16 +2135,16 @@
     <string name="peek_wake_30seconds">30 secondes</string>
 
     <!-- Battery Bar -->
-    <string name="battery_bar_title">Battery bar</string>
-    <string name="battery_bar_summary">View or change battery bar settings</string>
-    <string name="battery_bar">Battery bar location</string>
-    <string name="battery_bar_color">Battery bar color</string>
-    <string name="battery_bar_cat">Battery bar style</string>
-    <string name="battery_bar_style_title">Battery bar alignment</string>
-    <string name="battery_bar_thickness_title">Battery bar thickness</string>
-    <string name="battery_bar_animate_title">Charging animation</string>
-    <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion</string>
-    <string name="battery_bar_reset_message">Reset battery bar style to default?</string>
+    <string name="battery_bar_title">Barre de batterie</string>
+    <string name="battery_bar_summary">Voir et changer les options de la barre de batterie</string>
+    <string name="battery_bar">Emplacement de la barre de batterie</string>
+    <string name="battery_bar_color">Couleur de la barre de batterie</string>
+    <string name="battery_bar_cat">Style de barre de la batterie</string>
+    <string name="battery_bar_style_title">Alignement de la barre de batterie</string>
+    <string name="battery_bar_thickness_title">Épaisseur de la barre de batterie</string>
+    <string name="battery_bar_animate_title">Animation de charge</string>
+    <string name="battery_bar_animate_summary">L\'animation de chargement peut entraîner une expérience utilisateur médiocre sur les anciens appareils.</string>
+    <string name="battery_bar_reset_message">Réinitialiser les options du barre de batterie.</string>
 
     <!-- Volume Steps -->
     <string name="volume_steps_title">Étape du volume</string>
@@ -2189,9 +2189,9 @@
 
     <!-- Data Usage -->
     <!-- Subtitle of dialog for editing data usage cycle reset date. [CHAR LIMIT=32] -->
-    <string name="data_usage_cycle_editor_subtitle_cm">Date of each cycle:</string>
+    <string name="data_usage_cycle_editor_subtitle_cm">Date de chaque cycle :</string>
     <!-- Subtitle of dialog for editing data usage cycle length. [CHAR LIMIT=32] -->
-    <string name="data_usage_lengths_spinner_subtitle">Cycle length:</string>
+    <string name="data_usage_lengths_spinner_subtitle">Durée du cycle :</string>
 
     <!--Blacklist-->
     <string name="blacklist_button_title">Liste noire</string>
@@ -2239,7 +2239,7 @@
     <string name="heads_up_time_out_8sec">8 secondes</string>
     <string name="heads_up_time_out_10sec">10 secondes</string>
     <string name="heads_up_time_out_never">Jamais</string>
-    <string name="add_heads_up_package">Add app</string>
+    <string name="add_heads_up_package">Ajouter une application</string>
     <string name="add_heads_up_dnd_summary">Ne pas afficher de notifications flottantes dans ces applications</string>
     <string name="add_heads_up_blacklist_summary">Ne pas afficher les notifications flottantes de ces applications</string>
     <string name="heads_up_dnd_title">Ne pas déranger</string>
@@ -2272,8 +2272,8 @@
     <string name="gamma_tuning_saturation">Saturation</string>
 
     <!-- Backlight brightness settings screen -->
-    <string name="adaptive_backlight_title">Adaptive backlight</string>
-    <string name="adaptive_backlight_summary">Intelligently vary the backlight brightness of the display and help maximize battery life</string>
+    <string name="adaptive_backlight_title">Rétroéclairage adaptatif</string>
+    <string name="adaptive_backlight_summary">Ajuster dynamiquement la luminosité du rétroéclairage de l\'écran pour maximiser l\'autonomie tout en conservant une bonne lisibilité</string>
 
     <!-- tap-to-wake -->
     <string name="double_tap_to_wake_title">Double-tap to wake</string>
@@ -2295,8 +2295,8 @@
     <string name="intensity_str">Intensity: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
 
     <!-- Color enhancement settings screen -->
-    <string name="color_enhancement_title">Color enhancement</string>
-    <string name="color_enhancement_summary">Dynamically enhance the color of the display</string>
+    <string name="color_enhancement_title">Amélioration des couleurs</string>
+    <string name="color_enhancement_summary">Améliorer dynamiquement la couleur d\'affichage</string>
 
     <!-- Hardware tunables - Key backlight -->
     <string name="button_backlight_title">Rétroéclairage</string>
