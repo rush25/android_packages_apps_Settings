@@ -2004,12 +2004,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="voice_plus_title">Voice+</string>
     <string name="voice_plus_summary">Enable all apps to send SMS messages through Google Voice</string>
 
-    <!-- Voice Wakeup -->
-    <string name="voice_wakeup_settings_title">Voice wakeup</string>
-    <string name="voice_wakeup_retrain_title">Retrain your voice</string>
-    <string name="voice_wakeup_activity_title">Activity to launch</string>
-    <string name="voice_wakeup_default_activity">Google Now</string>
-
     <!-- Driving mode -->
     <!-- require add space in the end of string -->
     <string name="voice_tts_new_call">Incoming call from </string>
