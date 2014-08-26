@@ -69,7 +69,6 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
     private static final String LOCKSCREEN_STYLE_CATEGORY = "lockscreen_style_category";
     private static final String LOCKSCREEN_SHORTCUTS_CATEGORY = "lockscreen_shortcuts_category";
 
-    private static final String KEY_LOCKSCREEN_MODLOCK_ENABLED = "lockscreen_modlock_enabled";
     private static final String KEY_ENABLE_WIDGETS = "keyguard_enable_widgets";
     private static final String KEY_LOCKSCREEN_LOCK_ICON = "lockscreen_lock_icon";
     private static final String KEY_BATTERY_STATUS = "lockscreen_battery_status";
@@ -81,8 +80,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
 
     private PreferenceCategory mStyleCategory;
     private PreferenceCategory mShortcutCategory;
-        
-    private CheckBoxPreference mEnableModLock;
+
     private Preference mEnableKeyguardWidgets;
     private ListPreference mLockIcon;
     private CheckBoxPreference mSeeThrough;
@@ -135,11 +133,6 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
 
         // Set to string so we don't have to create multiple objects of it
         mDefault = getResources().getString(R.string.default_string);
-
-        mEnableModLock = (CheckBoxPreference) findPreference(KEY_LOCKSCREEN_MODLOCK_ENABLED);
-        if (mEnableModLock != null) {
-            mEnableModLock.setOnPreferenceChangeListener(this);
-        }
 
         // Link to widget settings showing summary about the actual status
         // and remove them on low memory devices
@@ -213,19 +206,6 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
         if (!Utils.isPhone(getActivity())) {
             lockscreen_shortcuts_category.removePreference(mGlowpadTorch);
         }
-
-        boolean canEnableModLockscreen = false;
-        final Bundle keyguard_metadata = Utils.getApplicationMetadata(
-                getActivity(), "com.android.keyguard");
-        if (keyguard_metadata != null) {
-            canEnableModLockscreen = keyguard_metadata.getBoolean(
-                    "com.cyanogenmod.keyguard", false);
-        }
-
-        if (mEnableModLock != null) {
-            prefs.removePreference(mEnableModLock);
-            mEnableModLock = null;
-        }
                 
         final int unsecureUnlockMethod = Settings.Secure.getInt(getActivity().getContentResolver(),
                 Settings.Secure.LOCKSCREEN_UNSECURE_USED, 1);
@@ -246,14 +226,6 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
         super.onResume();
 
         final LockPatternUtils lockPatternUtils = mChooseLockSettingsHelper.utils();
-
-        // Update mod lockscreen status
-        if (mEnableModLock != null) {
-            ContentResolver cr = getActivity().getContentResolver();
-            boolean checked = Settings.System.getInt(
-                    cr, Settings.System.LOCKSCREEN_MODLOCK_ENABLED, 1) == 1;
-            mEnableModLock.setChecked(checked);
-        }
 
         if (mEnableKeyguardWidgets != null) {
             if (!lockPatternUtils.getWidgetsEnabled()) {
@@ -324,12 +296,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
         if (!mCheckPreferences) {
             return false;
         }
-        if (preference == mEnableModLock) {
-            boolean value = (Boolean) objValue;
-            Settings.System.putInt(cr, Settings.System.LOCKSCREEN_MODLOCK_ENABLED,
-                    value ? 1 : 0);
-            return true;
-        } else if (preference == mLockIcon) {
+        if (preference == mLockIcon) {
             int indexOf = mLockIcon.findIndexOfValue(objValue.toString());
             if (indexOf == 0) {
                 requestLockImage();
