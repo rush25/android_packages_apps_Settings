@@ -2274,8 +2274,8 @@
     <string name="adaptive_backlight_summary">ディスプレイのバックライトの明るさを変化させて電池の持ちを最大化する</string>
 
     <!-- Sunlight readability enhancement screen -->
-    <string name="sunlight_enhancement_title">読みやすさ強化</string>
-    <string name="sunlight_enhancement_summary">日光の下での画面の明るさや読みやすさを強化する</string>
+    <string name="sunlight_enhancement_title">読みやすさ改良</string>
+    <string name="sunlight_enhancement_summary">日光の下での画面の明るさや読みやすさを改良する</string>
     
     <!-- Screen color -->
     <string name="screencolor">画面の色</string>
@@ -2288,52 +2288,52 @@
     <string name="selectnewfile_menu">ギャラリーから新しい画像を参照</string>
     <string name="selectfile_menu">ギャラリーから画像を参照</string>
     <string name="restore_default_str">リセット</string>
-    <string name="hue_str">Hue: <xliff:g id="hue_value">%1$s</xliff:g></string>
-    <string name="saturation_str">Saturation: <xliff:g id="saturation_value">%1$s</xliff:g></string>
-    <string name="contrast_str">Contrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
-    <string name="intensity_str">Intensity: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+    <string name="hue_str">色相: <xliff:g id="hue_value">%1$s</xliff:g></string>
+    <string name="saturation_str">彩度: <xliff:g id="saturation_value">%1$s</xliff:g></string>
+    <string name="contrast_str">コントラスト: <xliff:g id="contrast_value">%1$s</xliff:g></string>
+    <string name="intensity_str">輝度: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
 
     <!-- Color enhancement settings screen -->
-    <string name="color_enhancement_title">Color enhancement</string>
-    <string name="color_enhancement_summary">Dynamically enhance the color of the display</string>
+    <string name="color_enhancement_title">色の改良</string>
+    <string name="color_enhancement_summary">動的ディスプレイの色を改良する</string>
 
     <!-- Hardware tunables - Key backlight -->
-    <string name="button_backlight_title">Backlight</string>
-    <string name="button_backlight_enabled">Illuminate buttons</string>
-    <string name="keyboard_backlight_enabled">Illuminate keyboard</string>
-    <string name="button_backlight_seekbar_title">Button brightness</string>
-    <string name="keyboard_backlight_seekbar_title">Keyboard brightness</string>
-    <string name="backlight_timeout_title">Illumination timeout</string>
-    <string name="backlight_timeout_unlimited">Don\'t turn off</string>
+    <string name="button_backlight_title">バックライト</string>
+    <string name="button_backlight_enabled">ボタンを発光させる</string>
+    <string name="keyboard_backlight_enabled">キーボードを発光させる</string>
+    <string name="button_backlight_seekbar_title">ボタンの明るさ</string>
+    <string name="keyboard_backlight_seekbar_title">キーボードの明るさ</string>
+    <string name="backlight_timeout_title">発光タイムアウト</string>
+    <string name="backlight_timeout_unlimited">オフにしない</string>
     <plurals name="backlight_timeout_time">
-        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> second</item>
-        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> seconds</item>
+        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> 秒</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> 秒</item>
     </plurals>
-    <string name="backlight_summary_disabled">Disabled</string>
-    <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
-    <string name="backlight_summary_enabled">Enabled</string>
+    <string name="backlight_summary_disabled">無効</string>
+    <string name="backlight_summary_enabled_with_timeout">有効:<xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">有効</string>
 
     <!-- Glove mode / high touch sensitivity -->
-    <string name="auto_adjust_touch_title">High touch sensitivity</string>
-    <string name="auto_adjust_touch_summary">"Increase the screen's sensitivity so you can touch it while wearing gloves"</string>
+    <string name="auto_adjust_touch_title">タッチ感度を上げる</string>
+    <string name="auto_adjust_touch_summary">手袋をしていても反応するよう画面の感度を上げる</string>
 
     <!-- Search -->
-    <string name="settings_search_action_bar_button">Search</string>
-    <string name="settings_search_autocompleteview_hint">Search settings</string>
-    <string name="settings_search_loading_text">Loading search data\u2026</string>
+    <string name="settings_search_action_bar_button">検索</string>
+    <string name="settings_search_autocompleteview_hint">検索設定</string>
+    <string name="settings_search_loading_text">検索データを読み込み中\u2026</string>
 
     <!-- Stay Awake while plugged in -->
-    <string name="keep_screen_on_summary_cm">Screen will never sleep while plugged in</string>
+    <string name="keep_screen_on_summary_cm">充電中に画面をスリープにしない</string>
 
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
     <plurals name="show_dev_countdown_cm">
-        <item quantity="one">You are now <xliff:g id="step_count">%1$d</xliff:g> step away from enabling development settings.</item>
-        <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from enabling development settings.</item>
+        <item quantity="one">デベロッパーになるまであと<xliff:g id="step_count">%1$d</xliff:g>ステップです。</item>
+        <item quantity="other">デベロッパーになるまであと<xliff:g id="step_count">%1$d</xliff:g>ステップです。</item>
     </plurals>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-    <string name="show_dev_on_cm">You have enabled development settings!</string>
+    <string name="show_dev_on_cm">これでデベロッパーになりました！</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-    <string name="show_dev_already_cm">No need, you have already enabled development settings.</string>
+    <string name="show_dev_already_cm">必要ありません。既にデベロッパーです。</string>
 
     <!-- Setting checkbox title for Whether to enable Android debugging support on the phone. -->
     <string name="enable_adb_cm">Androidデバッグ</string>
@@ -2341,7 +2341,8 @@
     <string name="enable_adb_summary_cm">adbインターフェースを有効にする</string>
 
     <!-- Gestures Options -->
-    <string name="screen_off_gesture_settings_title">Screen off gestures</string>
+    <string name="screen_off_gesture_settings_title">画面オフジェスチャー</string>
+    <string name="screen_off_gesture_settings_summary">画面をオフにするジェスチャーの管理</string>
 
     <!-- Lid Settings -->
     <string name="smart_cover_title">スマートカバーを使用</string>
