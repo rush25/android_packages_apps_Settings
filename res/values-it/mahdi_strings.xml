@@ -1848,10 +1848,6 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <string name="pref_battery_saver_data_summary">Disattiva dati mobili quando è attivo salva batteria </string>
     <string name="pref_battery_saver_wifi_title">Disattiva Wi-Fi</string>
     <string name="pref_battery_saver_wifi_summary">Disattiva connessione Wi-Fi quando è attivo salva batteria </string>
-    <string name="pref_battery_saver_led_title">Disattiva LED</string>
-    <string name="pref_battery_saver_led_summary">Disattiva LED di notifica quando c\'è salva batteria </string>
-    <string name="pref_battery_saver_vibrate_title">Disattiva vibrazione </string>
-    <string name="pref_battery_saver_vibrate_summary">Disattiva vibrazione con salva batteria </string>
     <string name="pref_battery_saver_brightness_title">Modalità Luminosità </string>
     <string name="pref_battery_saver_brightness_summary">Attiva cambiamento automatico luminosità </string>
     <string name="pref_battery_saver_mode_brightness_level_title">Livello luminosità </string>

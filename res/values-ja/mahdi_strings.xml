@@ -1853,10 +1853,6 @@
     <string name="pref_battery_saver_data_summary">省電力モード時はモバイルデータ接続を無効にする</string>
     <string name="pref_battery_saver_wifi_title">Wi-Fiを無効</string>
     <string name="pref_battery_saver_wifi_summary">省電力モード時はWi-Fi接続を無効にする</string>
-    <string name="pref_battery_saver_led_title">LED通知を無効</string>
-    <string name="pref_battery_saver_led_summary">省電力モード時はLED通知を無効にする</string>
-    <string name="pref_battery_saver_vibrate_title">バイブレーションを無効</string>
-    <string name="pref_battery_saver_vibrate_summary">省電力モード時はバイブレーションを無効にする</string>
     <string name="pref_battery_saver_brightness_title">画面の明るさ</string>
     <string name="pref_battery_saver_brightness_summary">電地残量が少ない時は画面の明るさを変更する</string>
     <string name="pref_battery_saver_mode_brightness_level_title">明るさレベル</string>

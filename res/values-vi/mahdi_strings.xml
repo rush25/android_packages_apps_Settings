@@ -1641,10 +1641,6 @@ Xóa sẽ gỡ bỏ dòng.
     <string name="pref_battery_saver_data_summary">Tắt kết nối dữ liệu mạng khi kích hoạt chế độ tiết kiệm pin</string>
     <string name="pref_battery_saver_wifi_title">Tắt Wi-Fi</string>
     <string name="pref_battery_saver_wifi_summary">Tắt kết nối Wi-Fi khi kích hoạt chế độ tiết kiệm pin</string>
-    <string name="pref_battery_saver_led_title">Tắt LED</string>
-    <string name="pref_battery_saver_led_summary">Tắt thông báo LED khi kích hoạt chế độ tiết kiệm pin</string>
-    <string name="pref_battery_saver_vibrate_title">Tắt rung</string>
-    <string name="pref_battery_saver_vibrate_summary">Tắt rung khi kích hoạt chế độ tiết kiệm pin</string>
     <string name="pref_battery_saver_brightness_title">Mức sáng</string>
     <string name="pref_battery_saver_brightness_summary">Kích hoạt thay đổi mức sáng khi pin yếu</string>
     <string name="pref_battery_saver_mode_brightness_level_title">Mức sáng</string>

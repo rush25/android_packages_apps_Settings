@@ -1805,10 +1805,6 @@ If Power widget is removed, re-enable these -->
     <string name="pref_battery_saver_data_summary">Deaktivieren der Mobilfunkdaten bei aktiviertem Energiesparmodus</string>
     <string name="pref_battery_saver_wifi_title">WLAN deaktivieren</string>
     <string name="pref_battery_saver_wifi_summary">Deaktivieren von WLAN bei aktiviertem Energiesparmodus</string>
-    <string name="pref_battery_saver_led_title">Deaktivieren der Benachrichtigungs-LED</string>
-    <string name="pref_battery_saver_led_summary">Deaktivieren der Benachrichtigungs-LED bei aktiviertem Energiesparmodus</string>
-    <string name="pref_battery_saver_vibrate_title">Vibration deaktivieren</string>
-    <string name="pref_battery_saver_vibrate_summary">Deaktivieren der Vibration bei aktiviertem Energiesparmodus</string>
     <string name="pref_battery_saver_brightness_title">Helligkeitsmodus</string>
     <string name="pref_battery_saver_brightness_summary">Aktiviert Änderungen der Displayhelligkeit bei schwachem Akku</string>
     <string name="pref_battery_saver_mode_brightness_level_title">Helligkeitsstufe</string>
