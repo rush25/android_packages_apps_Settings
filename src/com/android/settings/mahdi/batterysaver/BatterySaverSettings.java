@@ -55,8 +55,6 @@ public class BatterySaverSettings extends SettingsPreferenceFragment implements
     private static final String PREF_KEY_BATTERY_SAVER_MODE_DATA = "pref_battery_saver_mode_data";
     private static final String PREF_KEY_BATTERY_SAVER_MODE_NETWORK = "pref_battery_saver_mode_network";
     private static final String PREF_KEY_BATTERY_SAVER_MODE_NOSIGNAL = "pref_battery_saver_mode_nosignal";
-    private static final String PREF_KEY_BATTERY_SAVER_MODE_LED = "pref_battery_saver_mode_led";
-    private static final String PREF_KEY_BATTERY_SAVER_MODE_VIBRATE = "pref_battery_saver_mode_vibrate";
     private static final String PREF_KEY_BATTERY_SAVER_MODE_BRIGHTNESS = "pref_battery_saver_mode_brightness";
     private static final String PREF_KEY_BATTERY_SAVER_MODE_BRIGHTNESS_LEVEL = "pref_battery_saver_mode_brightness_level";
     private static final String PREF_KEY_BATTERY_SAVER_TIMERANGE = "pref_battery_saver_timerange";
@@ -81,8 +79,6 @@ public class BatterySaverSettings extends SettingsPreferenceFragment implements
     private SeekBarPreference mLowBatteryLevel;
     private CheckBoxPreference mSmartBrightnessEnabled;
     private CheckBoxPreference mSmartDataEnabled;
-    private CheckBoxPreference mSmartLedEnabled;
-    private CheckBoxPreference mSmartVibrateEnabled;
     private CheckBoxPreference mSmartNoSignalEnabled;
     private ListPreference mUserCheckIntervalTime;
     private SeekBarPreference mInitialBrightness;
@@ -236,24 +232,6 @@ public class BatterySaverSettings extends SettingsPreferenceFragment implements
             prefSet.removePreference(findPreference(CATEGORY_NETWORK_CDMA));
         }
 
-        mSmartLedEnabled = (CheckBoxPreference) prefSet.findPreference(PREF_KEY_BATTERY_SAVER_MODE_LED);
-        if (BatterySaverHelper.deviceSupportsLed(mContext)) {
-            mSmartLedEnabled.setChecked(Settings.Global.getInt(mResolver,
-                     Settings.Global.BATTERY_SAVER_LED_MODE, 0) == 1);
-            mSmartLedEnabled.setOnPreferenceChangeListener(this);
-        } else {
-            prefSet.removePreference(mSmartLedEnabled);
-        }
-
-        mSmartVibrateEnabled = (CheckBoxPreference) prefSet.findPreference(PREF_KEY_BATTERY_SAVER_MODE_VIBRATE);
-        if (BatterySaverHelper.deviceSupportsVibrator(mContext)) {
-            mSmartVibrateEnabled.setChecked(Settings.Global.getInt(mResolver,
-                     Settings.Global.BATTERY_SAVER_VIBRATE_MODE, 0) == 1);
-            mSmartVibrateEnabled.setOnPreferenceChangeListener(this);
-        } else {
-            prefSet.removePreference(mSmartVibrateEnabled);
-        }
-
         mSmartBrightnessEnabled = (CheckBoxPreference) prefSet.findPreference(PREF_KEY_BATTERY_SAVER_MODE_BRIGHTNESS);
         mSmartBrightnessEnabled.setChecked(Settings.Global.getInt(mResolver,
                      Settings.Global.BATTERY_SAVER_BRIGHTNESS_MODE, 0) == 1);
@@ -323,14 +301,6 @@ public class BatterySaverSettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) newValue;
             Settings.Global.putInt(mResolver,
                      Settings.Global.BATTERY_SAVER_NOSIGNAL_MODE, value ? 1 : 0);
-        } else if (preference == mSmartLedEnabled) {
-            boolean value = (Boolean) newValue;
-            Settings.Global.putInt(mResolver,
-                     Settings.Global.BATTERY_SAVER_LED_MODE, value ? 1 : 0);
-        } else if (preference == mSmartVibrateEnabled) {
-            boolean value = (Boolean) newValue;
-            Settings.Global.putInt(mResolver,
-                     Settings.Global.BATTERY_SAVER_VIBRATE_MODE, value ? 1 : 0);
         } else if (preference == mBatterySaverDelay) {
             int val = ((Integer)newValue).intValue();
             Settings.Global.putInt(mResolver,

@@ -1829,10 +1829,6 @@
     <string name="pref_battery_saver_data_summary">Disable mobile data connection when power saving activated</string>
     <string name="pref_battery_saver_wifi_title">Disable Wi-Fi</string>
     <string name="pref_battery_saver_wifi_summary">Disable Wi-Fi connection when power saving activated</string>
-    <string name="pref_battery_saver_led_title">Disable LED</string>
-    <string name="pref_battery_saver_led_summary">Disable LED notification when power saving activated</string>
-    <string name="pref_battery_saver_vibrate_title">Disable vibrate</string>
-    <string name="pref_battery_saver_vibrate_summary">Disable vibration when power saving activated</string>
     <string name="pref_battery_saver_brightness_title">Brightness mode</string>
     <string name="pref_battery_saver_brightness_summary">Activates brightness level change when battery low</string>
     <string name="pref_battery_saver_mode_brightness_level_title">Brightness level</string>

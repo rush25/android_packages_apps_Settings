@@ -45,7 +45,7 @@ import com.android.internal.os.PowerProfile;
 import com.android.settings.HelpUtils;
 import com.android.settings.R;
 
-import com.android.settings.mahdi.batterysaver.BatterySaverPreference;
+import com.android.settings.mahdi.batterysaver.BatterySaverHelper;
 
 import java.util.List;
 
@@ -74,7 +74,7 @@ public class PowerUsageSummary extends PreferenceFragment implements
 
     private PreferenceGroup mAppListGroup;
     private Preference mBatteryStatusPref;
-    private BatterySaverPreference mBatterySaverPref;
+    private PreferenceScreen mBatterySaverPref;
     private ListPreference mLowBatteryWarning;
     private PreferenceCategory mBatteryPrefsCat;
     private PreferenceCategory mBatteryStatsCat;
@@ -121,7 +121,7 @@ public class PowerUsageSummary extends PreferenceFragment implements
         mAppListGroup = (PreferenceGroup) findPreference(KEY_APP_LIST);
         mBatteryStatusPref = mAppListGroup.findPreference(KEY_BATTERY_STATUS);
 
-        mBatterySaverPref = (BatterySaverPreference) mAppListGroup.findPreference(KEY_BATTERY_SAVER);
+        mBatterySaverPref = (PreferenceScreen) mAppListGroup.findPreference(KEY_BATTERY_SAVER);
 
         mBatteryPrefsCat =
             (PreferenceCategory) mAppListGroup.findPreference(KEY_BATTERY_PREFS_CATEGORY);

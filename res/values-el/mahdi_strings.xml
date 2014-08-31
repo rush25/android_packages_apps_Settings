@@ -1835,10 +1835,6 @@
   <string name="pref_battery_saver_data_summary">Απενεργοποίηση του δικτύου δεδομένων κινητής τηλεφωνίας όταν η εξοικονόμιση ενέργειας είναι ενεργοποιήμένη</string>
   <string name="pref_battery_saver_wifi_title">Απενεργοποίηση Wi-Fi</string>
   <string name="pref_battery_saver_wifi_summary">Ανενεργοποίησε το  Wi-Fi όταν η εξοικονόμιση ενέργειας είναι ενεργοποιήμένη</string>
-  <string name="pref_battery_saver_led_title">Απενεργοποίηση LED</string>
-  <string name="pref_battery_saver_led_summary">Απενεργοποίηση LED όταν η εξοικονόμιση ενέργειας είναι ενεργοποιήμένη</string>
-  <string name="pref_battery_saver_vibrate_title">Απενεργοποίηση δόνησης</string>
-  <string name="pref_battery_saver_vibrate_summary">Απενεργοποίηση δόνησης όταν η εξοικονόμιση ενέργειας είναι ενεργοποιήμένη</string>
   <string name="pref_battery_saver_brightness_title">Λειτουργία φωτεινότητας</string>
   <string name="pref_battery_saver_brightness_summary">Ενεργοποιεί ενα επίπεδο φωτεινότητας όταν είναι χαμηλή η μπαταρία</string>
   <string name="pref_battery_saver_mode_brightness_level_title">Επίπεδο φωτεινότητας</string>

@@ -22,13 +22,11 @@
         android:key="battery_prefs"
         android:title="@string/battery_prefs_title" />
 
-    <com.android.settings.mahdi.batterysaver.BatterySaverPreference
+    <PreferenceScreen
         android:key="pref_battery_saver"
-        android:defaultValue="false"
         android:fragment="com.android.settings.mahdi.batterysaver.BatterySaverSettings"
         android:title="@string/battery_saver_title" 
-        android:summary="@string/battery_saver_summary"
-        android:widgetLayout="@layout/listview_embedded_switchpreference" />
+        android:summary="@string/battery_saver_summary" />
 
     <ListPreference
         android:key="pref_low_battery_warning_policy"

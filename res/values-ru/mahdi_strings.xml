@@ -1848,10 +1848,6 @@
     <string name="pref_battery_saver_data_summary">Отключить передачу данных, когда активирован режим \"Энергосбережения\"</string>
     <string name="pref_battery_saver_wifi_title">Отключить Wi-Fi</string>
     <string name="pref_battery_saver_wifi_summary">Отключить Wi-Fi, когда активирован режим \"Энергосбережения\"</string>
-    <string name="pref_battery_saver_led_title">Отключить LED</string>
-    <string name="pref_battery_saver_led_summary">Отключить LED, когда активирован режим \"Энергосбережения\"</string>
-    <string name="pref_battery_saver_vibrate_title">Отключить вибрацию</string>
-    <string name="pref_battery_saver_vibrate_summary">Отключить вибрацию, когда активирован режим \"Энергосбережения\"</string>
     <string name="pref_battery_saver_brightness_title">Уровень яркости при низком заряде батареи</string>
     <string name="pref_battery_saver_brightness_summary">Изменить уровень яркости при низком заряде батареи</string>
     <string name="pref_battery_saver_mode_brightness_level_title">Уровень яркости</string>

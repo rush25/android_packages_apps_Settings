@@ -1854,10 +1854,6 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <string name="pref_battery_saver_data_summary">Desactivar datos móvil cuando ahorro de energía esté activado</string>
     <string name="pref_battery_saver_wifi_title">Desactivar Wi-Fi</string>
     <string name="pref_battery_saver_wifi_summary">Desactivar conexión wifi cuando el ahorro de energía esté activado</string>
-    <string name="pref_battery_saver_led_title">Desactivar LED</string>
-    <string name="pref_battery_saver_led_summary">Desactivar notificación LED cuando ahorro de energía esté activada</string>
-    <string name="pref_battery_saver_vibrate_title">Desactivar vibración</string>
-    <string name="pref_battery_saver_vibrate_summary">Desactivar vibración cuando modo de ahorro de energía esté activada</string>
     <string name="pref_battery_saver_brightness_title">Modo brillo</string>
     <string name="pref_battery_saver_brightness_summary">Activar cambio de nivel de brillo cuando la batería es baja</string>
     <string name="pref_battery_saver_mode_brightness_level_title">Nivel de brillo</string>
