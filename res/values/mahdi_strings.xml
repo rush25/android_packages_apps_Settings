@@ -1289,6 +1289,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="general">General</string>
     <string name="layout">Layout</string>
     <string name="privacy">Privacy</string>
+    <string name="wake_up">Wake up</string>
 
     <string name="lockscreen_notifications">Lock screen notifications</string>
     <string name="summary_lockscreen_notifications_enabled">Lock screen notifications are enabled</string>
@@ -1304,6 +1305,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="hide_non_clearable_summary">Hide all non clearable notifications</string>
     <string name="dismiss_all">Allow dismissing all notifications</string>
     <string name="dismiss_all_summary">Allow dismissing even non clearable notifications. Of course, they\'re just hidden from lock screen and not from the notification panel.</string>
+    <string name="dismiss_notification">Dismiss notification</string>
+    <string name="dismiss_notification_summary">Whether or not notification is dismissed when swiped away from interface</string>
     <string name="expanded_view">Expanded notification view</string>
     <string name="expanded_view_summary">Show notifications expanded when possible</string>
     <string name="force_expanded_view">Force expanded view</string>
@@ -1317,6 +1320,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="privacy_mode_summary">Disables notifications from being shown and dismissed. This way, you just see the icons of your notifications.</string>
     <string name="dynamic_width">Dynamic width</string>
     <string name="dynamic_width_summary">Sets the width of notifications dynamic, so that they only use the space they really need</string>
+    <string name="included_apps_title">Included applications</string>
+    <string name="included_apps_summary">Low priority notifications of included apps will be shown</string>
     <string name="excluded_apps_title">Excluded applications</string>
     <string name="excluded_apps_summary">Excluded applications will not show up as lock screen notifications</string>
     <string name="notification_color">Notification background color</string>

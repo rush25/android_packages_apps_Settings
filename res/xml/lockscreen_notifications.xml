@@ -20,47 +20,93 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceCategory
-        android:key="category_general"
         android:title="@string/general" >
+
+        <CheckBoxPreference
+            android:key="hide_non_clearable"
+            android:title="@string/hide_non_clearable"
+            android:summary="@string/hide_non_clearable_summary"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="dismiss_all"
+            android:title="@string/dismiss_all"
+            android:summary="@string/dismiss_all_summary"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="dismiss_notification"
+            android:title="@string/dismiss_notification"
+            android:summary="@string/dismiss_notification_summary"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="hide_low_priority"
+            android:title="@string/hide_low_priority"
+            android:summary="@string/hide_low_priority_summary"
+            android:defaultValue="false" />
+
+        <com.android.settings.mahdi.lsn.AppMultiSelectListPreference
+            android:key="excluded_apps"
+            android:title="@string/excluded_apps_title"
+            android:summary="@string/excluded_apps_summary"
+            android:persistent="false" />
+
+        <com.android.settings.mahdi.lsn.AppMultiSelectListPreference
+            android:key="included_apps"
+            android:title="@string/included_apps_title"
+            android:summary="@string/included_apps_summary"
+            android:dependency="hide_low_priority"
+            android:persistent="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category_wake_up"
+        android:title="@string/wake_up">
+
+        <CheckBoxPreference
+            android:key="wake_on_notification"
+            android:title="@string/wake_on_notification"
+            android:summary="@string/wake_on_notification_summary"
+            android:defaultValue="false" />
 
         <CheckBoxPreference
             android:key="pocket_mode"
             android:title="@string/pocket_mode"
-            android:summary="@string/pocket_mode_summary" />
+            android:summary="@string/pocket_mode_summary"
+            android:defaultValue="false" />
 
         <CheckBoxPreference
             android:key="show_always"
             android:title="@string/show_always"
             android:summary="@string/show_always_summary"
-            android:dependency="pocket_mode" />
-
-        <CheckBoxPreference
-            android:key="wake_on_notification"
-            android:title="@string/wake_on_notification"
-            android:summary="@string/wake_on_notification_summary" />
-
-        <CheckBoxPreference
-            android:key="hide_low_priority"
-            android:title="@string/hide_low_priority"
-            android:summary="@string/hide_low_priority_summary" />
-
-        <CheckBoxPreference
-            android:key="hide_non_clearable"
-            android:title="@string/hide_non_clearable"
-            android:summary="@string/hide_non_clearable_summary" />
-
-        <CheckBoxPreference
-            android:key="dismiss_all"
-            android:title="@string/dismiss_all"
-            android:summary="@string/dismiss_all_summary" />
-
-        <com.android.settings.mahdi.lsn.AppMultiSelectListPreference
-            android:key="excluded_apps"
-            android:persistent="false"
-            android:title="@string/excluded_apps_title"
-            android:summary="@string/excluded_apps_summary" />
-
+            android:dependency="pocket_mode"
+            android:defaultValue="false" />
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/privacy" >
+
+        <CheckBoxPreference
+            android:key="privacy_mode"
+            android:title="@string/privacy_mode"
+            android:summary="@string/privacy_mode_summary"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="expanded_view"
+            android:title="@string/expanded_view"
+            android:summary="@string/expanded_view_summary"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="force_expanded_view"
+            android:title="@string/force_expanded_view"
+            android:summary="@string/force_expanded_view_summary"
+            android:dependency="expanded_view"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
     <PreferenceCategory
         android:title="@string/layout" >
 
@@ -79,30 +125,11 @@
         <CheckBoxPreference
             android:key="dynamic_width"
             android:title="@string/dynamic_width"
-            android:summary="@string/dynamic_width_summary" />
+            android:summary="@string/dynamic_width_summary"
+            android:defaultValue="false" />
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="notification_color"
             android:title="@string/notification_color" />
-
-    </PreferenceCategory>
-    <PreferenceCategory
-        android:title="@string/privacy" >
-
-        <CheckBoxPreference
-            android:key="privacy_mode"
-            android:title="@string/privacy_mode"
-            android:summary="@string/privacy_mode_summary" />
-
-        <CheckBoxPreference
-            android:key="expanded_view"
-            android:title="@string/expanded_view"
-            android:summary="@string/expanded_view_summary" />
-
-        <CheckBoxPreference
-            android:key="force_expanded_view"
-            android:title="@string/force_expanded_view"
-            android:summary="@string/force_expanded_view_summary"
-            android:dependency="expanded_view" />
     </PreferenceCategory>
 </PreferenceScreen>
