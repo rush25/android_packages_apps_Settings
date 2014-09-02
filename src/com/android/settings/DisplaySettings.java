@@ -307,7 +307,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 com.android.internal.R.bool.config_proximityCheckOnWake);
         if (!proximityCheckOnWait) {
             wakeupPrefs.removePreference(findPreference(KEY_PROXIMITY_WAKE));
-            Settings.System.putInt(getContentResolver(), Settings.System.PROXIMITY_ON_WAKE, 1);
+            Settings.System.putInt(getContentResolver(), Settings.System.PROXIMITY_ON_WAKE, 0);
         }
 
         mScreenOffGesture = (PreferenceScreen) findPreference(KEY_SCREEN_OFF_GESTURE_SETTINGS);
