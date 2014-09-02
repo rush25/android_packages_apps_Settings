@@ -57,7 +57,7 @@
             android:key="quick_settings_tiles_vibrate"
             android:title="@string/haptic_qs_tiles_title"
             android:summary="@string/haptic_qs_tiles_summary"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 
