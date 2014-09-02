@@ -31,6 +31,7 @@ import com.android.settings.hardware.DisplayColor;
 import com.android.settings.hardware.DisplayGamma;
 import com.android.settings.hardware.VibratorIntensity;
 import com.android.settings.mahdi.HardwareKeys;
+import com.android.settings.mahdi.batterysaver.BatterySaverHelper;
 
 import java.util.Arrays;
 import java.util.List;
@@ -77,6 +78,9 @@ public class BootReceiver extends BroadcastReceiver {
         VibratorIntensity.restore(ctx);
         DisplaySettings.restore(ctx);
         HardwareKeys.restoreKeyDisabler(ctx);
+
+        /* Restore battery saver values */
+        BatterySaverHelper.scheduleService(ctx);
     }
 
     private void initFreqCapFiles(Context ctx)
