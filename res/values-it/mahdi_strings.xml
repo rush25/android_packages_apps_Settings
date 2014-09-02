@@ -108,7 +108,7 @@
 
     <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">Riavvio avanzato</string>
-    <string name="advanced_reboot_summary">Quando è attivo, include nella schermata di riavvio le opzioni per il riavvio in recovery e in fastboot</string>
+    <string name="advanced_reboot_summary">Quando è attivo, include nella schermata di riavvio le opzioni per il riavvio in recovery, fastboot e per il soft-reboot</string>
 
    <!-- Profiles settings  -->
     <string name="profiles_settings_title">Profili</string>
@@ -948,6 +948,7 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <string name="shortcut_action_wake_device">Risveglia dispositivo</string>
     <string name="shortcut_action_theme_switch">Cambia tema</string>
     <string name="shortcut_action_torch">Torcia</string>
+    <string name="shortcut_action_omniswitch">OmniSwitch</string>
     <string name="shortcut_action_longpress">Tieni premuto:</string>
     <string name="shortcut_action_select_action_longpress">Scegli l\'azione tieni premuto:</string>
     <string name="shortcut_action_select_action">Scegli azione:</string>
@@ -1162,6 +1163,7 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <string name="show_network_traffic_1500">1500 ms</string>
     <string name="show_network_traffic_2000">2000 ms</string>
     <string name="network_traffic_autohide">Nascondi automaticamente</string>
+    <string name="network_traffic_autohide_summary">Nascondi il monitor quando non c\'è attvità</string>
     <string name="network_traffic_autohide_threshold">Limita inattività</string>
 
     <!-- Status Bar Activity Indicators -->
@@ -1337,12 +1339,34 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <string name="icon_picker_pack_title">Icon pack</string>
 
     <!-- Wakeup options -->
-    <string name="display_category_wakeup_options_title">Opzioni di risveglio </string>
+    <string name="display_category_wakeup_options_title">Risveglio</string>
 
     <!--Wakeup when plugged/unplugged -->
     <string name="wakeup_when_plugged_unplugged_title">Risveglio al collegamento </string>
     <string name="wakeup_when_plugged_unplugged_summary">Lo schermo si accende quando il telefono viene collegato/scollegato al caricabatterie </string>
 
+    <!-- Gestures Options -->
+    <string name="screen_off_gesture_settings_title">Gesture a schermo spento</string>
+    <string name="screen_off_gesture_settings_summary">Imposta le gesture a schermo spento</string>
+    
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Risveglio prossimità</string>
+    <string name="proximity_wake_summary">Usa il sensore di prossimità per determinare quando accendere lo schermo</string>
+    
+    <!-- Touch control -->
+    <string name="touch_control_settings_title">Avanzato</string>
+    <string name="touch_control_settings_summary">Gestisci opzioni avanzate di accensione dello schermo</string>
+    
+    <!-- Lid Settings -->
+    <string name="smart_cover">Smart cover</string>
+    <string name="smart_cover_wake_title">Risveglio smart cover</string>
+    <string name="smart_cover_wake_summary">Risveglia dispositivo all\'apertura della smart cover</string>
+    <string name="smart_cover_sleep_title">Spegnimento smart cover</string>
+    <string name="smart_cover_sleep_summary">Spegni lo schermo del dispositivo alla chiusura della smart cover</string>
+    
+    <!-- tap-to-wake -->
+    <string name="double_tap_to_wake_title">Double-tap to wake</string>
+     
     <!-- Delete apn confirmation dialog message -->
     <string name="confirm_delete_apn">L\'APN sarà eliminato </string>
 
@@ -1365,6 +1389,9 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <!-- Recents panel menu -->
     <string name="recents_panel_settings_title">Applicazioni recenti </string>
     <string name="recents_panel_settings_summary">Slim recents, pulsante pulisci tutto e altro </string>
+    
+    <!-- OmniSwitch -->
+    <string name="omniswitch_title">OmniSwitch</string>
 
     <!-- Recents clear all -->
     <string name="aosp_recents_category">Pannello AOSP</string>
@@ -1376,6 +1403,8 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <string name="recent_clear_all_button_location_top_right">In alto a destra </string>
     <string name="recent_clear_all_button_location_bottom_left">In basso a sinistra </string>
     <string name="recent_clear_all_button_location_bottom_right">In basso a destra </string>
+    <string name="recent_clear_all_apps_title">Chiudi tutte le schede</string>
+    <string name="recent_clear_all_apps_summary">Chiudi tutte le schede, anche l\'ultima</string>
 
     <!-- New Recents Screen -->
     <string name="new_recents_category">Slim recents</string>
@@ -1393,6 +1422,7 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <string name="recent_panel_expanded_mode_never">Mai</string>
     <string name="recent_panel_show_topmost_title">Mostra app corrente</string>
     <string name="recent_panel_show_topmost_summary">Non escludere l\'app in uso da slim recents</string>
+    <string name="recent_panel_bg_color_title">Colore di sfondo</string>
 
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Mostra a sinistra </string>
@@ -1627,7 +1657,7 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <string name="system_power_crt_mode_scale">Graduale </string>
 
     <!-- Animation Control -->
-    <string name="interface_animation_title">Opzioni avanzate</string>
+    <string name="interface_animation_title">Avanzate</string>
     <string name="interface_animation_summary">Personalizza le animazioni di sistema, della visione lista, dello scroll e altro</string>
   
     <!-- ListView animation -->
@@ -2218,9 +2248,10 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <string name="adaptive_backlight_title">Retroilluminazione intelligente</string>
     <string name="adaptive_backlight_summary">Variazione intelligente della retroilluminazione dei pulsanti soft-touch per ottimizzare la batteria</string>
     
-    <!-- tap-to-wake -->
-    <string name="double_tap_to_wake_title">Double-tap to wake</string>
-     
+    <!-- Sunlight readability enhancement screen -->
+    <string name="sunlight_enhancement_title">Luce solare</string>
+    <string name="sunlight_enhancement_summary">Aumenta la luminosità e la leggibilità sotto la luce del sole</string>
+ 
     <!-- Screen color -->
     <string name="screencolor">Colori schermo</string>
     <string name="custom_screencolor">Colori schermo personalizzati</string>
@@ -2284,24 +2315,11 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <!-- Setting checkbox summary for Whether to enable Android debugging support on the phone -->
     <string name="enable_adb_summary_cm">Attiva l\'interfaccia adb di android</string>
     
-    <!-- Gestures Options -->
-    <string name="screen_off_gesture_settings_title">Gesture a schermo spento</string>
-    
-    <!-- Lid Settings -->
-    <string name="smart_cover">Smart cover</string>
-    <string name="smart_cover_wake_title">Risveglio smart cover</string>
-    <string name="smart_cover_wake_summary">Risveglia dispositivo all\'apertura della smart cover</string>
-    <string name="smart_cover_sleep_title">Spegnimento smart cover</string>
-    <string name="smart_cover_sleep_summary">Spegni lo schermo del dispositivo alla chiusura della smart cover</string>
-
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Risveglio prossimità</string>
-    <string name="proximity_wake_summary">Usa il sensore di prossimità per determinare quando accendere lo schermo</string>
-    
     <!-- Spam notifications -->
-    <string name="spam_added_title">Aggiunto %1$s</string>
-    <string name="spam_last_blocked_title">Ultimo bloccato %1$s</string>
+    <string name="spam_added_title">Aggiunto <xliff:g id="time_since" example="5 minutes ago">%1$s</xliff:g></string>
+    <string name="spam_last_blocked_title">Bloccato <xliff:g id="time_since" example="5 minutes ago">%1$s</xliff:g> (totale: <xliff:g id="count" example="2 times">%2$s</xliff:g>)</string>
     <string name="block_notifications_title">Filtra notifiche</string>
     <string name="block_notifications_summary">Gestisci notifiche ignorate e filtri</string>
-    <string name="no_filters_title">Nessun filtro impostato</string>
+    <!-- Keep the referenced menu string consistent with status_bar_notification_spam_item_title in frameworks/base/packages/SystemUI -->
+    <string name="no_filters_title">Nessun filtro impostato. Per filtrare una notifica, tieni premuto su di essa e scegli\'Ignora messaggi come questo\'</string>
 </resources>
