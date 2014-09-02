@@ -886,65 +886,28 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="nav_button_color_mode_summary">Változtasd meg a navigációs gomb szín módját</string>
     <string name="navigation_bar_glow_tint_title">Csillogás színe</string>
 
-    <!-- Basic Numbers -->
-    <string name="two">Two</string>
-    <string name="three">Three</string>
-    <string name="four">Four</string>
-    <string name="five">Five</string>
-    <string name="six">Six</string>
-
     <!-- Quiet hours -->
     <string name="quiet_hours_title">Csendes órák</string>
-    <string name="quiet_hours_summary">Állítsd be a nyugodt órákat</string>
-    <string name="quiet_hours_enabled">Csendes órák engedélyezése</string>
-    <string name="quiet_hours_enabled_on">Csendes órák végrehajtása</string>
-    <string name="quiet_hours_enabled_off">Az értesítések normálisan fognak müködni</string>
-    <string name="quiet_hours_start">Csendes órák kezdete</string>
-    <string name="quiet_hours_start_summary">Mikortól kezdődjön az időszak</string>
-    <string name="quiet_hours_end">Csendes órák vége</string>
-    <string name="quiet_hours_end_summary">Mikor legyen vége az időszaknak</string>
-    <string name="quiet_hours_ringer_title">Néma telefon csengés</string>
-    <string name="quiet_hours_ringer_on">Nem játsza le a csengést</string>
-    <string name="quiet_hours_ringer_off">Csengés normál lejátszása</string>
-    <string name="quiet_hours_mute">Néma értesítések</string>
-    <string name="quiet_hours_mute_on">Nem fog hangot lejátszani</string>
-    <string name="quiet_hours_mute_off">Hangok normális lejátszása</string>
-    <string name="quiet_hours_still">Rezgés tiltása</string>
-    <string name="quiet_hours_still_on">Készülék nem fog rezegni</string>
-    <string name="quiet_hours_still_off">Készülék normálisan fog rezegni</string>
-    <string name="quiet_hours_dim">Értesítési fény tiltása</string>
-    <string name="quiet_hours_dim_on">Értesítési fény tiltva lesz</string>
-    <string name="quiet_hours_dim_off">Értesítési fények normál helyzetbe</string>
-    <string name="quiet_hours_haptic">Érintési visszacsatolás tiltása</string>
-    <string name="quiet_hours_haptic_on">Érintési visszacsatolás tiltva lesz</string>
-    <string name="quiet_hours_haptic_off">Érintési visszacsatolás normális mükődése</string>
+    <string name="quiet_hours_summary">Csendes órák beállításai</string>
+    <string name="quiet_hours_enabled">Csendes órák</string>
     <string name="quiet_hours_active_from">innentől aktiv</string>
     <string name="quiet_hours_active_to">idáig</string>
-    <string name="quiet_hours_auto_sms_group">Automatikus válasz</string>
-    <string name="quiet_hours_auto_sms_title">Bejövő szöveges üzenet</string>
-    <string name="quiet_hours_auto_sms_call_title">Bejövő hívás</string>
-    <string name="quiet_hours_auto_string_title">Válasz küldése</string>
-    <string name="quiet_hours_auto_string_explain">Ez az üzenet lesz elküldve annak aki a csendes órákban keres</string>
-    <string name="quiet_hours_auto_sms_null">[Automatikus Üzenet] Visszahívom amint lehet.</string>
-    <string name="quiet_hours_auto_disabled">Tiltva</string>
-    <string name="quiet_hours_auto_enabled">Összes szám</string>
-    <string name="quiet_hours_auto_contacts">Kapcsolatok csak</string>
-    <string name="quiet_hours_bypass_group">Csendes órák megkerülése</string>
-    <string name="quiet_hours_sms_code_null">[Riasztás]</string>
-    <string name="quiet_hours_sms_bypass_title">Üzenet megkerülése</string>
-    <string name="quiet_hours_sms_code_title">Üzenet kulcs</string>
-    <string name="quiet_hours_sms_code_explain">Ha a bejövő üzenet tartalmazza ezt a szöveget a telefon riaszt</string>
-    <string name="quiet_hours_call_bypass_title">Bejövő hívás megkerülése</string>
-    <string name="quiet_hours_calls_required_title">Hívások száma 30 perc alatt</string>
-    <string name="quiet_hours_calls_required_summary">" hívások megkerülése a csendes órákban"</string>
-    <string name="quiet_hours_bypass_ringtone_title">Csengőhang lejátszása</string>
-    <string name="quiet_hours_bypass_ringtone_loop_title">Csengőhang ismétlés</string>
-    <string name="quiet_hours_bypass_ringtone_loop_summary_on">Addig ismétli a csengőhangot míg elutasítod</string>
-    <string name="quiet_hours_bypass_ringtone_loop_summary_off">Csengőhang lejátszása egyszer</string>
-    <string name="quiet_hours_alarm_dismiss">Riasztás elvetése</string>
-    <string name="quiet_hours_alarm_and">" és "</string>
-    <string name="quiet_hours_alarm_dialog_title">CSENDES ÓRÁK MEGKERÜLÉSE</string>
-    <string name="quiet_hours_alarm_message">" teljesítette a feltételeket, hogy megkerülje a Csendes Órákat!"</string>
+    <string name="quiet_hours_ringer">Telefon csörgés</string>
+    <string name="quiet_hours_mute">Értesítések</string>
+    <string name="quiet_hours_mute_summary">Értesítések némítása</string>
+    <string name="quiet_hours_system">Rendszerhangok</string>
+    <string name="quiet_hours_system_summary">Rendszerhangok némítása</string>
+    <string name="quiet_hours_still">Rezgések</string>
+    <string name="quiet_hours_still_summary">Rezgés tiltása</string>
+    <string name="quiet_hours_dim">Értesítési fények</string>
+    <string name="quiet_hours_dim_summary">Értesítési fények letiltása</string>
+    <string name="quiet_hours_haptic">Érintési visszajelzés</string>
+    <string name="quiet_hours_haptic_summary">Érintési visszajelzés letiltása</string>
+    <string name="quiet_hours_active_period">Aktív innentől: <xliff:g id="start">%1$s</xliff:g> idáig: <xliff:g id="end">%2$s</xliff:g></string>
+    <string name="quiet_hours_ringer_allow_all">Összes hívás</string>
+    <string name="quiet_hours_ringer_allow_contacts">Csak kapcsolatok</string>
+    <string name="quiet_hours_ringer_allow_starred">Csak kedvencek</string>
+    <string name="quiet_hours_ringer_mute_all">Összes hívás némítása</string>
 
     <!-- time range preference -->
     <string name="start_time_title">Kezdet</string>

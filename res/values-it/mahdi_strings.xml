@@ -1119,74 +1119,28 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <string name="nav_button_color_mode_summary">Cambia la modalità colore dei pulsanti della navigation bar</string>
     <string name="navigation_bar_glow_tint_title">Colore bagliore</string>
 
-    <!-- Basic Numbers -->
-    <string name="two">Due</string>
-    <string name="three">Tre</string>
-    <string name="four">Quattro</string>
-    <string name="five">Cinque</string>
-    <string name="six">Sei</string>
-
     <!-- Quiet hours -->
-    <string name="quiet_hours_title">Ore di quiete</string>
-    <string name="quiet_hours_summary">Configura gli orari in cui il dispositivo deve essere silenzioso</string>
-    <string name="quiet_hours_enabled">Attiva ore di quiete </string>
-    <string name="quiet_hours_enabled_on">Le ore di quiete saranno forzate</string>
-    <string name="quiet_hours_enabled_off">Le notifiche funzioneranno normalmente </string>
-    <string name="quiet_hours_auto_title">Segui la modalità suoneria </string>
-    <string name="quiet_hours_auto_silent">Le ore di quiete si attiveranno quando la suoneria è impostata a zero </string>
-    <string name="quiet_hours_auto_vibrate">Le ore di quiete si attiveranno quando la suoneria sarà in modalità vibrazione o silenziosa </string>
-    <string name="quiet_hours_start">Inizio delle ore di quiete </string>
-    <string name="quiet_hours_start_summary">Quando iniziare a imporre le ore di quiete </string>
-    <string name="quiet_hours_end">Fine delle ore di quiete </string>
-    <string name="quiet_hours_end_summary">Quando finire di imporre le ore di quiete</string>
-    <string name="quiet_hours_ringer_title">Mettere la suoneria a muto </string>
-    <string name="quiet_hours_ringer_on">Non saranno riprodotte suonerie </string>
-    <string name="quiet_hours_ringer_off">La suoneria sarà riprodotta normalmente</string>
-    <string name="quiet_hours_mute">Notifiche silenziose </string>
-    <string name="quiet_hours_mute_on">Non sarà riprodotto nessun suono </string>
-    <string name="quiet_hours_mute_off">I suoni saranno riprodotti normalmente </string>
-    <string name="quiet_hours_still">Disattiva vibrazione </string>
-    <string name="quiet_hours_still_on">Il dispositivo non vibrerà </string>
-    <string name="quiet_hours_still_off">Il dispositivo vibrerà normalmente </string>
-    <string name="quiet_hours_dim">Disattiva LED di notifica </string>
-    <string name="quiet_hours_dim_on">Il LED di notifica non sarà attivo </string>
-    <string name="quiet_hours_dim_off">Il LED di notifica funzionerà normalmente </string>
-    <string name="quiet_hours_system">Disattiva suoni di sistema</string>
-    <string name="quiet_hours_system_on">I suoni di sistema funzioneranno</string>
-    <string name="quiet_hours_system_off">I suoni di sistema non funzioneranno</string>
-    <string name="quiet_hours_haptic">Disattiva feedback aptico </string>
-    <string name="quiet_hours_haptic_on">Il feedback aptico sarà disattivato </string>
-    <string name="quiet_hours_haptic_off">Il feedback aptico funzionerà normalmente </string>
+    <string name="quiet_hours_title">Periodo di quiete</string>
+    <string name="quiet_hours_summary">Configura gli orari in cui il dispositivo dovrebbe essere silenzioso</string>
+    <string name="quiet_hours_enabled">Attiva il periodo di quiete</string>
     <string name="quiet_hours_active_from">Attiva dalle</string>
     <string name="quiet_hours_active_to">alle</string>
-    <string name="quiet_hours_auto_sms_group">Risposta automatica </string>
-    <string name="quiet_hours_auto_sms_title">Testo dei messaggi in arrivo </string>
-    <string name="quiet_hours_auto_sms_call_title">Chiamate in arrivo </string>
-    <string name="quiet_hours_auto_string_title">Risposta da inviare </string>
-    <string name="quiet_hours_auto_string_explain">Questo messaggio sarà inviato a chiunque tenti di contattarti durante
-            le ore di quiete </string>
-    <string name="quiet_hours_auto_sms_null">[Messaggio automatico] Ti richiamo appena posso.</string>
-    <string name="quiet_hours_auto_disabled">Disattivato </string>
-    <string name="quiet_hours_auto_enabled">Tutti i numeri </string>
-    <string name="quiet_hours_auto_contacts">Solo i contatti </string>
-    <string name="quiet_hours_auto_starred">Solo contatti preferiti </string>
-    <string name="quiet_hours_bypass_group">Bypassa ore di quiete</string>
-    <string name="quiet_hours_sms_code_null">[Allarme]</string>
-    <string name="quiet_hours_sms_bypass_title">Testo messaggio bypass </string>
-    <string name="quiet_hours_sms_code_title">Parola chiave del messaggio </string>
-    <string name="quiet_hours_sms_code_explain">Se un messaggio conterrà questo testo
-            il telefono suonerà </string>
-    <string name="quiet_hours_call_bypass_title">Bypass chiamate in arrivo </string>
-    <string name="quiet_hours_calls_required_title">Numero di chiamate in 30 minuti </string>
-    <string name="quiet_hours_calls_required_summary">" chiamate per il bypass"</string>
-    <string name="quiet_hours_bypass_ringtone_title">Suoneria </string>
-    <string name="quiet_hours_bypass_ringtone_loop_title">Comportamento suoneria </string>
-    <string name="quiet_hours_bypass_ringtone_loop_summary_on">La suoneria squillerà fino al rifiuto</string>
-    <string name="quiet_hours_bypass_ringtone_loop_summary_off">La suoneria ci sarà una volta sola </string>
-    <string name="quiet_hours_alarm_dismiss">Rifiuta allarmi</string>
-    <string name="quiet_hours_alarm_and">" e "</string>
-    <string name="quiet_hours_alarm_dialog_title">ORE DI QUIETE BYPASSATE </string>
-    <string name="quiet_hours_alarm_message">" conosci i requisiti per bypassare le ore di quiete!"</string>
+    <string name="quiet_hours_ringer">Suoneria telefono</string>
+    <string name="quiet_hours_mute">Notifiche</string>
+    <string name="quiet_hours_mute_summary">Silenzia notifiche</string>
+    <string name="quiet_hours_system">Suoni di sistema</string>
+    <string name="quiet_hours_system_summary">Disattiva i suoni di sistema</string>
+    <string name="quiet_hours_still">Vibrazioni</string>
+    <string name="quiet_hours_still_summary">Disattiva vibrazioni</string>
+    <string name="quiet_hours_dim">Luce di notifica</string>
+    <string name="quiet_hours_dim_summary">Disattiva la luce di notifica</string>
+    <string name="quiet_hours_haptic">Feedback tattile</string>
+    <string name="quiet_hours_haptic_summary">Disattiva il feedback tattile</string>
+    <string name="quiet_hours_active_period">Attivo da <xliff:g id="start">%1$s</xliff:g> a <xliff:g id="end">%2$s</xliff:g></string>
+    <string name="quiet_hours_ringer_allow_all">Squilla per tutti i chiamanti</string>
+    <string name="quiet_hours_ringer_allow_contacts">Squilla per tutti i contatti</string>
+    <string name="quiet_hours_ringer_allow_starred">Squilla per i contatti preferiti</string>
+    <string name="quiet_hours_ringer_mute_all">Silenzioso per tutti i chiamanti</string>
 
     <!-- time range preference -->
     <string name="start_time_title">Inizio </string>
