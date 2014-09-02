@@ -16,10 +16,12 @@
 
 package com.android.settings.cyanogenmod;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Bundle;
@@ -44,6 +46,8 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "PerformanceSettings";
 
+    public static final String PERFORMANCE_SETTINGS = "performance_settings";
+
     private static final String CATEGORY_PROFILES = "perf_profile_prefs";
     private static final String CATEGORY_SYSTEM = "perf_system_prefs";
     private static final String CATEGORY_GRAPHICS = "perf_graphics_prefs";
@@ -52,6 +56,9 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
     private static final String USE_16BPP_ALPHA_PREF = "pref_use_16bpp_alpha";
 
     private static final String USE_16BPP_ALPHA_PROP = "persist.sys.use_16bpp_alpha";
+
+    private Activity mActivity;
+    private SharedPreferences mPreferences;
 
     private ListPreference mPerfProfilePref;
     private CheckBoxPreference mUse16bppAlphaPref;
@@ -114,19 +121,27 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
         String use16bppAlpha = SystemProperties.get(USE_16BPP_ALPHA_PROP, "0");
         mUse16bppAlphaPref.setChecked("1".equals(use16bppAlpha));
 
-        /* Display the warning dialog */
-        alertDialog = new AlertDialog.Builder(getActivity()).create();
-        alertDialog.setTitle(R.string.performance_settings_warning_title);
-        alertDialog.setMessage(getResources().getString(R.string.performance_settings_warning));
-        alertDialog.setCancelable(false);
-        alertDialog.setButton(DialogInterface.BUTTON_POSITIVE,
+        /* Display the warning dialog on first run */
+        mPreferences = getActivity().getSharedPreferences(
+                PERFORMANCE_SETTINGS, Activity.MODE_PRIVATE);
+        boolean firstrun = mPreferences.getBoolean("firstrun", true);
+        if (firstrun) {
+            SharedPreferences.Editor e = mPreferences.edit();
+            e.putBoolean("firstrun", false);
+            e.commit();
+            alertDialog = new AlertDialog.Builder(getActivity()).create();
+            alertDialog.setTitle(R.string.performance_settings_warning_title);
+            alertDialog.setMessage(getResources().getString(R.string.performance_settings_warning));
+            alertDialog.setCancelable(false);
+            alertDialog.setButton(DialogInterface.BUTTON_POSITIVE,
                 getResources().getString(com.android.internal.R.string.ok),
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         return;
-                    }
-                });
-        alertDialog.show();
+                }
+            });
+            alertDialog.show();
+        }
     }
 
     @Override
