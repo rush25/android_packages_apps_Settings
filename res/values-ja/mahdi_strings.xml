@@ -1278,6 +1278,7 @@
     <string name="general">全般</string>
     <string name="layout">レイアウト</string>
     <string name="privacy">プライバシー</string>
+    <string name="wake_up">ウェイクアップ</string>
 
     <string name="lockscreen_notifications">ロック画面通知</string>
     <string name="summary_lockscreen_notifications_enabled">ロック画面通知は有効です</string>
@@ -1293,6 +1294,8 @@
     <string name="hide_non_clearable_summary">削除することができない通知は表示しない</string>
     <string name="dismiss_all">全ての通知の削除を許可する</string>
     <string name="dismiss_all_summary">削除不可能な通知をロック画面上では削除できるようする</string>
+    <string name="dismiss_notification">通知を却下する</string>
+    <string name="dismiss_notification_summary">通知をスワイプした際に通知を却下するかどうか</string>
     <string name="expanded_view">通知の展開表示</string>
     <string name="expanded_view_summary">通知を長押しすることで通知を展開して表示できるようにする</string>
     <string name="force_expanded_view">デフォルトで通知を展開</string>
@@ -1308,6 +1311,8 @@
     <string name="excluded_apps_summary">除外アプリはロック画面通知に表示しない</string>
     <string name="dynamic_width">通知の表示幅を可変</string>
     <string name="dynamic_width_summary">通知の幅を変化させて実際に必要なスペースだけを使用する</string>
+    <string name="included_apps_title">付属アプリ</string>
+    <string name="included_apps_summary">付属アプリの優先度の低い通知を表示する</string>
     <string name="excluded_apps_title">除外アプリ</string>
     <string name="excluded_apps_summary">除外アプリはロック画面通知に表示しない</string>
     <string name="notification_color">通知の背景色</string>
@@ -1853,10 +1858,6 @@
     <string name="pref_battery_saver_data_summary">省電力モード時はモバイルデータ接続を無効にする</string>
     <string name="pref_battery_saver_wifi_title">Wi-Fiを無効</string>
     <string name="pref_battery_saver_wifi_summary">省電力モード時はWi-Fi接続を無効にする</string>
-    <string name="pref_battery_saver_led_title">LED通知を無効</string>
-    <string name="pref_battery_saver_led_summary">省電力モード時はLED通知を無効にする</string>
-    <string name="pref_battery_saver_vibrate_title">バイブレーションを無効</string>
-    <string name="pref_battery_saver_vibrate_summary">省電力モード時はバイブレーションを無効にする</string>
     <string name="pref_battery_saver_brightness_title">画面の明るさ</string>
     <string name="pref_battery_saver_brightness_summary">電地残量が少ない時は画面の明るさを変更する</string>
     <string name="pref_battery_saver_mode_brightness_level_title">明るさレベル</string>
