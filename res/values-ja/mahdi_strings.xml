@@ -1252,7 +1252,7 @@
     <string name="dismiss_all">全ての通知の削除を許可する</string>
     <string name="dismiss_all_summary">削除不可能な通知をロック画面上では削除できるようする</string>
     <string name="dismiss_notification">通知の消去</string>
-    <string name="dismiss_notification_summary">スワイプした際に通知を消去するかどうか</string>
+    <string name="dismiss_notification_summary">インターフェースから遠ざけるようにスワイプした際に通知を消去する</string>
     <string name="expanded_view">通知の展開表示</string>
     <string name="expanded_view_summary">通知を長押しすることで通知を展開して表示できるようにする</string>
     <string name="force_expanded_view">デフォルトで通知を展開</string>
@@ -1268,8 +1268,8 @@
     <string name="excluded_apps_summary">除外アプリはロック画面通知に表示しない</string>
     <string name="dynamic_width">通知の表示幅を可変</string>
     <string name="dynamic_width_summary">通知の幅を変化させて実際に必要なスペースだけを使用する</string>
-    <string name="included_apps_title">付属アプリ</string>
-    <string name="included_apps_summary">付属アプリの優先度の低い通知を表示する</string>
+    <string name="included_apps_title">優先度の低い通知でも表示</string>
+    <string name="included_apps_summary">指定アプリからの通知は優先度が低くても表示する</string>
     <string name="excluded_apps_title">除外アプリ</string>
     <string name="excluded_apps_summary">除外アプリはロック画面通知に表示しない</string>
     <string name="notification_color">通知の背景色</string>
