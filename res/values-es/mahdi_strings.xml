@@ -251,17 +251,12 @@
     <string name="ring_mode_vibrate">Vibración</string>
     <string name="ring_mode_mute">Silencio</string>
 
-    <!-- button settings -->
-    <string name="button_volume_keys_title">Botones de volumen</string>
-    <string name="button_volume_wake_title">Despertar con botón de volumen</string>
-    <string name="button_volume_wake_summary">Al pulsar un botón de volumen despertará su dispositivo</string>
-
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Mostrar información de la CPU</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Superposición de pantalla que muestra información actual de la CPU</string>
 
-	<string name="app_security_title">Seguridad App</string>
+    <string name="app_security_title">Seguridad App</string>
 
     <!-- Blacklist preferences -->
     <string name="blacklist_title">Lista negra</string>
@@ -393,14 +388,7 @@
     <string name="headset_plug_actions_kill">Matar aplicación</string>
     <string name="headset_plug_force_actions_title">Fuerza eliminar la acción</string>
     <string name="headset_plug_force_actions_summary">Ejecutar quitar acción si atajo ya estaba corriendo</string>
-    
-    <!-- Launch music app on connect -->
-    <string name="volume_panel_timeout_title">Tiempo en espera</string>
-    <string name="volume_panel_timeout_summary">Tiempo hasta que el panel se ocultará</string>
-    <!-- Launch music app on connect -->
-    <string name="headset_category_title">Auriculares</string>
-    <string name="headset_connect_player_title">Lanzar aplicación de música al conectar</string>
-	
+
     <!-- Automatic brightness customization -->
     <string name="auto_brightness_setup_title">Brillo automático</string>
     <string name="auto_brightness_adjustment_title">Ajuste del brillo</string>
@@ -501,29 +489,9 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Mostrar patrón de puntos</string>
 
-    <!-- Security settings home unlock -->
-    <string name="unlock_home_unlock_title">Desbloqueo de Inicio</string>
-    <string name="unlock_home_unlock_summary">Al pulsar el botón de inicio desbloquea el dispositivo</string>
-
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Desbloqueo rápido</string>
     <string name="unlock_quick_unlock_control_summary">Desbloquear automáticamente cuando se introduce el PIN/contraseña correcta</string>
-
-    <!-- Slide lock delay -->
-    <string name="delay_and_timeout_title">Retraso bloqueo</string>
-    <string name="slide_lock_delay_title">Retardo bloqueo de pantalla</string>
-    <string name="slide_lock_timeout_delay_title">Retardo tras tiempo de espera</string>
-    <string name="slide_lock_screenoff_delay_title">Retardo tras apagado</string>
-    <string name="slide_lock_delay_none">Ninguno</string>
-    <string name="slide_lock_delay_1s">1 seg</string>
-    <string name="slide_lock_delay_5s">5 seg</string>
-    <string name="slide_lock_delay_10s">10 seg</string>
-    <string name="slide_lock_delay_15s">15 seg</string>
-    <string name="slide_lock_delay_30s">30 seg</string>
-    <string name="slide_lock_delay_1m">1 min</string>
-    <string name="slide_lock_delay_5m">5 min</string>
-    <string name="slide_lock_delay_10m">10 min</string>
-    <string name="slide_lock_delay_30m">30 min</string>
 
     <!-- Lock Gesture settings -->
     <string name="lockgesture_change_lock_pattern_label">Cambio gesto desbloqueo</string>
@@ -686,6 +654,10 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <!-- QuickSettings haptic feedback -->
     <string name="haptic_qs_tiles_title">Vibrar al tocar</string>
     <string name="haptic_qs_tiles_summary">Vibrar al tocar toggle</string>
+
+    <!-- QuickSettings smaller tiles -->
+    <string name="title_qs_small_icons">Mostrar toggles mas pequeños</string>
+    <string name="summary_qs_small_icons">Usar toggles mas pequeños para aumentar el numero de columnas</string>
 	
     <!-- This exists as part of Power widget already, re-use them
           If Power widget is removed, re-enable these -->
@@ -742,7 +714,8 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
 
     <!-- Status bar | Clock -->
     <string name="status_bar_title">Barra de estado</string>
-    <string name="status_bar_style_title">Estilos</string>
+    <string name="status_bar_summary">Ver o cambiar las opciones de la barra de estado</string>
+    <string name="status_bar_style_title">Estilo</string>
 
     <string name="status_bar_clock">Reloj y fecha</string>
     <string name="status_bar_clock_summary">Ver o cambiar los ajustes del reloj y la fecha</string>
@@ -778,10 +751,6 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <string name="clock_date_format_custom">Formato java personalizado</string>
     <string name="status_bar_clock_style_reset_message">¿Resetear colores de reloj?</string>
 
-    <!-- Statusbar Second Clock -->
-    <string name="clock_use_second">Segundos</string>
-    <string name="clock_use_second_summary">Mostrar segundos en el reloj</string>
-
     <!-- StatusBar Battery Settings -->    
     <string name="status_bar_battery_title">Estilo estado de batería</string>
     <string name="status_bar_style_icon_portrait">Icono en vertical</string>
@@ -814,6 +783,13 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <string name="privacy_guard_manager_show_system_apps">Mostrar apps de sistema</string>
     <string name="privacy_guard_manager_filter_permissions">Filtro de permisos</string>
     <string name="privacy_guard_advanced_settings_title">Avanzado</string>
+    <string name="privacy_guard_notification_options">Opciones de notificacion</string>
+    <string name="privacy_guard_notification_options_summary">Ver o cambiar las opciones de notificacion</string>
+    <string name="privacy_guard_notification_title">Mostrar notificaciones</string>
+    <string name="privacy_guard_notification_icon_title">Mostrar icono de notificaciones</string>
+    <string name="privacy_guard_notification_dismiss_title">Notificaciones descartables</string>
+    <string name="privacy_guard_notification_dismiss_summary">Una notificacion descartable se puede borrar</string>
+
 
     <!-- Battery status on lock ring -->
     <string name="battery_around_lockscreen_ring">Nivel de la batería alrededor del anillo de bloqueo</string>
@@ -823,12 +799,14 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <string name="adb_notify">Notificar depuración de USB</string>
     <string name="adb_notify_summary">Mostrar una notificación cuando se conecta la depuración USB</string>
 
-    <!-- Advanced, Device specific (DeviceParts) settings  -->
-    <string name="advanced_settings_title">Avanzado</string>
+    <!-- button settings -->
+    <string name="button_settings">Botones</string>
 
-   <!-- Hardware keys -->
+    <!-- Hardware keys -->
     <string name="button_keys_title">Botones Hardware</string>
     <string name="button_keys_summary">Ver o cambiar aaciones teclas hardware</string>
+    <string name="disable_hw_title">Deshabilitar botones fisicos</string>
+    <string name="disable_hw_summary">Deshabilitando los botones fisicos habilitan la barra de navegacion</string>
     <string name="keys_bindings_title">Acciones de teclas</string>
     <string name="keys_enable_custom_title">Activar acciones personales</string>
     <string name="keys_enable_custom_summary">Activar acciones de teclas hardware personales</string>
@@ -851,6 +829,51 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <string name="keys_action_long">Pulsación larga</string>
     <string name="keys_action_double">Doble toque</string>
     <string name="no_home_key">Usted no tiene botón asignado a la acción Inicio!\n\nEsto puede hacer que el dispositivo sea inutilizable!</string>
+   
+    <!-- Lock screen buttons -->
+    <string name="lockscreen_long_press_home_title">Long press on lock screen</string>
+    <string name="lockscreen_buttons_no_action">No action</string>
+    <string name="lockscreen_buttons_flashlight">Flashlight</string>
+    <string name="lockscreen_buttons_next">Next song</string>
+    <string name="lockscreen_buttons_previous">Previous song</string>
+    <string name="lockscreen_buttons_playpause">Play/Pause music</string>
+    <string name="lockscreen_buttons_toggle_sound">Toggle sound</string>
+    <string name="lockscreen_buttons_sleep">Go to sleep</string>
+   
+    <!-- Home wake -->
+    <string name="button_volume_wake_title">Despertar</string>
+    <string name="home_wake_summary">Presionar el boton home encendera el dispositivo</string>
+   
+    <!-- Home unlock -->
+    <string name="unlock_home_unlock_title">Desbloquear</string>
+    <string name="unlock_home_unlock_summary">Presionar el boton home desbloqueara el dispositivo</string>
+    
+    <!-- Home key end call -->
+    <string name="home_answer_call_title">Contestar</string>
+    <string name="home_answer_call_summary">Presionar el boton home contestara la llamada entrante</string>
+   
+    <!-- Power key end call -->
+    <string name="hardware_keys_power_key_title">Boton encendido</string>
+    <string name="power_end_call_title">Terminar llamada</string>
+    <string name="power_end_call_summary">Presionar el boton de encendido terminara la llamada actual</string>
+
+    <!-- Volume keys -->
+    <string name="button_volume_keys_title">Botones de volumen</string>
+    <string name="button_volume_wake_title">Despertar con botón de volumen</string>
+    <string name="button_volume_wake_summary">Al pulsar un botón de volumen despertará su dispositivo</string>
+    
+    <!-- Swap volume buttons -->
+    <string name="swap_volume_buttons_title">Reorientar</string>
+    <string name="swap_volume_buttons_summary">intercambia los botones de volumen al rotar la pantalla</string>
+    
+    <!-- Volume buttons cursor control -->
+    <string name="volume_key_cursor_control_title">Control del cursor del teclado</string>
+    <string name="volume_key_cursor_control_on">Volumen arriba/abajo mueve el cursor a la izquierda/derecha</string>
+    <string name="volume_key_cursor_control_on_reverse">Volumen arriba/abajo mueve el cursor a la derecha/izquierda</string>
+    
+    <!-- Volume button music control -->
+    <string name="volbtn_music_controls_title">Control de reproducción</string>
+    <string name="volbtn_music_controls_summary">Cuando la pantalla esta apagada, mantener presionado los botones de volumen cambiaran de pista</string>
 
     <!-- Increase Ringing -->
     <string name="increasing_ring_title">Tono ascendente</string>
@@ -1022,11 +1045,20 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <string name="shortcuts_color_mode_title">Modo de color de icono</string>
     <string name="shortcuts_color_mode_summary">Cambiar el modo de color del icono de acceso directo</string>
 
-    <!-- Notification drawer settings  -->
-    <string name="notification_drawer_title">Panel de notificaciones</string>
+    <!-- Status bar auto-collapse behaviour  -->
+    <string name="notification_drawer_title">Panel de notificaciónes</string>
     <string name="notification_drawer_summary">Añade accesos directos, activa cinta de accesos de configuración rápida y más</string>
     <string name="notification_shortcuts_settings_title">Accesos directos</string>
     <string name="notification_shortcuts_settings_summary">Añadir accesos directos a la parte inferior del cajón de notificación</string>
+
+    <!-- Notification hide labels -->
+    <string name="notification_drawer_collapse_on_dismiss_title">Auto cerrar comportamiento</string>
+    <string name="collapse_on_dismiss_never">Deshabilitado</string>
+    <string name="collapse_on_dismiss_if_empty">Si no queda nada</string>
+    <string name="collapse_on_dismiss_if_no_clearable">Si no queda nada extraible</string>
+    <string name="collapse_on_dismiss_never_summary">Dejar abierto despues de quitar notificación</string>
+    <string name="collapse_on_dismiss_if_empty_summary">Cerrar despues de quitar la ultima notificación</string>
+    <string name="collapse_on_dismiss_if_no_clearable_summary">Cerrar despues de quitar la ultima notificación extraible</string>
 
     <!-- Notification hide labels -->
     <string name="notification_hide_labels_title">Ocultar etiqueta de notificación</string>
@@ -1112,6 +1144,12 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <string name="quiet_hours_ringer_allow_contacts">Sonar para todos los contactos</string>
     <string name="quiet_hours_ringer_allow_starred">Sonar para todos los favoritos</string>
     <string name="quiet_hours_ringer_mute_all">Silenciar todas las llamadas</string>
+
+    <!-- Ringer mute options -->
+    <string name="quiet_hours_ringer_allow_all">Sonar para todas las llamadas</string>
+    <string name="quiet_hours_ringer_allow_contacts">Sonar para todos los contactos</string>
+    <string name="quiet_hours_ringer_allow_starred">Sonar para contactos favoritos</string>
+    <string name="quiet_hours_ringer_mute_all">Silenciar timbre para todas las llamadas</string>
 
     <!-- time range preference -->
     <string name="start_time_title">Inicio</string>
@@ -1264,6 +1302,12 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <string name="lockscreen_shortcuts_summary">Ver o cambiar los accesos directos de la pantalla de bloqueo personalizada</string>
     <string name="lockscreen_shorcuts_longpress_title">Pulsación larga accesos directos</string>
     <string name="lockscreen_shorcuts_longpress_summary">Abra atajos de la pantalla de bloqueo personalizada con pulsación larga</string>
+
+    <!--Lockscreen See Through-->
+    <string name="see_through_title">Ver a través</string>
+    <string name="see_through_summary">Muestra el contenido detrás de la pantalla de bloqueo, sus datos pueden ser visibles a los que te rodean</string>
+    <string name="blur_radius_title">Radio de desenfoque</string>
+    <string name="blur_radius_summary">Ajuste la intensidad de efecto de desenfoque de pantalla de bloqueo</string>
 
     <!-- Lock screen shortcuts -->
     <string name="picker_activities">Actividades</string>
@@ -1464,11 +1508,6 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
 
     <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
     <string name="encryptionpassword_choose_your_password_header">Establezca la contraseña cifrada</string>
-
-    <!-- Contextual notification panel header -->
-    <string name="notification_drawer_category_title">Panel de notificaciones</string>
-    <string name="custom_statusbar_header_title">Cabecera del panel de notificación contextual</string>
-    <string name="custom_statusbar_header_summary">Establece el fondo de la cabecera del panel de notificaciones para una imagen basada en la fecha y hora actuales</string>    
 
     <!-- Minimum Vibration Duration -->
     <string name="minimum_vibration_duration">Duración mínima de vibración</string>
