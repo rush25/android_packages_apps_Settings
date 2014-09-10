@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012-2013 The Mahdi-Rom Project
+<!-- Copyright (C) 2013-2014 The Mahdi-Rom Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -307,22 +307,17 @@
     <!-- Performance Settings : Processor settings sub items -->
     <string name="cpu_cur_freq_title">Huidige kloksnelheid</string>
     <string name="cpu_governors_title">Governor</string>
-    <string name="cpu_governors_summary" translatable="false">%S</string>
     <string name="cpu_min_freq_title">Minimale kloksnelheid</string>
-    <string name="cpu_min_freq_summary" translatable="false">%s</string>
     <string name="cpu_max_freq_title">Maximale kloksnelheid</string>
-    <string name="cpu_max_freq_summary" translatable="false">%s</string>
 
     <!-- Performance Settings : I/O scheduler settings title -->
     <string name="io_scheds_title">In-/uitvoerscheduler</string>
 
     <!-- Performance Settings : I/O scheduler settings sub items -->
     <string name="io_sched_title">In-/uitvoerscheduler</string>
-    <string name="io_sched_summary" translatable="false">%S</string>
 
     <!-- Performance Settings : Performance profile settings -->
     <string name="perf_profile_title">Profiel</string>
-    <string name="perf_profile_summary" translatable="false">%s</string>
 
     <!-- Memory Management -->
     <string name="memory_management_title">Geheugenbeheer</string>
@@ -399,7 +394,6 @@
     <string name="auto_brightness_dialog_title">Autom. helderheidsstanden</string>
     <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> lux</string>
     <string name="auto_brightness_last_level_format"><xliff:g id="level">%1$d</xliff:g> -\n\u221e lux</string>
-    <string name="auto_brightness_brightness_format" translatable="false"><xliff:g id="percent">%s</xliff:g>%%</string>
     <string name="auto_brightness_adjust_button">Aanpassen</string>
     <string name="auto_brightness_close_button">Sluiten</string>
     <string name="auto_brightness_reset_button">Herstellen</string>
@@ -512,10 +506,6 @@ Elke regel in de lijst van helderheidsstanden komt overeen met één <i>controle
     <string name="unlock_set_unlock_gesture_title">Gesture</string>
     <string name="unlock_set_unlock_gesture_summary">Low security, experimental</string>
     <string name="unlock_set_unlock_mode_gesture">Gesture</string>
-    <!-- Do not translate. -->
-    <string name="lockgesture_need_to_unlock_footer" />    
-    <!-- Do not translate. -->
-    <string name="lockgesture_need_to_unlock_wrong_footer" />
 
     <!-- Quick settings panel  -->
     <string name="quick_settings_panel_title">Snelle instellingenpaneel</string>
@@ -860,7 +850,7 @@ Elke regel in de lijst van helderheidsstanden komt overeen met één <i>controle
 
     <!-- Volume button music control -->
     <string name="volbtn_music_controls_title">Muziek beheren</string>
-    <string name="volbtn_music_controls_summary">Bij scherm uit door nummers spoelen door volumeknoppen lang in te drukken/string>
+    <string name="volbtn_music_controls_summary">Bij scherm uit door nummers spoelen door volumeknoppen lang in te drukken</string>
 
     <!-- Increase Ringing -->
     <string name="increasing_ring_title">In volume toenemende beltoon</string>
@@ -2323,5 +2313,4 @@ Elke regel in de lijst van helderheidsstanden komt overeen met één <i>controle
     <string name="block_notifications_summary">Genegeerde meldingen en filters beheren</string>
     <!-- Keep the referenced menu string consistent with status_bar_notification_spam_item_title in frameworks/base/packages/SystemUI -->
     <string name="no_filters_title">Geen filters ingesteld. Om een melding te filteren, drukt u lang op een melding en kiest u \'Meldingen als deze negeren\'.</string>
-
 </resources>
