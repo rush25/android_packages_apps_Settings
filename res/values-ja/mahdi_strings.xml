@@ -777,6 +777,8 @@
     <string name="privacy_guard_manager_show_system_apps">ビルトインアプリを表示</string>
     <string name="privacy_guard_manager_filter_permissions">権限フィルター</string>
     <string name="privacy_guard_advanced_settings_title">詳細設定</string>
+    <string name="privacy_guard_notification_options">通知オプション</string>
+    <string name="privacy_guard_notification_options_summary">通知のオプションを参照または変更する</string>
     <string name="privacy_guard_notification_title">通知を表示</string>
     <string name="privacy_guard_notification_icon_title">通知アイコンを表示</string>
     <string name="privacy_guard_notification_dismiss_title">消去できる通知</string>
@@ -1249,6 +1251,8 @@
     <string name="hide_non_clearable_summary">削除することができない通知は表示しない</string>
     <string name="dismiss_all">全ての通知の削除を許可する</string>
     <string name="dismiss_all_summary">削除不可能な通知をロック画面上では削除できるようする</string>
+    <string name="dismiss_notification">通知の消去</string>
+    <string name="dismiss_notification_summary">インターフェースから遠ざけるようにスワイプした際に通知を消去する</string>
     <string name="expanded_view">通知の展開表示</string>
     <string name="expanded_view_summary">通知を長押しすることで通知を展開して表示できるようにする</string>
     <string name="force_expanded_view">デフォルトで通知を展開</string>
@@ -1264,6 +1268,8 @@
     <string name="excluded_apps_summary">除外アプリはロック画面通知に表示しない</string>
     <string name="dynamic_width">通知の表示幅を可変</string>
     <string name="dynamic_width_summary">通知の幅を変化させて実際に必要なスペースだけを使用する</string>
+    <string name="included_apps_title">優先度の低い通知でも表示</string>
+    <string name="included_apps_summary">指定アプリからの通知は優先度が低くても表示する</string>
     <string name="excluded_apps_title">除外アプリ</string>
     <string name="excluded_apps_summary">除外アプリはロック画面通知に表示しない</string>
     <string name="notification_color">通知の背景色</string>
@@ -1496,6 +1502,7 @@
 
     <!-- Privacy Settings Header item -->
     <string name="privacy_settings_mahdi_title">プライバシー</string>
+    <string name="wake_up">ウェイクアップ</string>
 
     <!-- Superuser header name -->
     <string name="superuser">スーパーユーザー</string>
@@ -2267,7 +2274,7 @@
 
     <!-- Glove mode / high touch sensitivity -->
     <string name="auto_adjust_touch_title">タッチ感度を上げる</string>
-    <string name="auto_adjust_touch_summary">手袋をしていても反応するよう画面の感度を上げる</string>
+    <string name="high_touch_sensitivity_summary">手袋をしていても反応するよう画面の感度を上げる</string>
 
     <!-- Search -->
     <string name="settings_search_action_bar_button">検索</string>
@@ -2316,7 +2323,7 @@
     <string name="spam_last_blocked_title">最終ブロック %1$s</string>
     <string name="block_notifications_title">通知フィルター</string>
     <string name="block_notifications_summary">無視する通知とフィルターを管理する</string>
-    <string name="no_filters_title">フィルターがセットされていません。フィルターをセットするには通知を長押しし\'Iこのようなメッセージは無視する\'を選択します。</string>
+    <string name="no_filters_title">フィルターがセットされていません。フィルターをセットするには通知を長押しし\'このようなメッセージは無視する\'を選択します。</string>
 
     <!-- Touch control -->
     <string name="touch_control_settings_title">詳細設定</string>
