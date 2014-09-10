@@ -754,6 +754,8 @@
     <string name="privacy_guard_manager_show_system_apps">Системные приложения</string>
     <string name="privacy_guard_manager_filter_permissions">Фильтр разрешений</string>
     <string name="privacy_guard_advanced_settings_title">Дополнительно</string>
+    <string name="privacy_guard_notification_options">Настройки уведомлений</string>
+    <string name="privacy_guard_notification_options_summary">Посмотреть или изменить настройки уведомлений</string>
     <string name="privacy_guard_notification_title">Показывать уведомление</string>
     <string name="privacy_guard_notification_icon_title">Показывать иконку уведомления</string>
     <string name="privacy_guard_notification_dismiss_title">Удаляемые уведомления</string>
@@ -1213,6 +1215,7 @@
     <string name="general">Основные</string>
     <string name="layout">Расположение</string>
     <string name="privacy">Безопасность</string>
+    <string name="wake_up">Пробуждение</string>
 
     <string name="lockscreen_notifications">Уведомления на экране блокировки</string>
     <string name="summary_lockscreen_notifications_enabled">Уведомления на экране блокировки включены</string>
@@ -1228,6 +1231,8 @@
     <string name="hide_non_clearable_summary">Скрыть все неудаляемые уведомления</string>
     <string name="dismiss_all">Разрешить отключение всех уведомлений</string>
     <string name="dismiss_all_summary">Разрешить отключение даже неудаляемых уведомлений. Они просто скрываются на экране блокировки, а не на панели уведомлений.</string>
+    <string name="dismiss_notification">Отклонить уведомление</string>
+    <string name="dismiss_notification_summary">Так или иначе, уведомление будет отклонено при сильном свайпе</string>
     <string name="expanded_view">Расширенный вид уведомлений</string>
     <string name="expanded_view_summary">Добавить возможность переключения между обычным и расширенным видом по долгому нажатию на уведомление. Расширенный вид иногда показывает больше личной информации, поэтому вы можете отключить его.</string>
     <string name="force_expanded_view">Принудительный расширенный вид</string>
@@ -1241,6 +1246,8 @@
     <string name="privacy_mode_summary">Отключает просмотр уведомлений на экране блокировки. Таким образом, вы просто видите иконки ваших уведомлений.</string>
     <string name="dynamic_width">Динамическое изменение размеров</string>
     <string name="dynamic_width_summary">Динамически изменяет размеры, так что теперь уведомления занимают столько места, сколько им действительно нужно.</string>
+    <string name="included_apps_title">Встроенные приложения</string>
+    <string name="included_apps_summary">Показывать уведомления с низким приоритетом от встроенных приложений</string>
     <string name="excluded_apps_title">Исключённые приложения</string>
     <string name="excluded_apps_summary">Уведомления от исключённых приложений не будут отображаться на экране блокировки</string>
     <string name="notification_color">Цвет фона уведомления</string>
@@ -1341,6 +1348,9 @@
     <string name="smart_cover_wake_summary">Пробуждать устройство при открытии \"умной\" обложки</string>
     <string name="smart_cover_sleep_title">Блокировка \"умной\" обложкой</string>
     <string name="smart_cover_sleep_summary">Заблокировать устройство при закрытии \"умной\" обложки</string>
+    
+    <!-- tap-to-wake -->
+    <string name="double_tap_to_wake_title">Включение при двойном нажатии</string>
 
     <!-- Delete apn confirmation dialog message -->
     <string name="confirm_delete_apn">Точка доступа (APN) будет удалена.</string>
@@ -2198,8 +2208,9 @@
     <string name="adaptive_backlight_title">Адаптивная подсветка</string>
     <string name="adaptive_backlight_summary">Интеллектуальное изменение яркости подсветки экрана для сохранения заряда аккумулятора</string>
     
-    <!-- tap-to-wake -->
-    <string name="double_tap_to_wake_title">Включение при двойном нажатии</string>
+    <!-- Sunlight readability enhancement screen -->
+    <string name="sunlight_enhancement_title">Режим «На улице»</string>
+    <string name="sunlight_enhancement_summary">Повышение яркости и уровня читаемости экрана при ярком солнечном свете</string>
     
     <!-- Screen color -->
     <string name="screencolor">Цвет экрана</string>
@@ -2239,7 +2250,7 @@
     
     <!-- Glove mode / high touch sensitivity -->
     <string name="auto_adjust_touch_title">Высокая чувствительность касания</string>
-    <string name="auto_adjust_touch_summary">"Повысить чувствительность экрана для того, чтобы вы могли прикасаться к нему в перчатках"</string>
+    <string name="high_touch_sensitivity_summary">Повысить чувствительность экрана для того, чтобы вы могли прикасаться к нему в перчатках</string>
     
     <!-- Search -->
     <string name="settings_search_action_bar_button">Поиск</string>
