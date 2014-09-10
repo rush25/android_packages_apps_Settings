@@ -1440,33 +1440,33 @@
     <string name="theme_auto_switch_mode_error">Automatic light condition change mode is enabled. Manual switching is not possible.</string>
 
     <!-- Notification drawer background -->   
-    <string name="notification_background_title">Background style</string>
+    <string name="notification_background_title">Style du fond</string>
     <string name="notification_background_summary">Change your notification drawer background and more</string>
-    <string name="notification_wallpaper_title">Background</string>
-    <string name="notification_wallpaper_landscape_title">Different landscape background</string>
-    <string name="notification_background_color_fill">Color fill</string>
-    <string name="notification_background_custom_image">Custom image</string>
-    <string name="notification_background_default_wallpaper">Default background</string>
-    <string name="notification_drawer_custom_background_dialog_title">Choose color</string>
-    <string name="notif_wallpaper_alpha_title">Background transparency</string>
-    <string name="notif_alpha_title">Notification transparency</string>
+    <string name="notification_wallpaper_title">Fond</string>
+    <string name="notification_wallpaper_landscape_title">Fond différent en mode paysage</string>
+    <string name="notification_background_color_fill">Remplissage par couleur</string>
+    <string name="notification_background_custom_image">Image custom</string>
+    <string name="notification_background_default_wallpaper">Fond par défaut</string>
+    <string name="notification_drawer_custom_background_dialog_title">Choisir la couleur</string>
+    <string name="notif_wallpaper_alpha_title">Transparence du fond</string>
+    <string name="notif_alpha_title">Transparence des notifications</string>
 
     <!-- Title for PreferenceScreen to change encryption password [CHAR LIMIT=22] -->
-    <string name="change_crypt_password_title">Change password</string>
+    <string name="change_crypt_password_title">Changer de mot de passe</string>
     <!-- Summary for PreferenceScreen to change encryption password [CHAR LIMIT=45] -->
-    <string name="change_crypt_password_summary">Change the password used for device encryption</string>
+    <string name="change_crypt_password_summary">Changer le mot de passe utilisé pour le chiffrement de périphérique</string>
 
     <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
-    <string name="encryptionpassword_choose_your_password_header">Set encryption password</string>
+    <string name="encryptionpassword_choose_your_password_header">Choisir le mot de passe de cryptage</string>
 
     <!-- Minimum Vibration Duration -->
-    <string name="minimum_vibration_duration">Minimum vibration duration</string>
+    <string name="minimum_vibration_duration">Durée minimum de la vibration</string>
 
     <!-- Lock screen misc. settings -->
-    <string name="lockscreen_battery_status_title">Battery status</string>
-    <string name="lockscreen_battery_status_charging">Only when charging</string>
-    <string name="lockscreen_battery_status_alwayson">Always on</string>
-    <string name="lockscreen_battery_status_alwaysoff">Always off</string>
+    <string name="lockscreen_battery_status_title">État de la batterie</string>
+    <string name="lockscreen_battery_status_charging">Uniquement lors de la charge</string>
+    <string name="lockscreen_battery_status_alwayson">Toujours affiché</string>
+    <string name="lockscreen_battery_status_alwaysoff">Jamais affiché</string>
 
     <!-- Privacy Settings Header item -->
     <string name="privacy_settings_mahdi_title">Vie privée</string>
