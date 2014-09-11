@@ -1448,6 +1448,18 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
     <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
 
+    <!-- App circle sidebar -->
+    <string name="app_circle_bar_title">App circle sidebar</string>
+    <string name="app_circle_bar_enable_summary">Enable circular app sidebar launcher</string>
+    <string name="app_circle_bar_included_apps_title">Included apps</string>
+    <string name="app_circle_bar_included_apps_summary">Apps that show in app circle sidebar</string>
+    <string name="trigger_width_title">Trigger width</string>
+    <string name="trigger_width_summary">Adjust the width of trigger area</string>
+    <string name="trigger_top_title">Trigger position</string>
+    <string name="trigger_top_summary">Adjust the position of trigger area</string>
+    <string name="trigger_bottom_title">Trigger height</string>
+    <string name="trigger_bottom_summary">Adjust the height of trigger area</string>
+
     <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
     <string name="custom_runtime_warning_title">Warning</string>
     <string name="custom_runtime_warning_message">ART is not supported by Mahdi-Rom. This setting is included for experimentation only and has the potential to cause instability, crashes, data loss or prevent the proper boot of your device. Visit \u003Ca href=\"http://source.android.com/devices/tech/dalvik/art.html\"\u003EIntroducing ART\u003C/a\u003E for more information.\u003Cbr/\u003E\u003Cbr/\u003EWe request you do not file bug reports if you have enabled ART as your runtime.\u003Cbr/\u003E\u003Cbr/\u003EAre you sure you want to reboot to change runtime from <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> to <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>

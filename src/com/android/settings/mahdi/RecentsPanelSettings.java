@@ -32,19 +32,26 @@ import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MenuInflater;
 import android.view.WindowManagerGlobal;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-
+import com.android.settings.mahdi.chameleonos.SeekBarPreference;
+import com.android.settings.mahdi.lsn.AppMultiSelectListPreference;
 import com.android.settings.mahdi.util.Helpers;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Arrays;
 
 public class RecentsPanelSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -61,6 +68,11 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
     private static final String RECENT_PANEL_SCALE = "recent_panel_scale";
     private static final String RECENT_PANEL_EXPANDED_MODE = "recent_panel_expanded_mode";
     private static final String RECENT_PANEL_BG_COLOR = "recent_panel_bg_color";
+    private static final String PREF_ENABLE_APP_CIRCLE_BAR = "enable_app_circle_bar";
+    private static final String PREF_INCLUDE_APP_CIRCLE_BAR_KEY = "app_circle_bar_included_apps";
+    private static final String KEY_TRIGGER_WIDTH = "trigger_width";
+    private static final String KEY_TRIGGER_TOP = "trigger_top";
+    private static final String KEY_TRIGGER_BOTTOM = "trigger_bottom";
 
     private PreferenceScreen mOmniSwitch;
     private CheckBoxPreference mRecentClearAll;
@@ -72,6 +84,11 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
     private ListPreference mRecentPanelScale;
     private ListPreference mRecentPanelExpandedMode;
     private ColorPickerPreference mRecentPanelBgColor;
+    private CheckBoxPreference mEnableAppCircleBar;
+    private AppMultiSelectListPreference mIncludedAppCircleBar;
+    private SeekBarPreference mTriggerWidthPref;
+    private SeekBarPreference mTriggerTopPref;
+    private SeekBarPreference mTriggerBottomPref;
 
     private static final int MENU_RESET = Menu.FIRST;
     private static final int DEFAULT_BACKGROUND_COLOR = 0x00ffffff;
@@ -148,8 +165,32 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
             mRecentPanelBgColor.setSummary(hexColor);
         }
         mRecentPanelBgColor.setNewPreviewColor(intColor);
+
+        mEnableAppCircleBar = (CheckBoxPreference) prefSet.findPreference(PREF_ENABLE_APP_CIRCLE_BAR);
+        mEnableAppCircleBar.setChecked((Settings.System.getInt(resolver,
+                Settings.System.ENABLE_APP_CIRCLE_BAR, 0) == 1));
+
+        mIncludedAppCircleBar = (AppMultiSelectListPreference) prefSet.findPreference(PREF_INCLUDE_APP_CIRCLE_BAR_KEY);
+        Set<String> includedApps = getIncludedApps();
+        if (includedApps != null) mIncludedAppCircleBar.setValues(includedApps);
+        mIncludedAppCircleBar.setOnPreferenceChangeListener(this);
+
+        mTriggerWidthPref = (SeekBarPreference) findPreference(KEY_TRIGGER_WIDTH);
+        mTriggerWidthPref.setValue(Settings.System.getInt(getContentResolver(),
+                Settings.System.APP_CIRCLE_BAR_TRIGGER_WIDTH, 10));
+        mTriggerWidthPref.setOnPreferenceChangeListener(this);
+
+        mTriggerTopPref = (SeekBarPreference) findPreference(KEY_TRIGGER_TOP);
+        mTriggerTopPref.setValue(Settings.System.getInt(getContentResolver(),
+                Settings.System.APP_CIRCLE_BAR_TRIGGER_TOP, 0));
+        mTriggerTopPref.setOnPreferenceChangeListener(this);
+
+        mTriggerBottomPref = (SeekBarPreference) findPreference(KEY_TRIGGER_BOTTOM);
+        mTriggerBottomPref.setValue(Settings.System.getInt(getContentResolver(),
+                Settings.System.APP_CIRCLE_BAR_TRIGGER_HEIGHT, 100));
+        mTriggerBottomPref.setOnPreferenceChangeListener(this);
+
         setHasOptionsMenu(true);
-        
         updatePreference();
     }
 
@@ -173,12 +214,33 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
     }
 
     @Override
+    public void onPause() {
+        super.onPause();
+        Settings.System.putInt(getContentResolver(),
+                Settings.System.APP_CIRCLE_BAR_SHOW_TRIGGER, 0);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Settings.System.putInt(getContentResolver(),
+                Settings.System.APP_CIRCLE_BAR_SHOW_TRIGGER, 1);
+    }
+
+    @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+       if (preference == mEnableAppCircleBar) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.ENABLE_APP_CIRCLE_BAR, checked ? 1:0);
+            return true;
+       }
        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
+        final String key = preference.getKey();
         if (preference == mRecentClearAll) {
             boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver, Settings.System.SHOW_CLEAR_RECENTS_BUTTON, value ? 1 : 0);
@@ -232,6 +294,24 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.RECENT_PANEL_BG_COLOR,
                     intHex);
+            return true;
+        } else if (preference == mIncludedAppCircleBar) {
+            storeIncludedApps((Set<String>) newValue);
+            return true;
+        } else if (preference == mTriggerWidthPref) {
+            int width = ((Integer)newValue).intValue();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.APP_CIRCLE_BAR_TRIGGER_WIDTH, width);
+            return true;
+        } else if (preference == mTriggerTopPref) {
+            int top = ((Integer)newValue).intValue();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.APP_CIRCLE_BAR_TRIGGER_TOP, top);
+            return true;
+        } else if (preference == mTriggerBottomPref) {
+            int bottom = ((Integer)newValue).intValue();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.APP_CIRCLE_BAR_TRIGGER_HEIGHT, bottom);
             return true;
         }
         return false;
@@ -297,5 +377,26 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
                 Settings.System.RECENT_PANEL_BG_COLOR, DEFAULT_BACKGROUND_COLOR);
         mRecentPanelBgColor.setNewPreviewColor(DEFAULT_BACKGROUND_COLOR);
         mRecentPanelBgColor.setSummary("default");
+    }
+
+    private Set<String> getIncludedApps() {
+        String included = Settings.System.getString(getActivity().getContentResolver(),
+                Settings.System.WHITELIST_APP_CIRCLE_BAR);
+        if (TextUtils.isEmpty(included)) {
+            return null;
+        }
+        return new HashSet<String>(Arrays.asList(included.split("\\|")));
+    }
+
+    private void storeIncludedApps(Set<String> values) {
+        StringBuilder builder = new StringBuilder();
+        String delimiter = "";
+        for (String value : values) {
+            builder.append(delimiter);
+            builder.append(value);
+            delimiter = "|";
+        }
+        Settings.System.putString(getActivity().getContentResolver(),
+                Settings.System.WHITELIST_APP_CIRCLE_BAR, builder.toString());
     }
 }
