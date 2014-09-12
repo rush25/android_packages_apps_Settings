@@ -59,6 +59,12 @@
             android:summary="@string/haptic_qs_tiles_summary"
             android:defaultValue="false" />
 
+        <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+            android:key="quick_settings_add_tile_button"
+            android:title="@string/qs_add_tiles_title"
+            android:summary="@string/qs_add_tiles_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
