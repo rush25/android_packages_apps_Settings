@@ -40,9 +40,11 @@ import android.text.TextUtils;
 
 import com.android.internal.util.mahdi.QSConstants;
 import com.android.internal.util.mahdi.QSUtils;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settings.mahdi.SystemSettingCheckBoxPreference;
 
 public class QuickSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -59,6 +61,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String DYNAMIC_TILES = "pref_dynamic_tiles";
     private static final String VIBRATE_TILES = "quick_settings_tiles_vibrate";
     private static final String QS_SMALL_ICONS = "qs_small_icons";
+    private static final String ADD_TILES_BUTTON = "quick_settings_add_tile_button";
 
     private MultiSelectListPreference mRingMode;
     private ListPreference mNetworkMode;
@@ -68,7 +71,8 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private PreferenceCategory mGeneralSettings;
     private PreferenceCategory mStaticTiles;
     private PreferenceCategory mDynamicTiles;
-    private CheckBoxPreference mVibrateTiles;
+    private SystemSettingCheckBoxPreference mVibrateTiles;
+    private SystemSettingCheckBoxPreference mAddTilesButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -88,14 +92,16 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
         mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);
         mSmartPulldown = (ListPreference) findPreference(SMART_PULLDOWN);
-        mVibrateTiles = (CheckBoxPreference) findPreference(VIBRATE_TILES);
+        mVibrateTiles = (SystemSettingCheckBoxPreference) findPreference(VIBRATE_TILES);
+        mAddTilesButton = (SystemSettingCheckBoxPreference) findPreference(ADD_TILES_BUTTON);
 
         if (!Utils.isPhone(getActivity())) {
             PreferenceCategory pref_general_settings =
                 (PreferenceCategory) findPreference(GENERAL_SETTINGS);
             pref_general_settings.removePreference(mQuickPulldown);
             pref_general_settings.removePreference(mSmartPulldown);
-            pref_general_settings.removePreference(mVibrateTiles);       
+            pref_general_settings.removePreference(mVibrateTiles);
+            pref_general_settings.removePreference(mAddTilesButton);
         } else {
             mQuickPulldown.setOnPreferenceChangeListener(this);
             int quickPulldownValue = Settings.System.getInt(resolver,
