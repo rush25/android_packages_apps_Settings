@@ -1933,10 +1933,6 @@
   <string name="brightness_slider_title">Ρυθμιστής φωτεινότητας</string>
   <string name="brightness_slider_summary">Ενεργοποίηση ενος ρυθμιστή φωτεινότητας στο συρτάρι ειδοποιήσεων</string>
 
-  <!-- Voice+ -->
-  <string name="voice_plus_title">Voice+</string>
-  <string name="voice_plus_summary">Ενεργοποίηση όλων των εφραρμογών να στέλνουν SMS μηνύματα μέσω του Google Voice</string>
-
   <!-- Driving mode -->
   <!-- require add space in the end of string -->
   <string name="voice_tts_new_call">Εισερχόμενη κλήση από </string>

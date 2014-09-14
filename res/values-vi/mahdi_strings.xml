@@ -1764,10 +1764,6 @@ Xóa sẽ gỡ bỏ dòng.
     <string name="brightness_slider_title">Thanh kéo độ sáng</string>
     <string name="brightness_slider_summary">bật thanh kéo độ sáng trên trang thông báo</string>
 
-    <!-- Voice+ -->
-    <string name="voice_plus_title">Voice+</string>
-    <string name="voice_plus_summary">Bật tất cả ứng dụng gửi SMS qua Google Voice</string>
-
     <!-- Driving mode -->
     <!-- require add space in the end of string -->
     <string name="voice_tts_new_call">Cuộc gọi tới từ </string>

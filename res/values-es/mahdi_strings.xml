@@ -1973,10 +1973,6 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <string name="brightness_slider_title">Regulador de brillo</string>
     <string name="brightness_slider_summary">Permitir un control deslizante de brillo en el cajón de notificaciones</string>
 
-    <!-- Voice+ -->
-    <string name="voice_plus_title">Voice+</string>
-    <string name="voice_plus_summary">Habilitar todas las aplicaciones para enviar mensajes SMS a través de Google Voice</string>
-
     <!-- Driving mode -->
     <!-- require add space in the end of string -->
     <string name="voice_tts_new_call">Llamada entrante de </string>

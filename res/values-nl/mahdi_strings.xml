@@ -1934,10 +1934,6 @@ Elke regel in de lijst van helderheidsstanden komt overeen met één <i>controle
     <string name="brightness_slider_title">Brightness slider</string>
     <string name="brightness_slider_summary">enable a brightness slider in the notification drawer</string>
 
-    <!-- Voice+ -->
-    <string name="voice_plus_title">Voice+</string>
-    <string name="voice_plus_summary">Enable all apps to send SMS messages through Google Voice</string>
-
     <!-- Driving mode -->
     <!-- require add space in the end of string -->
     <string name="voice_tts_new_call">Inkomende oproep van </string>
