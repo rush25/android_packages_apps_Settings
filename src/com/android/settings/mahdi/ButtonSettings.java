@@ -50,7 +50,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
     private static final String TAG = "ButtonSettings";
 
-    private static final String CATEGORY_NAVIGATION = "navigation_category";
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_VOLUME = "volume_keys";
 
@@ -77,8 +76,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final ContentResolver resolver = getActivity().getContentResolver();
         Resources res = getResources();
 
-        final PreferenceCategory navigationCategory =
-                (PreferenceCategory) prefScreen.findPreference(CATEGORY_NAVIGATION);
         final PreferenceCategory powerCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_POWER);
         final PreferenceCategory volumeCategory =
@@ -90,7 +87,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mHardwareKeys = (PreferenceScreen) findPreference(KEY_HARDWARE_KEYS);
         if (mHardwareKeys != null) {
             if (!res.getBoolean(R.bool.config_has_hardware_buttons)) {
-                navigationCategory.removePreference(mHardwareKeys);
+                prefScreen.removePreference(mHardwareKeys);
             }        
         }
 

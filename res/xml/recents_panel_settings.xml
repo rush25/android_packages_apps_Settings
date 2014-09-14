@@ -113,7 +113,8 @@
         <CheckBoxPreference
             android:key="enable_app_circle_bar"
             android:title="@string/app_circle_bar_title"
-            android:summary="@string/app_circle_bar_enable_summary" />
+            android:summary="@string/app_circle_sidebar_summary"
+            android:defaultValue="false" />
 
         <com.android.settings.mahdi.lsn.AppMultiSelectListPreference
             android:key="app_circle_bar_included_apps"

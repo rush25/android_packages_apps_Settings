@@ -26,8 +26,7 @@
 
     <CheckBoxPreference
         android:key="enable_hardware_rebind"
-        android:title="@string/keys_enable_custom_title"
-        android:summary="@string/keys_enable_custom_summary" />
+        android:title="@string/keys_enable_custom_title" />
 
     <com.android.settings.cyanogenmod.ButtonBacklightBrightness
         android:key="button_backlight"

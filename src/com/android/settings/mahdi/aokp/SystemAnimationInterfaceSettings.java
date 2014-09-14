@@ -27,11 +27,11 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
-import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -71,7 +71,7 @@ public class SystemAnimationInterfaceSettings extends SettingsPreferenceFragment
     private ListPreference mWallpaperClose;
     private ListPreference mWallpaperIntraOpen;
     private ListPreference mWallpaperIntraClose;
-    private SwitchPreference mAnimNoOverride;
+    private CheckBoxPreference mAnimNoOverride;
     private SeekBarPreference mAnimationDuration;
 
     private int[] mAnimations;
@@ -95,7 +95,7 @@ public class SystemAnimationInterfaceSettings extends SettingsPreferenceFragment
             mAnimationsNum[i] = String.valueOf(mAnimations[i]);
         }
 
-        mAnimNoOverride = (SwitchPreference) prefSet.findPreference(ANIMATION_NO_OVERRIDE);
+        mAnimNoOverride = (CheckBoxPreference) prefSet.findPreference(ANIMATION_NO_OVERRIDE);
         mAnimNoOverride.setChecked(Settings.System.getInt(resolver,
                 Settings.System.ANIMATION_CONTROLS_NO_OVERRIDE, 0) == 1);
         mAnimNoOverride.setOnPreferenceChangeListener(this);

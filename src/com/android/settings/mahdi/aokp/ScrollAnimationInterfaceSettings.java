@@ -27,11 +27,11 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
-import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.view.ViewConfiguration;
 import android.view.Menu;
@@ -55,11 +55,11 @@ public class ScrollAnimationInterfaceSettings extends SettingsPreferenceFragment
 
     private static final int MENU_RESET = Menu.FIRST;
 
+    private CheckBoxPreference mAnimNoScroll;
     private SeekBarPreference mAnimationFling;
     private SeekBarPreference mAnimationScroll;
     private SeekBarPreference mAnimationOverScroll;
     private SeekBarPreference mAnimationOverFling;
-    private SwitchPreference mAnimNoScroll;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -69,7 +69,7 @@ public class ScrollAnimationInterfaceSettings extends SettingsPreferenceFragment
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
-        mAnimNoScroll = (SwitchPreference) prefSet.findPreference(ANIMATION_NO_SCROLL);
+        mAnimNoScroll = (CheckBoxPreference) prefSet.findPreference(ANIMATION_NO_SCROLL);
         mAnimNoScroll.setChecked(Settings.System.getInt(resolver,
                 Settings.System.ANIMATION_CONTROLS_NO_SCROLL, 0) == 1);
         mAnimNoScroll.setOnPreferenceChangeListener(this);
