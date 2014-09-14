@@ -96,7 +96,8 @@
     <!-- Power menu enable disable -->
     <string name="power_menu_title">Power menu</string> 
     <string name="power_menu_summary">View or change the power menu list</string>
-    <string name="lockscreen_enable_power_menu_title">Enable power menu on lock screen</string>
+    <string name="lockscreen_enable_power_menu_title">Show on lock screen</string>
+    <string name="lockscreen_enable_power_menu_summary">Note, this option will only disable the power menu on secure lock screens</string>
     <string name="power_menu_reboot_title">Reboot menu</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_screenrecord_title">Screen record</string>
@@ -375,7 +376,7 @@
     <string name="headset_category_title">Headset</string>
 
     <!-- Headset plug -->
-    <string name="headset_plug_title">Headset plug options</string>
+    <string name="headset_plug_title">Headset options</string>
     <string name="headset_plug_enable_title">Insert shortcut</string>
     <string name="headset_plug_positive_title">Disabled</string>
     <string name="headset_plug_neutral_title">Default</string>
@@ -1093,7 +1094,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="navigation_bar_size_0_dp">0 dp (off)</string>
     <string name="navigation_menu_right">Right</string>
     <string name="navigation_menu_left">Left</string>
-    <string name="navigation_menu_both">Both</string>
+    <string name="navigation_menu_both">Right &amp; left</string>
     <string name="navigation_menu_default_jb_behavior">Show on request (default)</string>
     <string name="navigation_menu_never_show">Never show</string>
     <string name="navigation_menu_always_show">Always show</string>
@@ -1358,7 +1359,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="icon_picker_pack_title">Icon pack</string>
 
     <!-- Wakeup options -->
-    <string name="display_category_wakeup_options_title">Wakeup</string>
+    <string name="display_category_wakeup_options_title">Wake up</string>
 
     <!--Wakeup when plugged/unplugged -->
     <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
@@ -1374,7 +1375,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Touch control -->
     <string name="touch_control_settings_title">Advanced</string>
-    <string name="touch_control_settings_summary">Manage advance wakeup option including double tap to wake and more</string>
+    <string name="touch_control_settings_summary">Manage advance wakeup options including double tap to wake and more</string>
 
     <!-- Lid Settings -->
     <string name="smart_cover_title">Use smart cover</string>
@@ -1428,7 +1429,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- New Recents Screen -->
     <string name="new_recents_category">Slims Recents</string>
-    <string name="new_recents_screen_title">Slims recents</string>
+    <string name="new_recents_screen_title">Slims Recents</string>
     <string name="new_recents_screen_summary">Replaces the recents screen with one based on the new google cards optic</string>
     <string name="recent_panel_scale_title">Panel size</string>
     <string name="recent_panel_scale_summary">Recent apps panel size</string>
@@ -1450,7 +1451,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- App circle sidebar -->
     <string name="app_circle_bar_title">App circle sidebar</string>
-    <string name="app_circle_bar_enable_summary">Enable circular app sidebar launcher</string>
+    <string name="app_circle_sidebar_summary">Launch apps faster from a sidebar and open multiple apps on one screen to multitask</string>
     <string name="app_circle_bar_included_apps_title">Included apps</string>
     <string name="app_circle_bar_included_apps_summary">Apps that show in app circle sidebar</string>
     <string name="trigger_width_title">Trigger width</string>
@@ -1682,7 +1683,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="display_category_animation_options_title">Animation</string>
     <string name="system_power_crt_mode_title">Screen off </string>
     <string name="system_power_crt_mode_dialog_title">Screen off animation</string>
-    <string name="system_power_crt_mode_off">Don\'t show</string>
+    <string name="system_power_crt_mode_off">Fade off</string>
     <string name="system_power_crt_mode_horizontal">Collapse horizontal</string>
     <string name="system_power_crt_mode_vertical">Collapse vertical</string>
     <string name="system_power_crt_mode_both">Collapse orientation dependent</string>
@@ -1845,8 +1846,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="battery_saver_action_undefined">Undefined</string>
     <string name="battery_saver_title">Battery saver mode</string>
     <string name="battery_saver_summary">Choose power saving modes for mobile data and WiFi connections</string>
-    <string name="pref_battery_saver_enable_title">Battery saver</string>
-    <string name="pref_battery_saver_enable_summary">This will automatically manage your device battery usage and switch your network to user-defined power saving mode or normal mode depending on mobile data and Wi-Fi connection states</string>
+    <string name="pref_battery_saver_enable_title">Enable</string>
+    <string name="pref_battery_saver_enable_summary">Battery saver will manage your device network to user-defined power saving mode or normal mode depending on your connection states</string>
     <string name="pref_battery_saver_enable_no_mobiledata_summary">This will automatically manage your device battery usage to user-defined</string>
     <string name="pref_battery_saver_normal_mode_title">Normal network mode</string>
     <string name="pref_battery_saver_power_saving_mode_title">Power saving network mode</string>

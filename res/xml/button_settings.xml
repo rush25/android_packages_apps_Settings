@@ -17,29 +17,20 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <PreferenceCategory
-        android:key="navigation_category"
-        android:title="@string/navigation_settings_category_title" >
+    <PreferenceScreen
+        android:key="navbar_settings"
+        android:title="@string/navigation_settings_title"
+        android:fragment="com.android.settings.mahdi.NavbarSettings" />
 
-        <PreferenceScreen
-            android:key="navbar_settings"
-            android:title="@string/navigation_settings_title"
-            android:summary="@string/navigation_settings_summary"
-            android:fragment="com.android.settings.mahdi.NavbarSettings" />
+    <PreferenceScreen
+        android:key="hardware_keys"
+        android:title="@string/button_keys_title"
+        android:fragment="com.android.settings.mahdi.HardwareKeys" />
 
-        <PreferenceScreen
-            android:key="hardware_keys"
-            android:title="@string/button_keys_title"
-            android:summary="@string/button_keys_summary"
-            android:fragment="com.android.settings.mahdi.HardwareKeys" />
-
-        <PreferenceScreen
-            android:key="pie_control"
-            android:title="@string/pie_control_title"
-            android:summary="@string/pie_control_summary"
-            android:fragment="com.android.settings.mahdi.slim.PieControl" />
-
-    </PreferenceCategory>
+    <PreferenceScreen
+        android:key="pie_control"
+        android:title="@string/pie_control_title"
+        android:fragment="com.android.settings.mahdi.slim.PieControl" />
 
     <PreferenceCategory
         android:key="power_key"
@@ -48,7 +39,6 @@
         <PreferenceScreen
             android:key="power_menu"
             android:title="@string/power_menu_title"
-            android:summary="@string/power_menu_summary"
             android:fragment="com.android.settings.mahdi.PowerMenu" />
 
         <CheckBoxPreference

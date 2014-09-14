@@ -30,7 +30,6 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
-import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.telephony.TelephonyManager;
@@ -74,7 +73,7 @@ public class BatterySaverSettings extends SettingsPreferenceFragment implements
     private ListPreference mPowerSavingGsmPreferredNetworkMode;
     private ListPreference mNormalCdmaPreferredNetworkMode;
     private ListPreference mPowerSavingCdmaPreferredNetworkMode;
-    private SwitchPreference mBatterySaverEnabled;
+    private CheckBoxPreference mBatterySaverEnabled;
     private SeekBarPreference mBatterySaverDelay;
     private SeekBarPreference mLowBatteryLevel;
     private CheckBoxPreference mSmartBrightnessEnabled;
@@ -101,7 +100,7 @@ public class BatterySaverSettings extends SettingsPreferenceFragment implements
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
-        mBatterySaverEnabled = (SwitchPreference) prefSet.findPreference(PREF_KEY_BATTERY_SAVER_ENABLE);
+        mBatterySaverEnabled = (CheckBoxPreference) prefSet.findPreference(PREF_KEY_BATTERY_SAVER_ENABLE);
         mBatterySaverEnabled.setChecked(Settings.Global.getInt(mResolver,
                      Settings.Global.BATTERY_SAVER_OPTION, 0) != 0);
         mBatterySaverEnabled.setOnPreferenceChangeListener(this);
