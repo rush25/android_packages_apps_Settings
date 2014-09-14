@@ -1720,10 +1720,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="brightness_slider_title">Fényerő csúszka</string>
     <string name="brightness_slider_summary">Engedélyezi a fényerő csúszkát az értesítési panelen</string>
 
-    <!-- Voice+ -->
-    <string name="voice_plus_title">Voice+</string>
-    <string name="voice_plus_summary">Engedélyezi az összes alkalmazásnak, hogy  SMS-t küldjön a Google Voice-on keresztül</string>
-
     <!-- Driving mode -->
     <!-- require add space in the end of string -->
     <string name="voice_tts_new_call">Bejövő hívás: </string>

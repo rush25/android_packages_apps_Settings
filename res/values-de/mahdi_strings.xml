@@ -1876,10 +1876,6 @@ If Power widget is removed, re-enable these -->
     <string name="brightness_slider_title">Helligkeitsregler</string>
     <string name="brightness_slider_summary">Helligkeitsregler anzeigen</string>
 
-    <!-- Voice+ -->
-    <string name="voice_plus_title">Voice+</string>
-    <string name="voice_plus_summary">Ermöglicht es aus allen Apps SMS-Nachrichten über Google Voice zu senden</string>
-
     <!-- Driving mode -->
     <!-- require add space in the end of string -->
     <string name="voice_tts_new_call">Eingehender Anruf von </string>

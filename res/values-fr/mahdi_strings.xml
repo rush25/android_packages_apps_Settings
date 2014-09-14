@@ -1894,10 +1894,6 @@
     <string name="brightness_slider_title">Curseur de luminosité</string>
     <string name="brightness_slider_summary">Ajoute un curseur de luminosité au paneau de notification.</string>
 
-    <!-- Voice+ -->
-    <string name="voice_plus_title">Voice+</string>
-    <string name="voice_plus_summary">Autoriser toutes les applications à envoyer des messages SMS par l\'intermédiaire de Google Voice</string>
-
     <!-- Driving mode -->
     <!-- require add space in the end of string -->
     <string name="voice_tts_new_call">Incoming call from </string>

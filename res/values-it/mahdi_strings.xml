@@ -1943,10 +1943,6 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <string name="brightness_slider_title">Slider luminosità </string>
     <string name="brightness_slider_summary">Attiva uno slider per la luminosità nel menu notifiche </string>
 
-    <!-- Voice+ -->
-    <string name="voice_plus_title">Voice+ </string>
-    <string name="voice_plus_summary">Permetti a tutte le app di mandare messaggi tramite Google Now </string>
-
     <!-- Driving mode -->
     <!-- require add space in the end of string -->
     <string name="voice_tts_new_call">Chiamata in arrivo da </string>

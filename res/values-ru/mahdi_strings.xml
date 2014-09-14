@@ -1928,10 +1928,6 @@
     <string name="brightness_slider_title">Управление яркостью</string>
     <string name="brightness_slider_summary">Отображать \"Управление яркостью\" на панели уведомлений</string>
 
-    <!-- Voice+ -->
-    <string name="voice_plus_title">Voice+</string>
-    <string name="voice_plus_summary">Отправка всех сообщений через Google Voice</string>
-
     <!-- Driving mode -->
     <!-- require add space in the end of string -->
     <string name="voice_tts_new_call">Входящий вызов от </string>

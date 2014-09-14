@@ -1927,10 +1927,6 @@
     <string name="brightness_slider_title">明るさスライダー</string>
     <string name="brightness_slider_summary">通知ドロワーに明るさスライダーを表示する</string>
 
-    <!-- Voice+ -->
-    <string name="voice_plus_title">ボイス+</string>
-    <string name="voice_plus_summary">Googleボイスを介してSMSメッセージを送信するためにすべてのアプリケーションを有効にする</string>
-
     <!-- Driving mode -->
     <!-- require add space in the end of string -->
     <string name="voice_tts_new_call">着信: </string>
