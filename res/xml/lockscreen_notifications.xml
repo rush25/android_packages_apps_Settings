@@ -22,41 +22,43 @@
     <PreferenceCategory
         android:title="@string/general" >
 
-        <CheckBoxPreference
-            android:key="hide_non_clearable"
+        <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+            android:key="lockscreen_notifications_hide_non_clearable"
             android:title="@string/hide_non_clearable"
             android:summary="@string/hide_non_clearable_summary"
+            android:disableDependentsState="true"
             android:defaultValue="true" />
 
-        <CheckBoxPreference
-            android:key="dismiss_all"
+        <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+            android:key="lockscreen_notifications_dismiss_all"
             android:title="@string/dismiss_all"
             android:summary="@string/dismiss_all_summary"
+            android:dependency="lockscreen_notifications_hide_non_clearable"
             android:defaultValue="true" />
 
-        <CheckBoxPreference
-            android:key="dismiss_notification"
+        <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+            android:key="lockscreen_notifications_dismiss_notification"
             android:title="@string/dismiss_notification"
             android:summary="@string/dismiss_notification_summary"
             android:defaultValue="true" />
 
-        <CheckBoxPreference
-            android:key="hide_low_priority"
+        <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+            android:key="lockscreen_notifications_hide_low_priority"
             android:title="@string/hide_low_priority"
             android:summary="@string/hide_low_priority_summary"
             android:defaultValue="false" />
 
         <com.android.settings.mahdi.lsn.AppMultiSelectListPreference
-            android:key="excluded_apps"
+            android:key="lockscreen_notifications_excluded_apps"
             android:title="@string/excluded_apps_title"
             android:summary="@string/excluded_apps_summary"
             android:persistent="false" />
 
         <com.android.settings.mahdi.lsn.AppMultiSelectListPreference
-            android:key="included_apps"
+            android:key="lockscreen_notifications_included_apps"
             android:title="@string/included_apps_title"
             android:summary="@string/included_apps_summary"
-            android:dependency="hide_low_priority"
+            android:dependency="lockscreen_notifications_hide_low_priority"
             android:persistent="false" />
     </PreferenceCategory>
 
@@ -64,72 +66,74 @@
         android:key="category_wake_up"
         android:title="@string/wake_up">
 
-        <CheckBoxPreference
-            android:key="wake_on_notification"
-            android:title="@string/wake_on_notification"
-            android:summary="@string/wake_on_notification_summary"
-            android:defaultValue="false" />
-
-        <CheckBoxPreference
-            android:key="pocket_mode"
+         <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+            android:key="lockscreen_notifications_pocket_mode"
             android:title="@string/pocket_mode"
             android:summary="@string/pocket_mode_summary"
             android:defaultValue="false" />
 
-        <CheckBoxPreference
-            android:key="show_always"
+        <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+            android:key="lockscreen_notifications_show_always"
             android:title="@string/show_always"
             android:summary="@string/show_always_summary"
-            android:dependency="pocket_mode"
+            android:dependency="lockscreen_notifications_pocket_mode"
             android:defaultValue="false" />
+
+        <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+            android:key="lockscreen_notifications_wake_on_notification"
+            android:title="@string/wake_on_notification"
+            android:summary="@string/wake_on_notification_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/privacy" >
 
         <CheckBoxPreference
-            android:key="privacy_mode"
+            android:key="lockscreen_notifications_privacy_mode"
             android:title="@string/privacy_mode"
             android:summary="@string/privacy_mode_summary"
             android:defaultValue="false" />
 
-        <CheckBoxPreference
-            android:key="expanded_view"
+        <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+            android:key="lockscreen_notifications_expanded_view"
             android:title="@string/expanded_view"
             android:summary="@string/expanded_view_summary"
             android:defaultValue="true" />
 
-        <CheckBoxPreference
-            android:key="force_expanded_view"
+        <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+            android:key="lockscreen_notifications_force_expanded_view"
             android:title="@string/force_expanded_view"
             android:summary="@string/force_expanded_view_summary"
-            android:dependency="expanded_view"
+            android:dependency="lockscreen_notifications_expanded_view"
             android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/layout" >
 
         <SeekBarPreference
-            android:key="offset_top"
+            android:key="lockscreen_notifications_offset_top"
             android:title="@string/offset_top"
             android:max="100"
             android:defaultValue="45" />
 
-        <com.android.settings.mahdi.lsn.NumberPickerPreference
-            android:key="notifications_height"
-            android:dialogMessage="@string/notifications_height"
-            android:title="@string/notifications_height"
-            android:summary="@string/notifications_height_summary" />
-
-        <CheckBoxPreference
-            android:key="dynamic_width"
+        <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+            android:key="lockscreen_notifications_dynamic_width"
             android:title="@string/dynamic_width"
             android:summary="@string/dynamic_width_summary"
             android:defaultValue="false" />
 
+        <com.android.settings.mahdi.lsn.NumberPickerPreference
+            android:key="lockscreen_notifications_notifications_height"
+            android:dialogMessage="@string/notifications_height"
+            android:title="@string/notifications_height"
+            android:summary="@string/notifications_height_summary" />
+
         <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="notification_color"
+            android:key="lockscreen_notifications_notification_color"
             android:title="@string/notification_color" />
     </PreferenceCategory>
 </PreferenceScreen>
