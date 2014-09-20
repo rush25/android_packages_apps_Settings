@@ -89,6 +89,12 @@
             android:summary="@string/system_bar_visibility_summary"
             android:defaultValue="false" />
 
+        <com.android.settings.mahdi.SystemSettingCheckBoxPreference
+            android:key="disable_ime_navbar"
+            android:title="@string/disable_ime_navbar_title"
+            android:summary="@string/disable_ime_navbar_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
        
 </PreferenceScreen>
