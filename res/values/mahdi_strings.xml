@@ -2067,6 +2067,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Pie Control -->
     <string name="pie_control_title">Pie navigation</string>
+    <string name="pie_control_enable_title">Enable</string>
     <string name="pie_control_summary">Enable pie controls to help navigate while using immersive mode</string>
     <string name="pie_control_size">Navigation size</string>
     <string name="pie_control_trigger_positions">Trigger options</string>
@@ -2111,6 +2112,13 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="pie_style_reset_message">Reset style entries to default?</string>
     <string name="pie_disable_ime_triggers_title">Reduce trigger size on keyboard</string>
     <string name="pie_disable_ime_triggers_summary">Reduces left and right trigger size if keyboard is active</string>
+    <string name="pie_background_fadein_time_title">Fade in time</string>
+    <string name="pie_slice_gap_title">Slice gap</string>
+    <string name="pie_slice_gap_disabled">Disabled</string>
+    <string name="pie_slice_gap_small">Small (default)</string>
+    <string name="pie_slice_gap_medium">Medium</string>
+    <string name="pie_slice_gap_large">Large</string>
+    <string name="pie_colors_title">Colors</string>
 
     <!-- Shortcuts -->
     <string name="shortcut_picker">Actions</string>

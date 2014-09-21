@@ -20,8 +20,7 @@
 
     <CheckBoxPreference
         android:key="pie_control"
-        android:title="@string/pie_control_title"
-        android:summary="@string/pie_control_summary" />
+        android:title="@string/pie_control_enable_title" />
 
     <PreferenceScreen
             android:key="pie_button"
@@ -34,18 +33,48 @@
         <extra android:name="fragment" android:value="com.android.settings.mahdi.fragments.PieButtonFragment" />
     </PreferenceScreen>
 
-
     <PreferenceScreen
         android:key="pie_style"
         android:fragment="com.android.settings.mahdi.slim.PieStyleSettings"
-        android:title="@string/pie_style"
+        android:title="@string/pie_style_title"
         android:dependency="pie_control" />
 
-    <PreferenceScreen
-        android:key="pie_trigger"
-        android:fragment="com.android.settings.mahdi.slim.PieTriggerSettings"
-        android:title="@string/pie_control_trigger_positions"
-        android:dependency="pie_control" />
+    <PreferenceCategory
+        android:title="@string/pie_control_trigger_positions">
+
+        <Preference
+            style="?android:preferenceInformationStyle"
+            android:title="@string/pie_trigger_note_title"
+            android:summary="@string/pie_trigger_note_summary"
+            android:selectable="false"
+            android:dependency="pie_control" />
+
+        <CheckBoxPreference
+            android:key="pie_control_trigger_bottom"
+            android:title="@string/pie_control_trigger_bottom"
+            android:defaultValue="false"
+            android:dependency="pie_control" />
+
+        <CheckBoxPreference
+            android:key="pie_control_trigger_left"
+            android:title="@string/pie_control_trigger_left"
+            android:defaultValue="false"
+            android:dependency="pie_control" />
+
+        <CheckBoxPreference
+            android:key="pie_control_trigger_right"
+            android:title="@string/pie_control_trigger_right"
+            android:defaultValue="false"
+            android:dependency="pie_control" />
+
+        <CheckBoxPreference
+            android:key="pie_control_trigger_top"
+            android:title="@string/pie_control_trigger_top"
+            android:summary="@string/pie_control_trigger_top_summary"
+            android:defaultValue="false"
+            android:dependency="pie_control" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/additional_options_title">
@@ -56,6 +85,18 @@
             android:entryValues="@array/pref_menu_display_values"
             android:title="@string/title_pref_menu_display"
             android:summary="@string/summary_pref_menu_display"
+            android:dependency="pie_control" />
+
+        <SlimSeekBarPreference
+            android:key="pie_control_size"
+            android:title="@string/pie_control_size"
+            android:dependency="pie_control" />
+
+        <CheckBoxPreference
+            android:key="pie_disable_ime_triggers"
+            android:title="@string/pie_disable_ime_triggers_title"
+            android:summary="@string/pie_disable_ime_triggers_summary"
+            android:defaultValue="true"
             android:dependency="pie_control" />
 
     </PreferenceCategory>
