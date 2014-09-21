@@ -19,13 +19,47 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/pie_style">
 
+    <CheckBoxPreference
+        android:key="pie_show_background"
+        android:title="@string/pie_show_background_title"
+        android:summary="@string/pie_show_background_summary"
+        android:defaultValue="true" />
+
+    <SlimSeekBarPreference
+        android:key="pie_background_alpha"
+        android:title="@string/pie_background_alpha_title"
+        android:dependency="pie_show_background" />
+
+    <SlimSeekBarPreference
+        android:key="pie_background_fadein_time"
+        android:title="@string/pie_background_fadein_time_title" />
+
+    <CheckBoxPreference
+        android:key="pie_show_text"
+        android:title="@string/pie_show_text_title"
+        android:summary="@string/pie_show_text_summary"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:key="pie_show_snap"
+        android:title="@string/pie_show_snap_title"
+        android:summary="@string/pie_show_snap_summary"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:key="pie_mirror_right"
+        android:title="@string/pie_mirror_right_title"
+        android:summary="@string/pie_mirror_right_summary"
+        android:defaultValue="true" />
+
+    <ListPreference
+        android:key="pie_slice_gap"
+        android:entries="@array/pie_slice_gap_entries"
+        android:entryValues="@array/pie_slice_gap_values"
+        android:title="@string/pie_slice_gap_title" />
+
     <PreferenceCategory
-        android:title="@string/pie_style_title">
-        <CheckBoxPreference
-            android:key="pie_show_background"
-            android:title="@string/pie_show_background_title"
-            android:summary="@string/pie_show_background_summary"
-            android:defaultValue="true" />
+        android:title="@string/pie_colors_title">
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="pie_background_color"
@@ -33,16 +67,11 @@
             android:defaultValue="0xff000000"
             android:dependency="pie_show_background" />
 
-        <SlimSeekBarPreference
-            android:key="pie_background_alpha"
-            android:title="@string/pie_background_alpha_title"
-            android:dependency="pie_show_background" />
-
-        <CheckBoxPreference
-            android:key="pie_show_snap"
-            android:title="@string/pie_show_snap_title"
-            android:summary="@string/pie_show_snap_summary"
-            android:defaultValue="true" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="pie_text_color"
+            android:title="@string/pie_text_color_title"
+            android:defaultValue="0xffffffff"
+            android:dependency="pie_show_text" />
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="pie_snap_color"
@@ -50,38 +79,6 @@
             android:defaultValue="0xffffff"
             android:dependency="pie_show_snap" />
 
-        <CheckBoxPreference
-            android:key="pie_show_text"
-            android:title="@string/pie_show_text_title"
-            android:summary="@string/pie_show_text_summary"
-            android:defaultValue="true" />
-
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="pie_text_color"
-            android:title="@string/pie_text_color_title"
-            android:defaultValue="0xffffffff"
-            android:dependency="pie_show_text" />
-
     </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/pie_dimens_title">
-
-        <SlimSeekBarPreference
-             android:key="pie_control_size"
-             android:title="@string/pie_control_size" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/additional_options_title">
-
-        <CheckBoxPreference
-            android:key="pie_mirror_right"
-            android:title="@string/pie_mirror_right_title"
-            android:summary="@string/pie_mirror_right_summary"
-            android:defaultValue="true" />
-
-   </PreferenceCategory>
 
 </PreferenceScreen>

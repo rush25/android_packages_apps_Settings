@@ -19,12 +19,14 @@ package com.android.settings.mahdi.slim;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
@@ -48,15 +50,12 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
     private static final String PREF_PIE_SNAP_COLOR = "pie_snap_color";
     private static final String PREF_PIE_TEXT_COLOR = "pie_text_color";
     private static final String PREF_PIE_BACKGROUND_ALPHA = "pie_background_alpha";
-    private static final String PREF_PIE_CONTROL_SIZE = "pie_control_size";
+    private static final String PREF_PIE_BACKGROUND_FADEIN_TIME = "pie_background_fadein_time";
     private static final String PREF_PIE_MIRROR_RIGHT = "pie_mirror_right";
     private static final String PREF_PIE_SHOW_TEXT = "pie_show_text";
     private static final String PREF_PIE_SHOW_BACKGROUND = "pie_show_background";
     private static final String PREF_PIE_SHOW_SNAP = "pie_show_snap";
-
-    private static final float PIE_CONTROL_SIZE_MIN = 0.6f;
-    private static final float PIE_CONTROL_SIZE_MAX = 1.5f;
-    private static final float PIE_CONTROL_SIZE_DEFAULT = 0.97f;
+    private static final String PREF_PIE_SLICE_GAP = "pie_slice_gap";
 
     private static final int MENU_RESET = Menu.FIRST;
     private static final int DLG_RESET = 0;
@@ -64,14 +63,15 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
     Resources mSystemUiResources;
     private boolean mCheckPreferences;
 
-    private ColorPickerPreference mPieBackgroundColor;
-    private ColorPickerPreference mPieSnapColor;
-    private ColorPickerPreference mPieTextColor;
+    private CheckBoxPreference mShowBackground;
     private SlimSeekBarPreference mPieBackgroundAlpha;
+    private ColorPickerPreference mPieBackgroundColor;
+    private SlimSeekBarPreference mPieBackgroundFadeinTime;
     private CheckBoxPreference mShowSnap;
     private CheckBoxPreference mShowText;
-    private CheckBoxPreference mShowBackground;
-    private SlimSeekBarPreference mPieControlSize;
+    private ColorPickerPreference mPieSnapColor;
+    private ColorPickerPreference mPieTextColor;
+    private ListPreference mPieSliceGap;
     private CheckBoxPreference mMirrorRightPie;
 
     @Override
@@ -82,6 +82,7 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.pie_style);
 
         PreferenceScreen prefs = getPreferenceScreen();
+        ContentResolver resolver = getContentResolver();
         PackageManager pm = getPackageManager();
         if (pm != null) {
             try {
@@ -92,17 +93,25 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
             }
         }
 
-        mPieBackgroundColor = (ColorPickerPreference) findPreference(PREF_PIE_BACKGROUND_COLOR);
-        mPieBackgroundColor.setOnPreferenceChangeListener(this);
-
-        mPieSnapColor = (ColorPickerPreference) findPreference(PREF_PIE_SNAP_COLOR);
-        mPieSnapColor.setOnPreferenceChangeListener(this);
-
-        mPieTextColor = (ColorPickerPreference) findPreference(PREF_PIE_TEXT_COLOR);
-        mPieTextColor.setOnPreferenceChangeListener(this);
+        mShowBackground = (CheckBoxPreference) findPreference(PREF_PIE_SHOW_BACKGROUND);
+        mShowBackground.setOnPreferenceChangeListener(this);
 
         mPieBackgroundAlpha = (SlimSeekBarPreference) findPreference(PREF_PIE_BACKGROUND_ALPHA);
         mPieBackgroundAlpha.setOnPreferenceChangeListener(this);
+
+        mPieBackgroundColor = (ColorPickerPreference) findPreference(PREF_PIE_BACKGROUND_COLOR);
+        mPieBackgroundColor.setOnPreferenceChangeListener(this);
+
+        int pieBackgroundFadeinTime = Settings.System.getInt(resolver,
+                Settings.System.PIE_TIME_FADEIN_DELAY, 500);
+        mPieBackgroundFadeinTime = (SlimSeekBarPreference) findPreference(PREF_PIE_BACKGROUND_FADEIN_TIME);
+        mPieBackgroundFadeinTime.setInterval(10);
+        mPieBackgroundFadeinTime.setDefault(500);
+        mPieBackgroundFadeinTime.minimumValue(100);
+        mPieBackgroundFadeinTime.multiplyValue(10);
+        mPieBackgroundFadeinTime.isMilliseconds(true);
+        mPieBackgroundFadeinTime.setInitValue(pieBackgroundFadeinTime);
+        mPieBackgroundFadeinTime.setOnPreferenceChangeListener(this);
 
         mShowSnap = (CheckBoxPreference) findPreference(PREF_PIE_SHOW_SNAP);
         mShowSnap.setOnPreferenceChangeListener(this);
@@ -110,11 +119,19 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
         mShowText = (CheckBoxPreference) findPreference(PREF_PIE_SHOW_TEXT);
         mShowText.setOnPreferenceChangeListener(this);
 
-        mShowBackground = (CheckBoxPreference) findPreference(PREF_PIE_SHOW_BACKGROUND);
-        mShowBackground.setOnPreferenceChangeListener(this);
+        mPieSnapColor = (ColorPickerPreference) findPreference(PREF_PIE_SNAP_COLOR);
+        mPieSnapColor.setOnPreferenceChangeListener(this);
 
-        mPieControlSize = (SlimSeekBarPreference) findPreference(PREF_PIE_CONTROL_SIZE);
-        mPieControlSize.setOnPreferenceChangeListener(this);
+        mPieTextColor = (ColorPickerPreference) findPreference(PREF_PIE_TEXT_COLOR);
+        mPieTextColor.setOnPreferenceChangeListener(this);
+
+        mPieSliceGap =
+            (ListPreference) findPreference(PREF_PIE_SLICE_GAP);
+        int pieSliceGap = Settings.System.getInt(resolver,
+                Settings.System.PIE_SLICE_GAP, 3);
+        mPieSliceGap.setValue(String.valueOf(pieSliceGap));
+        mPieSliceGap.setSummary(mPieSliceGap.getEntry());
+        mPieSliceGap.setOnPreferenceChangeListener(this);
 
         mMirrorRightPie = (CheckBoxPreference) findPreference(PREF_PIE_MIRROR_RIGHT);
         mMirrorRightPie.setOnPreferenceChangeListener(this);
@@ -150,6 +167,9 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
 
         Settings.System.putFloat(getActivity().getContentResolver(),
                 Settings.System.PIE_BACKGROUND_ALPHA, 0.3f);
+
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.PIE_TIME_FADEIN_DELAY, 500);
     }
 
     @Override
@@ -157,20 +177,16 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
         if (!mCheckPreferences) {
             return false;
         }
-        if (preference == mPieBackgroundAlpha) {
+        if (preference == mShowBackground) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.PIE_SHOW_BACKGROUND, (Boolean) newValue ? 1 : 0);
+            return true;
+        } else if (preference == mPieBackgroundAlpha) {
             float val = Float.parseFloat((String) newValue);
             Log.e("R", "value: " + val / 100);
             Settings.System.putFloat(getActivity().getContentResolver(),
                     Settings.System.PIE_BACKGROUND_ALPHA,
                     val / 100);
-            return true;
-        } else if (preference == mPieControlSize) {
-            float val = Float.parseFloat((String) newValue);
-            float value = (val * ((PIE_CONTROL_SIZE_MAX - PIE_CONTROL_SIZE_MIN) /
-                100)) + PIE_CONTROL_SIZE_MIN;
-            Settings.System.putFloat(getActivity().getContentResolver(),
-                    Settings.System.PIE_SIZE,
-                    value);
             return true;
         } else if (preference == mPieBackgroundColor) {
             String hex = ColorPickerPreference.convertToARGB(
@@ -179,6 +195,19 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.PIE_BACKGROUND_COLOR, intHex);
+            return true;
+        } else if (preference == mPieBackgroundFadeinTime) {
+            int value = Integer.parseInt((String) newValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.PIE_TIME_FADEIN_DELAY, value);
+            return true;
+        } else if (preference == mShowText) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.PIE_SHOW_TEXT, (Boolean) newValue ? 1 : 0);
+            return true;
+        } else if (preference == mShowSnap) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.PIE_SHOW_SNAP, (Boolean) newValue ? 1 : 0);
             return true;
         } else if (preference == mPieTextColor) {
             String hex = ColorPickerPreference.convertToARGB(
@@ -196,17 +225,11 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.PIE_SNAP_COLOR, intHex);
             return true;
-        } else if (preference == mShowText) {
+        } else if (preference == mPieSliceGap) {
+            int index = mPieSliceGap.findIndexOfValue((String) newValue);
             Settings.System.putInt(getContentResolver(),
-                    Settings.System.PIE_SHOW_TEXT, (Boolean) newValue ? 1 : 0);
-            return true;
-        } else if (preference == mShowBackground) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.PIE_SHOW_BACKGROUND, (Boolean) newValue ? 1 : 0);
-            return true;
-        } else if (preference == mShowSnap) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.PIE_SHOW_SNAP, (Boolean) newValue ? 1 : 0);
+                    Settings.System.PIE_SLICE_GAP, Integer.parseInt((String) newValue));
+            mPieSliceGap.setSummary(mPieSliceGap.getEntries()[index]);
             return true;
         } else if (preference == mMirrorRightPie) {
             Settings.System.putInt(getContentResolver(),
@@ -290,19 +313,16 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
         }
         mPieBackgroundAlpha.setInitValue((int) (defaultAlpha * 100));
 
-        float controlSize;
+        int defaultDelay;
         try{
-            controlSize = Settings.System.getFloat(getActivity()
-                    .getContentResolver(), Settings.System.PIE_SIZE);
+            defaultDelay = Settings.System.getInt(getActivity()
+                     .getContentResolver(), Settings.System.PIE_TIME_FADEIN_DELAY);
         } catch (Exception e) {
-            controlSize = PIE_CONTROL_SIZE_DEFAULT;
-            Settings.System.putFloat(getActivity().getContentResolver(),
-                Settings.System.PIE_SIZE, controlSize);
+            defaultDelay = 500;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.PIE_TIME_FADEIN_DELAY, defaultDelay);
         }
-        float controlSizeValue = ((controlSize - PIE_CONTROL_SIZE_MIN) /
-                    ((PIE_CONTROL_SIZE_MAX - PIE_CONTROL_SIZE_MIN) / 100)) / 100;
-        mPieControlSize.setInitValue((int) (controlSizeValue * 100));
-        mPieControlSize.disableText(false);
+        mPieBackgroundFadeinTime.setInitValue((int) (defaultDelay / 11) - 4);
 
         mCheckPreferences = true;
     }

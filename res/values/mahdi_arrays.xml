@@ -2044,6 +2044,7 @@
         <item>10000</item>
     </string-array>
 
+    <!-- Quick ribbon size -->
     <string-array name="qs_quick_access_size_entries">
         <item>Automatic</item>
         <item>Automatic (narrow)</item>
@@ -2051,11 +2052,25 @@
         <item>Narrow</item>
     </string-array>
 
-    <!-- Use 0 as default -->
     <string-array name="qs_quick_access_size_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
+    </string-array>
+
+    <!-- Pie slice gap -->
+    <string-array name="pie_slice_gap_entries">
+        <item>@string/pie_slice_gap_disabled</item>
+        <item>@string/pie_slice_gap_small</item>
+        <item>@string/pie_slice_gap_medium</item>
+        <item>@string/pie_slice_gap_large</item>
+    </string-array>
+
+    <string-array name="pie_slice_gap_values" translatable="false">
+        <item>0</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
     </string-array>
 </resources>
