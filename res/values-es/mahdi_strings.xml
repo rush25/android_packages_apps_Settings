@@ -97,7 +97,8 @@
     <!-- Power menu enable disable -->
     <string name="power_menu_title">Menú de encendido</string> 
     <string name="power_menu_summary">Ver o cambiar la lista de menú de encendido</string>
-    <string name="lockscreen_enable_power_menu_title">Habilitar menú de encendido LockScreen</string>
+    <string name="lockscreen_enable_power_menu_title">Mostrar en pantalla de bloqueo</string>
+    <string name="lockscreen_enable_power_menu_summary">Nota, esta opción solo desactiva el menu de encendido en una pantalla de bloqueo con seguridad</string>
     <string name="power_menu_reboot_title">Menú de reinicio</string>
     <string name="power_menu_screenshot_title">Captura de pantalla</string>
     <string name="power_menu_screenrecord_title">Grabador de pantalla</string>
@@ -372,7 +373,7 @@
     <string name="headset_category_title">Headset</string>
     
     <!-- Headset plug -->
-    <string name="headset_settings">Auriculares</string>
+    <string name="headset_plug_title">Opciónes de auriculares</string>
     <string name="headset_plug_enable_title">Insertar acceso directo</string>
     <string name="headset_plug_positive_title">Desactivado</string>
     <string name="headset_plug_neutral_title">Por defecto</string>
@@ -1085,7 +1086,7 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <string name="navigation_bar_size_0_dp">0 dp (off)</string>
     <string name="navigation_menu_right">Derecha</string>
     <string name="navigation_menu_left">Izquierda</string>
-    <string name="navigation_menu_both">Ambos</string>
+    <string name="navigation_menu_both">Derecho &amp; izquierdo</string>
     <string name="navigation_menu_default_jb_behavior">Mostrar solicitado (por defecto)</string>
     <string name="navigation_menu_never_show">No volver a mostrar</string>
     <string name="navigation_menu_always_show">Mostrar siempre</string>
@@ -1409,7 +1410,7 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
 
     <!-- New Recents Screen -->
     <string name="new_recents_category">Slim Recientes</string>
-    <string name="new_recents_screen_title">Slim recientes</string>
+    <string name="new_recents_screen_title">Slim Recientes</string>
     <string name="new_recents_screen_summary">Reemplaza la pantalla de recientes por una basada en nuevas tarjetas ópticas de Google.</string>
     <string name="recent_panel_scale_title">Tamaño panel</string>
     <string name="recent_panel_scale_summary">Tamaño en porcentaje del panel de apps recientes.</string>
@@ -1425,6 +1426,18 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Mostrar en el borde izquierdo</string>
     <string name="recent_panel_lefty_mode_summary">Mostrar panel de aplicaciones recientes en el borde izquierdo.</string>
+
+    <!-- App circle sidebar -->
+    <string name="app_circle_bar_title">Aplicaciónes en barra lateral circular</string>
+    <string name="app_circle_sidebar_summary">Inicia aplicaciónes mas rapido desde una barra lateral y abre multiples aplicaciónes en una sola pantalla para multitarea</string>
+    <string name="app_circle_bar_included_apps_title">Aplicaciónes incluidas</string>
+    <string name="app_circle_bar_included_apps_summary">Aplicaciones que se muestran en la barra lateral circular</string>
+    <string name="trigger_width_title">Ancho de activación</string>
+    <string name="trigger_width_summary">Adjuste el ancho de la zona de activación</string>
+    <string name="trigger_top_title">Posición de activación</string>
+    <string name="trigger_top_summary">Ajuste la posición de la zona de activación</string>
+    <string name="trigger_bottom_title">Altura de activación</string>
+    <string name="trigger_bottom_summary">Ajuste la altura de la zona de activación</string>
 	
     <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
     <string name="custom_runtime_warning_title">Advertencia</string>
@@ -1662,7 +1675,7 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <!-- Screen off animation options -->
     <string name="system_power_crt_mode_title">Modo de animación CRT</string>
     <string name="system_power_crt_mode_dialog_title">Mostrar animación CRT</string>
-    <string name="system_power_crt_mode_off">No mostrar</string>
+    <string name="system_power_crt_mode_off">Desvanecer</string>
     <string name="system_power_crt_mode_horizontal">Horizontal</string>
     <string name="system_power_crt_mode_vertical">Vertical</string>
     <string name="system_power_crt_mode_both">Ambos</string>
@@ -1828,8 +1841,8 @@ dos con el fin de insertar puntos de control adicionales. \'Borrar\' elimina lin
     <string name="battery_saver_action_undefined">Indefinido</string>
     <string name="battery_saver_title">Modo ahorro de batería</string>
     <string name="battery_saver_summary">Elija los modos de ahorro de energía para los datos móviles y conexiones WiFi</string>
-    <string name="pref_battery_saver_enable_title">Ahorro de batería</string>
-    <string name="pref_battery_saver_enable_summary">Esto gestionará automáticamente el uso de la batería del dispositivo y el interruptor de la red para el modo de ahorro de energía definida por el usuario o el modo normal en función de los datos móviles y estados de conexión Wi-Fi</string>
+    <string name="pref_battery_saver_enable_title">Activar</string>
+    <string name="pref_battery_saver_enable_summary">Ahorro de bateria gestionará automáticamente el uso de la batería del dispositivo y el interruptor de la red para el modo de ahorro de energía definida por el usuario o el modo normal en función de los estados de conexión</string>
     <string name="pref_battery_saver_enable_no_mobiledata_summary">Este gestionará automáticamente el uso de la batería del dispositivo al definido por el usuario</string>
     <string name="pref_battery_saver_normal_mode_title">Modo de red normal</string>
     <string name="pref_battery_saver_power_saving_mode_title">Modo de red de ahorro de energía</string>
