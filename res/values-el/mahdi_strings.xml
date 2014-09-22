@@ -791,7 +791,7 @@
     
   <!-- Hardware keys -->
   <string name="button_keys_title">Φυσικά πλήκτρα</string>
-  <string name="button_keys_summary">Προβολή και αλλαγή των ενεργειών των φυσικών ππλήκτρων</string>
+  <string name="button_keys_summary">Προβολή και αλλαγή των ενεργειών των φυσικών πλήκτρων</string>
   <string name="disable_hw_title">Απενεργοποίηση φυσικών πλήκτρων</string>
   <string name="disable_hw_summary">Απενεργοποιόντας τα φυσικά πλήκτρα θα ενεργοποιήθεί η μπάρα πλοήγησης στην οθόνη</string>
   <string name="keys_bindings_title">Ενέργειες πλήκτρων</string>
@@ -2159,7 +2159,7 @@
 
   <!-- Protected Apps -->
   <string name="menu_hidden_apps_delete">Επαναφορά</string>
-  <string name="menu_hidden_apps_reset_lock">Επαναφορά μοτίβου κλειδώματοςReset pattern lock</string>
+  <string name="menu_hidden_apps_reset_lock">Επαναφορά μοτίβου κλειδώματος</string>
   <string name="protected_apps">Προστατευόμενες εφαρμογές</string>
   <string name="saving_protected_components">Αποθήκευση στοιχείων</string>
 

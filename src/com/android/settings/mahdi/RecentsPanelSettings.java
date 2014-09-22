@@ -160,7 +160,7 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
                 Settings.System.RECENT_PANEL_BG_COLOR, 0x00ffffff);
         String hexColor = String.format("#%08x", (0x00ffffff & intColor));
         if (hexColor.equals("#00ffffff")) {
-            mRecentPanelBgColor.setSummary("default");
+            mRecentPanelBgColor.setSummary(R.string.default_string);
         } else {
             mRecentPanelBgColor.setSummary(hexColor);
         }
@@ -286,7 +286,7 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
             if (hex.equals("#00ffffff")) {
-                preference.setSummary("default");
+                preference.setSummary(R.string.default_string);
             } else {
                 preference.setSummary(hex);
             }
@@ -376,7 +376,7 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
         Settings.System.putInt(getContentResolver(),
                 Settings.System.RECENT_PANEL_BG_COLOR, DEFAULT_BACKGROUND_COLOR);
         mRecentPanelBgColor.setNewPreviewColor(DEFAULT_BACKGROUND_COLOR);
-        mRecentPanelBgColor.setSummary("default");
+        mRecentPanelBgColor.setSummary(R.string.default_string);
     }
 
     private Set<String> getIncludedApps() {
