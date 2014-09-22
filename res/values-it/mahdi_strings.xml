@@ -1422,7 +1422,9 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' elimina la riga selezionata.
     <string name="recent_panel_expanded_mode_never">Mai</string>
     <string name="recent_panel_show_topmost_title">Mostra app corrente</string>
     <string name="recent_panel_show_topmost_summary">Non escludere l\'app in uso da slim recents</string>
-    <string name="recent_panel_bg_color_title">Colore di sfondo</string>
+    <string name="recent_panel_bg_color_title">Colore sfondo pannello</string>
+    <string name="recent_card_bg_color_title">Colore sfondo schede</string>
+    <string name="recent_card_text_color_title">Colore testo schede</string>
 
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Mostra a sinistra </string>
