@@ -68,6 +68,8 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
     private static final String RECENT_PANEL_SCALE = "recent_panel_scale";
     private static final String RECENT_PANEL_EXPANDED_MODE = "recent_panel_expanded_mode";
     private static final String RECENT_PANEL_BG_COLOR = "recent_panel_bg_color";
+    private static final String RECENT_CARD_BG_COLOR = "recent_card_bg_color";
+    private static final String RECENT_CARD_TEXT_COLOR = "recent_card_text_color";
     private static final String PREF_ENABLE_APP_CIRCLE_BAR = "enable_app_circle_bar";
     private static final String PREF_INCLUDE_APP_CIRCLE_BAR_KEY = "app_circle_bar_included_apps";
     private static final String KEY_TRIGGER_WIDTH = "trigger_width";
@@ -84,6 +86,8 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
     private ListPreference mRecentPanelScale;
     private ListPreference mRecentPanelExpandedMode;
     private ColorPickerPreference mRecentPanelBgColor;
+    private ColorPickerPreference mRecentCardBgColor;
+    private ColorPickerPreference mRecentCardTextColor;
     private CheckBoxPreference mEnableAppCircleBar;
     private AppMultiSelectListPreference mIncludedAppCircleBar;
     private SeekBarPreference mTriggerWidthPref;
@@ -166,6 +170,32 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
         }
         mRecentPanelBgColor.setNewPreviewColor(intColor);
 
+        mRecentCardBgColor =
+                (ColorPickerPreference) findPreference(RECENT_CARD_BG_COLOR);
+        mRecentCardBgColor.setOnPreferenceChangeListener(this);
+        final int intColorCard = Settings.System.getInt(getContentResolver(),
+                Settings.System.RECENT_CARD_BG_COLOR, 0x00ffffff);
+        String hexColorCard = String.format("#%08x", (0x00ffffff & intColorCard));
+        if (hexColorCard.equals("#00ffffff")) {
+            mRecentCardBgColor.setSummary(R.string.default_string);
+        } else {
+            mRecentCardBgColor.setSummary(hexColorCard);
+        }
+        mRecentCardBgColor.setNewPreviewColor(intColorCard);
+
+        mRecentCardTextColor =
+                (ColorPickerPreference) findPreference(RECENT_CARD_TEXT_COLOR);
+        mRecentCardTextColor.setOnPreferenceChangeListener(this);
+        final int intColorText = Settings.System.getInt(getContentResolver(),
+                Settings.System.RECENT_CARD_TEXT_COLOR, 0x00ffffff);
+        String hexColorText = String.format("#%08x", (0x00ffffff & intColorText));
+        if (hexColorText.equals("#00ffffff")) {
+            mRecentCardTextColor.setSummary(R.string.default_string);
+        } else {
+            mRecentCardTextColor.setSummary(hexColorText);
+        }
+        mRecentCardTextColor.setNewPreviewColor(intColorText);
+
         mEnableAppCircleBar = (CheckBoxPreference) prefSet.findPreference(PREF_ENABLE_APP_CIRCLE_BAR);
         mEnableAppCircleBar.setChecked((Settings.System.getInt(resolver,
                 Settings.System.ENABLE_APP_CIRCLE_BAR, 0) == 1));
@@ -204,12 +234,16 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
             mRecentPanelScale.setEnabled(false);
             mRecentPanelExpandedMode.setEnabled(false);
             mRecentPanelBgColor.setEnabled(false);
+            mRecentCardBgColor.setEnabled(false);
+            mRecentCardTextColor.setEnabled(false);
         } else {
             mRecentsShowTopmost.setEnabled(true);
             mRecentPanelLeftyMode.setEnabled(true);
             mRecentPanelScale.setEnabled(true);
             mRecentPanelExpandedMode.setEnabled(true);
             mRecentPanelBgColor.setEnabled(true);
+            mRecentCardBgColor.setEnabled(true);
+            mRecentCardTextColor.setEnabled(true);
         }
     }
 
@@ -295,6 +329,32 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
                     Settings.System.RECENT_PANEL_BG_COLOR,
                     intHex);
             return true;
+        } else if (preference == mRecentCardBgColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            if (hex.equals("#00ffffff")) {
+                preference.setSummary(R.string.default_string);
+            } else {
+                preference.setSummary(hex);
+            }
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.RECENT_CARD_BG_COLOR,
+                    intHex);
+            return true;
+        } else if (preference == mRecentCardTextColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            if (hex.equals("#00ffffff")) {
+                preference.setSummary(R.string.default_string);
+            } else {
+                preference.setSummary(hex);
+            }
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.RECENT_CARD_TEXT_COLOR,
+                    intHex);
+            return true;
         } else if (preference == mIncludedAppCircleBar) {
             storeIncludedApps((Set<String>) newValue);
             return true;
@@ -377,6 +437,16 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
                 Settings.System.RECENT_PANEL_BG_COLOR, DEFAULT_BACKGROUND_COLOR);
         mRecentPanelBgColor.setNewPreviewColor(DEFAULT_BACKGROUND_COLOR);
         mRecentPanelBgColor.setSummary(R.string.default_string);
+
+        Settings.System.putInt(getContentResolver(),
+                Settings.System.RECENT_CARD_BG_COLOR, DEFAULT_BACKGROUND_COLOR);
+        mRecentCardBgColor.setNewPreviewColor(DEFAULT_BACKGROUND_COLOR);
+        mRecentCardBgColor.setSummary(R.string.default_string);
+
+        Settings.System.putInt(getContentResolver(),
+                Settings.System.RECENT_CARD_TEXT_COLOR, DEFAULT_BACKGROUND_COLOR);
+        mRecentCardTextColor.setNewPreviewColor(DEFAULT_BACKGROUND_COLOR);
+        mRecentCardTextColor.setSummary(R.string.default_string);
     }
 
     private Set<String> getIncludedApps() {
