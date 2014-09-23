@@ -249,34 +249,22 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mNavigationBarWidth) {
-            String newVal = (String) newValue;
-            int index = mNavigationBarWidth.findIndexOfValue(
-                    (String) newValue);
+            int index = mNavigationBarWidth.findIndexOfValue((String) newValue);
             Settings.System.putInt(getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_WIDTH,
-                    Integer.parseInt(newVal));
-            mNavigationBarWidth.setSummary(
-                    mNavigationBarWidth.getEntries()[index]);
+                    Settings.System.NAVIGATION_BAR_WIDTH, Integer.parseInt((String) newValue));
+            mNavigationBarWidth.setSummary(mNavigationBarWidth.getEntries()[index]);
             return true;
         } else if (preference == mNavigationBarHeight) {
-            String newVal = (String) newValue;
-            int index = mNavigationBarHeight.findIndexOfValue(
-                    (String) newValue);
+            int index = mNavigationBarHeight.findIndexOfValue((String) newValue);
             Settings.System.putInt(getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_HEIGHT,
-                    Integer.parseInt(newVal));
-            mNavigationBarHeight.setSummary(
-                    mNavigationBarHeight.getEntries()[index]);
+                    Settings.System.NAVIGATION_BAR_HEIGHT, Integer.parseInt((String) newValue));
+            mNavigationBarHeight.setSummary(mNavigationBarHeight.getEntries()[index]);
             return true;
         } else if (preference == mNavigationBarHeightLandscape) {
-            String newVal = (String) newValue;
-            int index = mNavigationBarHeightLandscape.findIndexOfValue(
-                    (String) newValue);
+            int index = mNavigationBarHeightLandscape.findIndexOfValue((String) newValue);
             Settings.System.putInt(getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_HEIGHT_LANDSCAPE,
-                    Integer.parseInt(newVal));
-            mNavigationBarHeightLandscape.setSummary(
-                    mNavigationBarHeightLandscape.getEntries()[index]);
+                    Settings.System.NAVIGATION_BAR_HEIGHT_LANDSCAPE, Integer.parseInt((String) newValue));
+            mNavigationBarHeightLandscape.setSummary(mNavigationBarHeightLandscape.getEntries()[index]);
             return true;
         } else if (preference == mMenuDisplayLocation) {
             int index = mMenuDisplayLocation.findIndexOfValue((String) newValue);
@@ -294,20 +282,17 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             return true;
         } else if (preference == mEnableNavigationBar) {
             Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_SHOW,
-                    ((Boolean) newValue) ? 1 : 0);
+                    Settings.System.NAVIGATION_BAR_SHOW, ((Boolean) newValue) ? 1 : 0);
             updateNavbarPreferences((Boolean) newValue);
             return true;
         } else if (preference == mNavigationBarCanMove) {
             Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_CAN_MOVE,
-                    ((Boolean) newValue) ? 0 : 1);
+                    Settings.System.NAVIGATION_BAR_CAN_MOVE, ((Boolean) newValue) ? 0 : 1);
             updateDimensionValues();
             return true;
         } else if (preference == mEmulateMenuKey) {
             Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.EMULATE_MENU_KEY,
-                    ((Boolean) newValue) ? 1 : 0);
+                    Settings.System.EMULATE_MENU_KEY, ((Boolean) newValue) ? 1 : 0);
             return true;
         }
         return false;

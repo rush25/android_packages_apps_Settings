@@ -1104,7 +1104,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="summary_pref_menu_location">Where do you want the menu buttons to appear?</string>
     <string name="title_pref_menu_display">Menu visibility</string>
     <string name="summary_pref_menu_display">How and when do you want the menu buttons to appear?</string>
-    <string name="navbar_enable_bar">Enable navigation bar</string>
+    <string name="navbar_enable_bar">Enable</string>
     <string name="navbar_enable_bar_summary">Enable the navigation bar</string>
     <string name="navigation_bar_left_title">Left handed mode</string>
     <string name="navigation_bar_left_summary">Place the navigation bar on the left side of the screen in landscape mode</string>
