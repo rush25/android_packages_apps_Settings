@@ -774,6 +774,10 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across status bar</string>
     <string name="status_bar_toggle_info">Automatic brightness is enabled</string>
 
+    <!-- Statusbar Carrier Logo -->
+    <string name="statusbar_carrier_logo_title">Carrier logo statusbar</string>
+    <string name="statusbar_carrier_logo_summary">Show logo based from carrier/provider</string>
+
     <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">Enable Privacy Guard</string>
     <string name="privacy_guard_dlg_title">Enable Privacy Guard?</string>
