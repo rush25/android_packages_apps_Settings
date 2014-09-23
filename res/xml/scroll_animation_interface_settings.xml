@@ -51,7 +51,7 @@
             android:title="@string/animation_scroll_friction_title"
             android:summary="@string/animation_duration_summary"
             android:max="1000"
-            settings:min="100"
+            settings:min="10"
             settings:interval="10"
             settings:unitsLeft=""
             settings:unitsRight="units"
